@@ -1,30 +1,30 @@
-# Fabricage — ITO L prototype
+# Fabrication — ITO revision L prototype
 
-Upload uitsluitend `manufacturing/ito-l-fabrication.zip` naar de printleverancier. Het volledige project-ZIP is voor ontwerp/assemblage. Bestel eerst een kleine serie, bijvoorbeeld5 kale printen; assembleer aanvankelijk1.
+Upload only `manufacturing/ito-l-fabrication.zip` to the PCB manufacturer. The full project archive is for design and assembly. Order a small run, for example five bare boards, and assemble one first.
 
-| Eigenschap | Bestelspecificatie |
+| Property | Order specification |
 |---|---|
-| Afmeting / dikte | 160 × 110mm / 1,60mm ±10% |
-| Materiaal | FR-4, Tg ≥150°C |
-| Koperlagen | 4: F.Cu / In1.Cu / In2.Cu / B.Cu |
-| Koper | Buiten nominale70µm afgewerkt, binnen35µm; geen automatische verlaging naar1oz buiten |
-| Afwerking | ENIG |
-| Masker / opdruk | Groen soldeermasker, witte opdruk |
-| Minimale baan / koperafstand | 0,15 / 0,15mm; leverancier moet dit bij2oz buitenkoper ondersteunen |
-| Kleinste via | 0,25mm afgewerkt boorgat; kleinste koperdiameter0,55mm |
-| Via-in-pad | Epoxy vullen en koper afdekken (IPC-4761 type VII) voor vias in QFN exposed pads, zie via-in-pad.csv |
-| Boorbestanden | PTH en NPTH gescheiden; maatvoering metrisch |
-| Test | Elektrische nettest, AOI; geen impedantie-eis |
-| Opbouw | Symmetrische standaard4-laagsopbouw van leverancier, totale dikte1,6mm en hierboven genoemd koper |
+| Size / thickness | 160 × 110 mm / 1.60 mm ±10% |
+| Material | FR-4, Tg ≥150°C |
+| Copper layers | 4: F.Cu / In1.Cu / In2.Cu / B.Cu |
+| Copper weight | Nominal finished outer copper 70 µm, inner 35 µm; do not silently reduce outer layers to 1 oz |
+| Finish | ENIG |
+| Mask / legend | Green solder mask, white silkscreen |
+| Minimum track / clearance | 0.15 / 0.15 mm; manufacturer must support this with 2 oz outer copper |
+| Smallest via | 0.25 mm finished hole, minimum copper diameter 0.55 mm |
+| Via-in-pad | Epoxy filled and copper capped, IPC-4761 type VII, for QFN exposed-pad vias; see via-in-pad.csv |
+| Drill files | Separate PTH and NPTH, metric units |
+| Tests | Electrical net test and AOI; no controlled-impedance requirement |
+| Stackup | Manufacturer's symmetric standard four-layer stack, 1.6 mm total and copper as specified above |
 
-In1.Cu bevat massa én enkele routes: niet behandelen als een automatisch vol vlak. Het antennegebied moet op alle koperlagen leeg blijven. Gerbers zijn reeds met gevulde zones geëxporteerd; niet opnieuw vullen op basis van een andere regelset.
+In1.Cu contains ground and some tracks; it is not an uninterrupted plane. The antenna area must stay clear on every copper layer. Gerbers were exported with filled zones; do not refill them using a different rule set.
 
-Laat de normale DFM-controle van de leverancier de opgegeven2oz/0,15mm-combinatie en via-in-pad bevestigen. Als de gekozen goedkope standaarddienst die combinatie niet accepteert, kies de passende fabricageoptie of een andere leverancier; vergroot geen spoorafstanden en verwijder geen vias op eigen initiatief.
+Have normal DFM confirm the 2 oz / 0.15 mm combination and filled/capped vias. If a low-cost service does not support these requirements, select the appropriate process or another manufacturer. Do not change clearances or remove vias without design review.
 
-Voor SMT: stencil100µm, originele F.Paste-data gebruiken. U1 heeft verdeelde pasteopeningen. Filled/capped exposed-pad-vias voorkomen soldeerwegvloeiing. Reflow en inspectie zijn nodig voor de QFN's en gestapelde uitgangscondensatoren. De centroidlijst geeft KiCad-hoeken; de assembler controleert zijn rotatieconventie aan de pin1-markeringen en montagetekening.
+SMT stencil: 100 µm, using original F.Paste data. U1 has segmented paste apertures. Filled/capped exposed-pad vias prevent solder loss. QFNs and stacked output capacitors require reflow and inspection. Placement angles follow KiCad conventions; the assembler must verify rotation against pin-1 marks and the assembly drawing.
 
-De meegeleverde CAD- en exportcontroles bewijzen aansluitingen en fabricagegeometrie, niet de werking van een gebouwde print.
+CAD/export checks establish connectivity and fabrication geometry, not operation of assembled hardware.
 
-## J30 R7B: gefreesde sleufgaten
+## J30 R7B plated slots
 
-J30 heeft vier **doorgemetalliseerde sleufgaten van 0,60 x 2,70 mm** en drie niet-doorgemetalliseerde montagegaten: twee rond 1,70 mm, één sleuf 2,20 x 1,00 mm. De maten zijn afgewerkte maten uit de Kycon-tekening. Behoud de sleuven in de Excellon-routegegevens; vervang ze niet door ronde gaten. Laat de leverancier de 0,60 mm gemetalliseerde sleuven en de afgewerkte tolerantie bevestigen bij DFM.
+J30 has four **0.60 × 2.70 mm plated slots**, plus three unplated mounting holes: two Ø1.70 mm and one 2.20 × 1.00 mm slot. Dimensions are finished sizes from the Kycon drawing. Preserve Excellon routing data; do not replace slots with round holes. Have DFM confirm 0.60 mm plated-slot capability and finished tolerances.

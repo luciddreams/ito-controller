@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-26",
+  "source_commit": "78a5e5b91e51cb6c364b3cd9b65e039dc381aa2d",
+  "scope": "English active documentation, schematic display text, connector notes and BOM description column",
+  "components": 202,
+  "electrical_pins": 638,
+  "exact_pin_to_net_parity": true,
+  "canonical_values_footprints_uuids_preserved": true,
+  "pcb_bytes_unchanged": true,
+  "pcb_sha256": "94e26b0159dc112d9fe51a5cce2872bfe5b97c0d8600d464bc04b36c9e7ec8d8",
+  "firmware_source_and_binaries_unchanged": true,
+  "fabrication_geometry_files_unchanged": true,
+  "fabrication_zip_change": "English FABRICATION.md only",
+  "erc_errors": 0,
+  "erc_warnings": 0,
+  "schematic_pdf_pages": 14,
+  "active_documentation_links_valid": true,
+  "original_historical_records_preserved": true
+}

@@ -1,17 +1,17 @@
-# Plaatsingscorrectie — 24 september 2026
+# Placement correction — 24 September 2026
 
-## Uitgevoerd
+## Changes
 
-- C5: pin 1 op (12,00; 101,75) mm; behuizingsmiddelpunt (14,50; 101,75) mm. De radiale condensator staat vrij van Q2, F1 en Q5. Courtyard met straal 6,50 mm toegevoegd.
-- Weerstandencluster naast XIAO: kolommen met 4,00 mm steek en rijen met 2,50 mm steek. Componentoriëntatie horizontaal behouden. 17 verspringende weerstanden uitgelijnd; waarden, netnamen en componentnummers behouden.
-- Massavlakken verbonden met extra vias; R54-massapad rechtstreeks aan het vlak gekoppeld en de thermische aansluitingen van J24-pin 2 op 45° gezet.
-- Aansluitingen opnieuw gerouteerd en spoorrestanten verwijderd. C5 heeft een nieuwe 0,80 mm voedingsaftakking; de lokale ontkoppelcondensatoren bij de eFuse blijven staan.
-- Gerbers, boringen, SMT-posities, laagplots, STEP en KiCad-renders vervangen door actuele exports.
+- C5 pin 1 at (12.00,101.75) mm, body center (14.50,101.75) mm. The radial capacitor clears Q2, F1 and Q5. Added a 6.50 mm radius courtyard.
+- Resistor group beside XIAO: columns at 4.00 mm spacing, rows at 2.50 mm. Horizontal component orientation retained. Seventeen staggered resistors aligned without changing values, nets or references.
+- Ground planes joined using additional vias; R54 ground pad directly connected and J24 pin-2 thermal spokes set to 45°.
+- Connections rerouted and obsolete track fragments removed. C5 has a new 0.80 mm power branch; local eFuse decoupling remains in place.
+- Gerbers, drills, SMT positions, layer plots, STEP and KiCad renders updated.
 
-## Controle
+## Checks
 
-Schema/PCB-netvergelijking en componentvergelijking zonder afwijkingen. KiCad DRC: nul overtredingen, nul open verbindingen en nul footprintafwijkingen. STEP-intersectiecontrole: geen ongewenste componentoverlap boven 0,05 mm³. De modellen bevatten de vereenvoudigingen en montageaannamen beschreven in `3D-INSPECTIE.md`; dit is geen tolerantiesimulatie of fysieke kwalificatie.
+Schematic/PCB net and component comparisons found no differences. KiCad DRC: zero violations, unconnected pads and footprint mismatches. STEP intersection checks found no unwanted overlap above 0.05 mm³. Model simplifications and assembly assumptions are described in `3D-INSPECTION.md`; this is not a tolerance simulation or physical qualification.
 
-De eerdere fabricageblokkade wegens C5-overlap is hiermee opgeheven. Gebruik uitsluitend het nieuwe pakket. Begin met één geassembleerd prototype en voer de beschreven inbedrijfstelling uit.
+The previous fabrication hold caused by C5 overlap was removed. Use the corrected revision-L package, assemble one prototype first, and follow commissioning instructions.
 
-Exacte voor/na-posities: `3dmodels/placement-changes.json`.
+Exact before/after positions: `3dmodels/placement-changes.json`.

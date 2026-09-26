@@ -1,5 +1,5 @@
-# Documenten en modellen van derden
+# Third-party documents and models
 
-Fabrikantdatasheets, tekeningen, modulenamen en merken blijven eigendom van hun respectieve rechthebbenden. Ze zijn opgenomen als technische ontwerpreferentie op verzoek van de projecteigenaar en worden niet onder een nieuwe projectlicentie aangeboden. Bron-URL, ophaaldatum en SHA-256 staan in `datasheets/manifest.json`. Een serie-datasheet dekt meerdere bestelcodes; controleer de specifieke suffix en rating vóór bestellen.
+Manufacturer datasheets, drawings, module names and trademarks remain the property of their respective rights holders. They are included as engineering references at the project owner's request and are not relicensed under a new project license. Source URL, retrieval date and SHA-256 are recorded in `datasheets/manifest.json`. Family datasheets cover multiple order codes; verify the exact suffix and ratings before ordering.
 
-De originele modellen en hun herkomst worden beschreven in `3D-INSPECTIE.md` en de modelmappen. De firmware gebruikt de externe Seeed/Adafruit-boardcore zoals beschreven in `firmware/README.md`; de volledige core wordt niet meegeleverd. Er is nog geen licentie voor het eigen project gekozen.
+Model provenance is described in `3D-INSPECTION.md` and the model directory. Firmware depends on the external Seeed/Adafruit board core described in `firmware/README.md`; the complete core is not bundled. No license has been selected for the project's own work. Manufacturer documents retain their original language and content.

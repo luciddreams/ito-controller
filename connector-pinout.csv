@@ -13,28 +13,28 @@ J2,4,D10,BUTTON_N,"Top view, module components up, USB down: J2 at left; 5V pin1
 J2,5,D9,POWER_ARM,"Top view, module components up, USB down: J2 at left; 5V pin1 bottom."
 J2,6,D8,FAN_TACH,"Top view, module components up, USB down: J2 at left; 5V pin1 bottom."
 J2,7,D7,FAN_PWM,"Top view, module components up, USB down: J2 at left; 5V pin1 bottom."
-JP1,1,1,+5_AUX,Alleen sluiten zonder USB-VBUS; geen automatische bronselectie.
-JP1,2,2,XIAO_5V,Alleen sluiten zonder USB-VBUS; geen automatische bronselectie.
-J5,1,1,BUTTON_N,"Externe drukknop, normaal open."
-J5,2,2,GND,"Externe drukknop, normaal open."
+JP1,1,1,+5_AUX,Close only without USB VBUS; no automatic source selection.
+JP1,2,2,XIAO_5V,Close only without USB VBUS; no automatic source selection.
+J5,1,1,BUTTON_N,"External normally-open pushbutton."
+J5,2,2,GND,"External normally-open pushbutton."
 J3,1,1,+24_IN,"Mean Well GST160A24-R7B; J3:1 +24V, J3:2 return; prototype 4A operating budget."
 J3,2,2,GND,"Mean Well GST160A24-R7B; J3:1 +24V, J3:2 return; prototype 4A operating budget."
-J6,1,1,+24_PROT,"Vergrendelende noodstop, NC contact, geschikt voor 24V DC spoelkring."
-J6,2,2,ESTOP_OUT,"Vergrendelende noodstop, NC contact, geschikt voor 24V DC spoelkring."
+J6,1,1,+24_PROT,"Latching emergency stop, NC contact suitable for a 24 V DC relay-coil circuit."
+J6,2,2,ESTOP_OUT,"Latching emergency stop, NC contact suitable for a 24 V DC relay-coil circuit."
 J7,1,1,ESTOP_OUT,"See PROTOTYPE-START.md, ASSEMBLY.md and BOM specification."
 J7,2,2,THERM_GLASS_OUT,"See PROTOTYPE-START.md, ASSEMBLY.md and BOM specification."
 J8,1,1,THERM_GLASS_OUT,"See PROTOTYPE-START.md, ASSEMBLY.md and BOM specification."
 J8,2,2,COIL_PLUS,"See PROTOTYPE-START.md, ASSEMBLY.md and BOM specification."
 J4,1,1,ITO_PLUS,"See PROTOTYPE-START.md, ASSEMBLY.md and BOM specification."
 J4,2,2,ITO_MINUS,"See PROTOTYPE-START.md, ASSEMBLY.md and BOM specification."
-J11,1,1,T1_OUT,TEC1: polariteit zo aansluiten dat glaszijde koelt; connector >=3A.
-J11,2,2,GND,TEC1: polariteit zo aansluiten dat glaszijde koelt; connector >=3A.
-J12,1,1,T2_OUT,TEC2: polariteit zo aansluiten dat glaszijde koelt; connector >=3A.
-J12,2,2,GND,TEC2: polariteit zo aansluiten dat glaszijde koelt; connector >=3A.
-J13,1,1,T3_OUT,TEC3: polariteit zo aansluiten dat glaszijde koelt; connector >=3A.
-J13,2,2,GND,TEC3: polariteit zo aansluiten dat glaszijde koelt; connector >=3A.
-J14,1,1,T4_OUT,TEC4: polariteit zo aansluiten dat glaszijde koelt; connector >=3A.
-J14,2,2,GND,TEC4: polariteit zo aansluiten dat glaszijde koelt; connector >=3A.
+J11,1,1,T1_OUT,TEC1: connect polarity to cool the glass side; connector rated >=3 A.
+J11,2,2,GND,TEC1: connect polarity to cool the glass side; connector rated >=3 A.
+J12,1,1,T2_OUT,TEC2: connect polarity to cool the glass side; connector rated >=3 A.
+J12,2,2,GND,TEC2: connect polarity to cool the glass side; connector rated >=3 A.
+J13,1,1,T3_OUT,TEC3: connect polarity to cool the glass side; connector rated >=3 A.
+J13,2,2,GND,TEC3: connect polarity to cool the glass side; connector rated >=3 A.
+J14,1,1,T4_OUT,TEC4: connect polarity to cool the glass side; connector rated >=3 A.
+J14,2,2,GND,TEC4: connect polarity to cool the glass side; connector rated >=3 A.
 J21,1,1,NTC1,"See PROTOTYPE-START.md, ASSEMBLY.md and BOM specification."
 J21,2,2,GND,"See PROTOTYPE-START.md, ASSEMBLY.md and BOM specification."
 J22,1,1,NTC2,"See PROTOTYPE-START.md, ASSEMBLY.md and BOM specification."
@@ -43,16 +43,16 @@ J23,1,1,NTC3,"See PROTOTYPE-START.md, ASSEMBLY.md and BOM specification."
 J23,2,2,GND,"See PROTOTYPE-START.md, ASSEMBLY.md and BOM specification."
 J24,1,1,NTC4,"See PROTOTYPE-START.md, ASSEMBLY.md and BOM specification."
 J24,2,2,GND,"See PROTOTYPE-START.md, ASSEMBLY.md and BOM specification."
-J25,1,1,HOT_NTC,Externe 10k NTC op hete warmtewisselaar.
-J25,2,2,GND,Externe 10k NTC op hete warmtewisselaar.
+J25,1,1,HOT_NTC,External 10k NTC on the hot-side heat exchanger.
+J25,2,2,GND,External 10k NTC on the hot-side heat exchanger.
 J26,1,1,+3V3,Short local I2C service connector only. Leave empty when both remote SHT31 sensors occupy addresses0x44/0x45.
 J26,2,2,GND,Short local I2C service connector only. Leave empty when both remote SHT31 sensors occupy addresses0x44/0x45.
 J26,3,3,SDA,Short local I2C service connector only. Leave empty when both remote SHT31 sensors occupy addresses0x44/0x45.
 J26,4,4,SCL,Short local I2C service connector only. Leave empty when both remote SHT31 sensors occupy addresses0x44/0x45.
-J27,1,1,GND,"24V vierdraads fan, open-collector PWM en tach vereist. Pinvolgorde definitief type controleren."
-J27,2,2,FAN_24,"24V vierdraads fan, open-collector PWM en tach vereist. Pinvolgorde definitief type controleren."
-J27,3,3,FAN_TACH,"24V vierdraads fan, open-collector PWM en tach vereist. Pinvolgorde definitief type controleren."
-J27,4,4,FAN_PWM_OC,"24V vierdraads fan, open-collector PWM en tach vereist. Pinvolgorde definitief type controleren."
+J27,1,1,GND,"24 V four-wire fan; open-collector PWM and tach required. Verify the selected fan pinout."
+J27,2,2,FAN_24,"24 V four-wire fan; open-collector PWM and tach required. Verify the selected fan pinout."
+J27,3,3,FAN_TACH,"24 V four-wire fan; open-collector PWM and tach required. Verify the selected fan pinout."
+J27,4,4,FAN_PWM_OC,"24 V four-wire fan; open-collector PWM and tach required. Verify the selected fan pinout."
 J9,1,SHDN,PROT_SHDN,Normally open reset button to GND; internal SHDN pull-up.
 J9,2,GND,GND,Normally open reset button to GND; internal SHDN pull-up.
 J28,1,3V3REF,+3V3,"Short <=10cm lead to local PCA9615 adapter; differential cable only beyond adapter. Pin1=3V3 reference, pin5=fused5V. See REMOTE-SENSORS.md."

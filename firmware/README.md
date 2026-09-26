@@ -1,24 +1,24 @@
-# Prototypefirmware L.1
+# Prototype firmware L.1
 
-Bewaakte inbedrijfstelling voor PCB L, XIAO BLE nRF52840 en Mean Well 24 V. Dit is testfirmware met korte handmatige pulsen. Geen automatische condenscyclus, BLE-bediening of onbeheerd bedrijf. Er is nog geen echte print met deze firmware getest.
+Supervised commissioning firmware for PCB L, XIAO BLE nRF52840 and the Mean Well 24 V supply. It provides short manual test pulses, not an automatic condensation cycle, BLE interface or unattended operation. No actual board has been tested with this firmware.
 
-## Meegeleverd
+## Included files
 
-- `ito_prototype/`: Arduino-broncode en `config.h`.
-- `build/`: gecompileerde diagnoseversie, met vermogensvrijgave geblokkeerd.
-- `calibrate.py`: tweepuntsberekening uit zelf gemeten waarden.
-- `tests/`: hosttests van grenscontroles en de echte firmwaretoestanden met gesimuleerde hardware. De testconfiguratie is uitsluitend voor deze tests.
-- `verification.txt`: werkelijke build- en testresultaten.
+- `ito_prototype/`: Arduino source and `config.h`.
+- `build/`: compiled diagnostic version with power tests blocked.
+- `calibrate.py`: two-point calculations using actual measured data.
+- `tests/`: host tests for safety limits and real firmware states using simulated hardware. The test configuration is for tests only.
+- `verification.txt`: previous actual build/test results.
 
-De USB-terminal geeft met `status` onder andere ruwe ADC-tellingen, gemeten ingangsstroom, heaterstroom, busspanning, vijf temperaturen, ventilatortoerental en foutstatus. Temperaturen en ingangsstroom zijn vóór kalibratie indicatief. Toestanden: 0=rust, 1=relaiscontrole, 2=heater, 3=TEC, 4=fout.
+USB command `status` reports raw ADC counts, input current, heater current, bus voltage, five temperatures, fan speed and fault state. Temperatures and input current are indicative until calibrated. States: 0=idle, 1=relay check, 2=heater, 3=TEC, 4=fault.
 
-## Compileren en uploaden
+## Build and flash
 
-Gebruik Arduino IDE met **Seeed nRF52 Boards 1.1.13**, bord **Seeed XIAO nRF52840**. Gebruik voor dit pakket niet de mbed-variant, Sense of Plus. TinyUSB 1.7.0 wordt met deze core geleverd; geen extra sensorbibliotheken nodig.
+Use Arduino IDE with **Seeed nRF52 Boards 1.1.13**, board **Seeed XIAO nRF52840**. Do not use the mbed, Sense or Plus variants for this package. TinyUSB 1.7.0 comes with this core; no additional sensor libraries are needed.
 
-Board-index: https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
+Board index: https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
 
-Open `ito_prototype/ito_prototype.ino`. Of gebruik Arduino CLI:
+Open `ito_prototype/ito_prototype.ino`, or use Arduino CLI:
 
 ```sh
 arduino-cli core update-index --additional-urls https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
@@ -27,49 +27,50 @@ arduino-cli compile --fqbn Seeeduino:nrf52:xiaonRF52840 --output-dir build ito_p
 arduino-cli upload --fqbn Seeeduino:nrf52:xiaonRF52840 --port YOUR_PORT --input-dir build
 ```
 
-Op Linux kan deze core `adafruit-nrfutil` op PATH vereisen: `python -m pip install adafruit-nrfutil`. De UF2 kan ook naar de bootloaderdrive worden gekopieerd na tweemaal kort op reset te drukken. Flash alleen met de 24 V uit en JP1 OPEN. Laat na inschakelen altijd de USB-voeding aanwezig zolang JP1 open is; schakel 24 V uit en ontlaad voordat USB wordt verwijderd. Zie ASSEMBLY.md.
+On Linux this core may require `adafruit-nrfutil` on PATH: `python -m pip install adafruit-nrfutil`. Alternatively, double-press reset and copy the UF2 to the bootloader drive. Flash only with 24 V off and JP1 OPEN. Keep USB connected while JP1 is open and 24 V is on; switch off 24 V and discharge the load bus before removing USB. See ASSEMBLY.md.
 
-## Eerste diagnose
+## Initial diagnostics
 
-Sluit nog geen glas of peltiers aan. Volg de elektrische inspectie in PROTOTYPE-START.md. Sluit de vijf juiste NTC's aan en controleer de NC-veiligheidsketen. Gebruik eerst belastingsweerstanden, een begrensde labvoeding, externe meters en een scoop.
+Do not connect glass or TECs yet. Follow PROTOTYPE-START.md, connect the five correctly specified NTCs and verify the NC safety chain. Begin with power resistors, a current-limited lab supply, external meters and an oscilloscope.
 
-De geleverde firmware zet heater-PWM, TEC_ARM en POWER_ARM laag vóór initialisatie. TCA-uitgangslatches gaan naar nul vóór de richtingwijziging; DAC-kanalen worden expliciet op nul en interne 2,048 V referentie gezet. De fan krijgt continu 100% vraag. Sensoruitval, hoge temperatuur, stroomoverschrijding, I2C-fout, veranderd configuratieregister, bedienknop loslaten of USB-verlies tijdens een proef zetten de directe vermogensvrijgaven uit en vergrendelen de fout. Geen automatische herstart van een proef.
+Firmware drives heater PWM, TEC_ARM and POWER_ARM low before initialization. TCA output latches are zeroed before changing direction; DAC channels are explicitly set to zero with the internal 2.048 V reference. The fan receives a continuous 100% request. Sensor failures, excessive temperature/current, I²C faults, altered configuration registers, releasing the hold button or USB loss during a test disable direct power enables and latch a fault. Tests never restart automatically.
 
-I2C gebruikt een eigen begrensde open-drain driver op D4/D5, maximaal 100 kHz. Clock stretching heeft 1 ms timeout, een transactie 20 ms. Dit vermijdt de onbegrensde wachtlussen van Wire in deze core. De nRF-watchdog heeft een nominale timeout van 250 ms en wordt alleen na een complete lus gevoed. Softwaretiming en reactietijd moeten met een scoop worden gemeten; dit is geen gecertificeerde veiligheidsregeling.
+I²C uses a bounded open-drain software driver on D4/D5 at ≤100 kHz. Clock-stretch timeout is 1 ms; transaction timeout is 20 ms. This avoids unbounded Wire waits in this core. The nRF watchdog has a nominal 250 ms timeout and is fed only after a complete loop. Verify software timing and fault response with a scope; this is not a certified safety controller.
 
-## Kalibratie vóór vermogen
+## Calibration before enabling power tests
 
-`MEASUREMENTS_VERIFIED=false`, nulwaarden voor de TEC-codegrenzen en ontbrekende heaterweerstand blokkeren standaard de proeven. Zet die vlag pas op true nadat de relevante meetwaarden en onderstaande controles zijn ingevuld. Voor de eerste weerstandstest mogen niet-gemonteerde TEC-kanalen op codegrens nul blijven. Beperk de labvoeding en start met een zeer kleine DAC-code; verhoog de codegrens alleen op basis van externe stroommeting. Een testgrens is geen voorspelling van de TEC-stroom.
+`MEASUREMENTS_VERIFIED=false`, zero TEC code limits and an unspecified heater resistance block tests by default. Set the flag true only after entering relevant measurements and completing the checks below. For the first resistor test, unused TEC channels may retain zero limits. Limit the lab supply and begin with a very small DAC code; increase code limits only from external measurements. A code limit is not a predicted TEC current.
 
-1. Meet de 3,3 V rail en vul `VDD_V` in. Controleer het exacte R25- en beta-getal van alle vijf geïnstalleerde NTC's; de 3950 K in config.h is een placeholder. Bevestig hun aanwijzing bij omgevingstemperatuur en een tweede relevante temperatuur. Open en kortgesloten kabels moeten een fout geven. Gebruik bij afwijkende probes hun juiste omzetting in plaats van deze beta-benadering.
-2. Kalibreer de ADC met twee bekende spanningen op de geïsoleerde meetingang, met de controller droog en vermogen uit. Belangrijk: koppel de te testen signaalbron eerst los; injecteer geen spanning tegen IMON of een aangesloten sensor. De interne ADC-schaal is nominaal 3,6 V/4096, niet 3,3 V/4095. Controleer beide ADC-kanalen. `status` geeft `raw=INPUT,HOT`.
-3. Bereken de spanningsoverdracht met `python calibrate.py adc RAW1 VOLT1 RAW2 VOLT2`. Voer daarna een onafhankelijke derde controle uit. Vul slope en offset in `config.h` in. De onderschatting moet over het relevante bereik aantoonbaar onder 3% blijven, inclusief temperatuur en marge.
-4. Kalibreer IMON met een externe elektronische belasting op +24_PROT, onder toezicht en zonder heater/TEC. Meet twee punten in het 2-4 A bereik. Bereken `python calibrate.py current IMONV1 AMP1 IMONV2 AMP2`. Controleer een derde punt. Firmware schakelt af bij 1,00 V óf 3,8 A gekalibreerd; de echte stroom moet onder 4 A blijven.
-5. Verifieer de INA226 met externe meter en scoop. De firmware leest de shuntspanning rechtstreeks: 2,5 microvolt/bit over 10 milliohm. De softwaregrens is 3,4 A als marge onder 3,5 A. Beoordeel ook puls-piekstromen; alleen een gemiddelde meter is onvoldoende.
-6. Meet de heaterweerstand tussen de complete busbars, of eerst de belastingsweerstand. Vul `HEATER_RESISTANCE_OHM` in. Met de gemeten spanning berekent de firmware een duty-bovengrens voor 10 W en controleert de verwachte aanstroom. Een dummybelasting gebruikt zijn eigen weerstand, niet die van het glas.
-7. Kalibreer één TEC-kanaal per keer aan de weerstand, met de scope en stroommeter. Leg per kanaal een conservatieve `TEC_MAX_CODE` vast die inclusief rimpel, warme toestand en overshoot onder 2 A blijft. Vul nul in voor nog niet gekwalificeerde kanalen. Deze firmware activeert maximaal één TEC tegelijk.
-8. Controleer fanpulsgetal en minimumtoerental. Voor een proef moet de fan al draaien. Controleer ook een losgetrokken tachkabel. Verifieer de ingestelde 2 s uitperiode met een scoop: stroom moet al zijn afgebouwd voordat een nieuwe modus wordt toegelaten.
+1. Measure 3.3 V and enter `VDD_V`. Verify the exact R25 and beta of all five NTCs; 3950 K in config.h is a placeholder. Verify readings at ambient and a second relevant temperature. Open/shorted probes must cause faults. Use the proper transfer function if a probe does not fit the beta approximation.
+2. Calibrate the ADC with two known voltages on the isolated measurement input, controller dry and power stages off. Disconnect the original signal source first; do not inject voltage against IMON or an attached probe. Nominal ADC scaling is 3.6 V/4096, not 3.3 V/4095. Check both ADC channels; `status` reports `raw=INPUT,HOT`.
+3. Run `python calibrate.py adc RAW1 VOLT1 RAW2 VOLT2`. Perform an independent third check. Enter slope/offset in config.h. Under-reading must remain demonstrably below 3% over the relevant range, including temperature and margin.
+4. Calibrate IMON using a supervised external electronic load on +24_PROT without heater/TECs. Measure two points in the 2–4 A range. Run `python calibrate.py current IMONV1 AMP1 IMONV2 AMP2` and check a third point. Firmware stops at 1.00 V or 3.8 A calibrated current; actual current must remain below 4 A.
+5. Verify INA226 against an external meter and scope. Firmware reads shunt voltage directly: 2.5 µV/bit across 10 mΩ. Software limit is 3.4 A for margin below 3.5 A. Examine pulse peaks; an averaging meter alone is insufficient.
+6. Measure full-busbar heater resistance, or the initial dummy resistor. Set `HEATER_RESISTANCE_OHM`. Firmware uses measured voltage to calculate a 10 W duty ceiling and check expected on-current. A dummy load must use its own resistance value.
+7. Calibrate one TEC channel at a time using a resistor, scope and current meter. Set conservative per-channel `TEC_MAX_CODE` values that keep current including ripple, warm operation and overshoot below 2 A. Keep unqualified channels at zero. Firmware L.1 activates at most one TEC at a time.
+8. Check fan pulses/revolution and minimum speed. The fan must already be running before a test. Test a disconnected tach wire. Verify the 2 s off interval with a scope: current must have decayed before a new mode starts.
 
-## Proef uitvoeren
+## Running a test
 
-USB-terminal: 115200 baud, newline. J5 is de vasthoudknop: houd hem ingedrukt gedurende relaisinschakeling én de proef. Loslaten stopt en vergrendelt een actieve proef. Alle NC-veiligheidscontacten moeten operationeel zijn.
+USB terminal: 115200 baud, newline. J5 is the hold-to-run button; keep it pressed through relay startup and the entire pulse. Releasing it stops an active test and latches a fault. All NC safety contacts must be operational.
 
-| Opdracht | Gedrag |
+| Command | Action |
 |---|---|
-| `status` | Diagnosewaarden; geen vermogensactie |
-| `heat 20 500` | Heater duty 20/255, 500 ms; alleen als binnen berekende 10 W grens |
-| `tec 1 100 500` | Kanaal 1, DAC-code 100, 500 ms; alleen als code binnen gemeten kanaalgrens |
-| `stop` | Directe GPIO-vrijgaven uit, daarna TCA en DAC nul |
-| `reset` | Alleen met knop los; herinitialiseert apparatuur en wist fout uitsluitend bij gezonde meetwaarden en relais uit |
+| `status` | Diagnostics only; no power action |
+| `heat 20 500` | Heater duty 20/255 for 500 ms, only within calculated 10 W ceiling |
+| `tec 1 100 500` | Channel 1, DAC code 100, 500 ms, only within the calibrated channel code limit |
+| `stop` | Disable direct GPIO enables, then zero TCA and DAC |
+| `reset` | Requires button released; reinitializes devices and clears faults only with healthy measurements and relay off |
+| `ambient` | Remote temperature, RH, dew point, validity and age |
 
-Opdrachten hierboven zijn voorbeelden, geen gekalibreerde stroominstellingen. Iedere proef wacht 200 ms op relais/busspanning voordat de uitgang actief wordt. Pulsen zijn 100-2000 ms, met minimaal 2 s uit tussen proeven. Heater-PWM is voorlopig 10 Hz. Start na een fout nooit door alleen de limiet te verhogen. Als een fout nog in de vorige meetcyclus staat, eerst `status` en pas daarna `reset`.
+These examples are not calibrated current settings. Each test waits 200 ms for the relay/bus before enabling the output. Pulses are 100–2000 ms with at least 2 s off between tests. Initial heater PWM is 10 Hz. Never respond to a fault merely by raising a limit. If a previous-cycle fault remains, inspect `status` before `reset`.
 
-De firmware bewaakt vijf sensoren, maar weet niet of een correct aangesloten NTC mechanisch is losgeraakt van het glas. Controleer hechting en temperatuuruniformiteit fysiek. De onafhankelijke thermostaten blijven noodzakelijk.
+Firmware monitors five probes but cannot reliably detect a mechanically detached yet electrically valid NTC. Physically verify bonding and temperature uniformity. Independent thermostats remain necessary.
 
-## Praktijktests die nog openstaan
+## Outstanding physical tests
 
-Vul `../commissioning-results.csv` met echte meetresultaten, waaronder kortgesloten/onderbroken I2C, watchdog, reset tijdens beide modi, sensorfouten, knop/USB-verlies, relaisfalen, fanstilstand, stroomgrenzen en thermische proeven. De brontests en een geslaagde build vervangen geen van deze metingen. Vier TEC's tegelijk en automatisch ontwasemen behoren pas tot een volgende firmwarestap na kwalificatie van één kanaal.
+Record actual measurements in `../commissioning-results.csv`: open/shorted I²C, watchdog, reset in each mode, sensor faults, button/USB loss, relay failure, fan stall, current limits and thermal tests. Host tests and a successful build replace none of these. Four simultaneous TECs and automatic defogging are later firmware work after single-channel qualification.
 
-## Twee ambientmetingen (L.1)
+## Two ambient measurements
 
-Sluit de twee remote SHT31's volgens ../REMOTE-SENSORS.md aan. `ambient` toont T/RH/dauwpunt per sensor. Beide meetpunten zijn standaard vereist vóór proefpulsen; ontbrekende of te oude waarden blokkeren de start. De sensoren worden uit de externe 5 V tak gevoed: met alleen USB en 24 V uit zijn ze niet aanwezig. Dit is normaal en laat geen vermogen toe. Details over adressen, CRC, timing en de dauwpuntbenadering staan in REMOTE-SENSORS.md.
+Connect remote SHT31s according to ../REMOTE-SENSORS.md. Both are required by default before pulses; missing/stale values block startup. They are supplied by the external 5 V branch and will be absent with USB only and 24 V off. This is expected and leaves power disabled. REMOTE-SENSORS.md covers addresses, CRC, timing and the dew-point approximation.

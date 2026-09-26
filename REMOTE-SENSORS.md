@@ -1,91 +1,91 @@
-# Twee externe SHT31-meetpunten - revisie L
+# Two remote SHT31 measurement points — revision L
 
-J28 en J29 zijn twee **extra** poorten op de hoofdprint voor een lokale differentiële I2C-adapter. Ze zijn geen rechtstreekse lange-kabelaansluitingen. Per poort is één adapter naast de controller én één adapter bij de externe sensor nodig. De PCA9615-adapters en SHT31-modules staan op de externe stuklijst, niet op de hoofd-PCB.
+J28 and J29 are two additional main-board ports for local differential I²C adapters. They are not direct long-cable connections. Each port requires one adapter beside the controller and another beside the remote sensor. PCA9615 adapters and SHT31 modules belong to the external BOM and are not fitted to the main PCB.
 
-J26 bestond al in K als korte lokale I2C-aansluiting. Laat J26 leeg bij gebruik van beide externe SHT31's: alle drie de poorten delen dezelfde I2C-bus en twee identieke adressen tegelijk werken niet.
+J26 is the existing short local I²C port. Leave it empty when using both remote SHT31s: all three ports share one bus and duplicate sensor addresses cannot coexist.
 
-## Vastgelegde prototype-uitvoering
+## Defined prototype arrangement
 
-- Twee onafhankelijke kabeltrajecten, elk met twee **SparkFun QwiicBus EndPoint COM-16988** modules (vier modules totaal).
-- Twee **Adafruit SHT31-D breakout, product 2857**. Deze module ondersteunt voeding én I2C-pull-ups op 5 V. Gebruik de beschreven Vin/GND/SDA/SCL-soldeeraansluitingen; een ander sensormoduleontwerp kan een andere voeding of levelshifter nodig hebben.
-- Twee rechte, volledig bedrade CAT5e/CAT6-kabels met RJ45, aanvankelijk 1 m. Ontwerpdoel maximaal 3 m per tak bij maximaal 100 kHz, te verifiëren op de werkelijke installatie. Voor meer dan 3 m: nieuwe kabelkwalificatie; geen gegarandeerde onbeperkte lengte.
-- De lange kabel voert differentiële SCL en SDA en 5 V/GND. **Geen Ethernet of PoE**: verbind deze RJ45's nooit met netwerkapparatuur, switches of PoE-injectoren.
-- Ongebufferde bedrading controller-adapter maximaal circa 10 cm. Sensor-adapter circa 10-15 cm, met GND naast de signalen en gecontroleerde signaalflanken. Geen lange aftakkingen of Y-splitsingen op de differentiële zijde.
+- Two independent links, each with two **SparkFun QwiicBus EndPoint COM-16988** modules: four modules total.
+- Two **Adafruit SHT31-D breakout boards, product 2857**. These support 5 V power and I²C pull-ups. Use the Vin/GND/SDA/SCL solder connections; other module designs may need different supplies or level shifting.
+- Two straight fully wired CAT5e/CAT6 RJ45 cables, initially 1 m each. Design target: up to 3 m per branch at ≤100 kHz, subject to qualification in the actual installation. Longer cables need new qualification; unlimited length is not guaranteed.
+- Cables carry differential SCL/SDA and 5 V/GND. **Not Ethernet or PoE:** never connect these RJ45s to network equipment, switches or PoE injectors.
+- Unbuffered controller-to-adapter wiring: approximately 10 cm maximum. Sensor-to-adapter: approximately 10–15 cm, with GND beside signals and verified edge rates. No long stubs or Y branches on the differential side.
 
-## Hoofdprint: J28/J29
+## Main PCB: J28/J29
 
-Beide zijn JST XH 5-polig, 2,50 mm, B5B-XH-A(LF)(SN). Gebruik XHP-5-behuizingen en passende SXH-001T-P0.6 contacten. Nummering volgt de pin-1-markering van het PCB-footprint; controleer de kabel vóór insteken, niet op draadkleur vertrouwen.
+Both use five-pin JST XH, 2.50 mm, B5B-XH-A(LF)(SN). Use XHP-5 housings and suitable SXH-001T-P0.6 contacts. Numbering follows the PCB pin-1 mark. Verify cable continuity rather than trusting wire colors.
 
-| Pin | Signaal | Lokale EndPoint |
+| Pin | Signal | Local EndPoint connection |
 |---|---|---|
-| 1 | +3V3, alleen lokale logica/referentie | VCC/VDDA, op de als 3.3V aangeduide lokale header |
+| 1 | +3V3, local logic/reference only | VCC/VDDA, local header marked 3.3V |
 | 2 | GND | GND |
-| 3 | SDA, 3,3 V | SDA |
-| 4 | SCL, 3,3 V | SCL |
-| 5 | gezekerde +5 V | VCC1/VDDB, aparte voedingsheader |
+| 3 | SDA, 3.3 V | SDA |
+| 4 | SCL, 3.3 V | SCL |
+| 5 | Fused +5 V | VCC1/VDDB, separate power header |
 
-F4 voedt J28:5; F5 voedt J29:5. Beide zijn 250 mA smeltzekeringen. Normaal verbruik per volledige tak maximaal 150 mA als prototypebudget; meet de werkelijke stroom. C51/C52 ontkoppelen de voedingspoorten. De 5 V komt uit M1, niet uit de 3,3 V regelaar van de XIAO. Beide takken samen reserveren maximaal 300 mA op de 5 V rail, naast de bestaande elektronica; totale 24 V budget blijft 4 A.
+F4 supplies J28:5 and F5 supplies J29:5; both are 250 mA fuses. Prototype consumption budget is ≤150 mA per complete branch; measure actual consumption. C51/C52 decouple the ports. The 5 V comes from M1, not the XIAO 3.3 V regulator. Reserve ≤300 mA on the 5 V rail for both branches plus the existing electronics; the overall 24 V input budget remains 4 A.
 
-Pin 1 is geen 5 V ingang. Verbind de 3,3 V en 5 V rails nooit rechtstreeks. Bij programmeren met JP1 open: eerst USB, daarna 24 V; uitschakelen in omgekeerde volgorde, zoals in ASSEMBLY.md.
+Pin 1 is not a 5 V input. Never short 3.3 V and 5 V together. With JP1 open, apply USB first and then 24 V; turn off in reverse order as described in ASSEMBLY.md.
 
-## Jumpers op alle vier EndPoint-modules
+## Jumpers on all four EndPoint modules
 
-Deze instellingen zijn gecontroleerd tegen het officiële SparkFun QwiicBus EndPoint schema. Controleer de ontvangen revisie vóór solderen.
+These settings were checked against SparkFun's official schematic. Check the revision actually received before soldering.
 
-| Jumper | Twee lokale modules | Twee externe modules |
+| Jumper | Two local modules | Two remote modules |
 |---|---|---|
-| `0-1` (VDDA-V DDB verbinding) | **OPEN**, anders wordt 5 V op de MCU-rail gezet | GESLOTEN: lokale sensorbus werkt hier op 5 V |
-| `VCC1` | GESLOTEN, stuurt 5 V door de kabel | GESLOTEN, ontvangt 5 V |
-| `GND` | GESLOTEN | GESLOTEN |
-| `I2C` pull-ups | Beide traces OPEN: R1/R2 op de hoofdprint zijn de pull-ups | Beide traces GESLOTEN: lokale 4,7 kΩ pull-ups naar 5 V |
-| `PWR` LED | Mag OPEN om verbruik/warmte te verminderen | OPEN om onnodige warmte bij de meetlocatie te beperken |
+| `0-1` (VDDA–VDDB link) | **OPEN**, otherwise 5 V reaches the MCU rail | CLOSED: remote sensor bus operates at 5 V |
+| `VCC1` | CLOSED, sends 5 V through cable | CLOSED, receives 5 V |
+| `GND` | CLOSED | CLOSED |
+| `I2C` pull-ups | Both traces OPEN; main-board R1/R2 provide pull-ups | Both traces CLOSED; local 4.7 kΩ pull-ups to 5 V |
+| `PWR` LED | May be OPEN to reduce consumption/heat | OPEN to reduce heat near measurement point |
 
-Behoud de 390/100/390-ohm differentiële netwerken van beide EndPoints. Voeg geen losse extra 100-ohm afsluitweerstanden toe. Dit is per tak een point-to-point verbinding met precies twee EndPoints.
+Retain each EndPoint's 390/100/390 Ω differential networks. Do not add separate 100 Ω termination resistors. Each branch is a point-to-point link with exactly two EndPoints.
 
-De officiële EndPoint pinmapping van de RJ45 is: 1=DSCL-, 2=DSCL+, 3=GRN+, 4=VCC1, 5=GND, 6=GRN-, 7=DSDA-, 8=DSDA+. Het groene paar (3/6) blijft ongebruikt; plaats daarop geen externe voeding. Gebruik een rechte patchkabel, geen crossover. De mapping is ter kabelcontrole; sluit bij voorkeur de RJ45-stekkers rechtstreeks tussen de modules aan.
+Official RJ45 mapping: 1=DSCL−, 2=DSCL+, 3=GRN+, 4=VCC1, 5=GND, 6=GRN−, 7=DSDA−, 8=DSDA+. The green pair (3/6) is unused; do not apply external power there. Use a straight patch cable, not crossover. Prefer direct RJ45 cables between modules; this mapping is for continuity checks.
 
-## Sensorzijde
+## Sensor end
 
-Verbind de externe EndPoint VCC/VDDA (hier **5 V**, ook als de PCB-opdruk 3.3V aangeeft) met SHT31 Vin, en verbind GND/SDA/SCL. De gekozen Adafruit SHT31 heeft 10 kΩ pull-ups naar Vin; samen met de 4,7 kΩ op de externe adapter ontstaat circa 3,2 kΩ. De MCU-zijde blijft door de PCA9615 op 3,3 V.
+Connect remote EndPoint VCC/VDDA (**5 V here**, even if PCB lettering says 3.3V) to SHT31 Vin, and connect GND/SDA/SCL. The chosen Adafruit board has 10 kΩ pull-ups to Vin; together with 4.7 kΩ adapter pull-ups this is approximately 3.2 kΩ. PCA9615 keeps the MCU side at 3.3 V.
 
-- Sensor 1 op J28: ADR onverbonden (ingebouwde pulldown), adres `0x44`.
-- Sensor 2 op J29: ADR verbinden met **eigen Vin**, adres `0x45`.
-- RST en ALR mogen voor dit prototype onverbonden blijven.
-- Sluit geen extra 3,3 V-only Qwiic-module op de externe 5 V sensorbus aan.
+- Sensor 1 on J28: ADR unconnected, using its onboard pulldown; address `0x44`.
+- Sensor 2 on J29: ADR connected to its **own Vin**; address `0x45`.
+- RST and ALR may remain unconnected for this prototype.
+- Do not connect a 3.3 V-only Qwiic device to the remote 5 V sensor bus.
 
-De PCA9615 heeft geen eigen I2C-adres; hij verandert de adressen niet. De poorten zijn elektrisch parallel aan de interne bus. Een defecte externe bus kan dus ook de interne metingen verstoren; de bestaande begrensde busdriver schakelt vermogen uit bij I2C-fouten. Dit ontwerp heeft geen galvanische isolatie en geen per-poort I2C-multiplexer.
+PCA9615 has no I²C address and does not change addresses. Ports are electrically parallel to the internal bus. A faulty external branch may disrupt internal measurements too; the bounded bus driver disables power on I²C faults. There is no galvanic isolation or per-port I²C multiplexer.
 
-## Plaatsing voor representatieve ambientmetingen
+## Representative ambient measurements
 
-Plaats de sensorkop buiten de luchtstroom van het warme koelblok, de koude grenslaag bij het glas en directe zon/stralingswarmte. Een afstand van 1 m is een beginpunt, geen bewijs dat de lucht daar representatief is. Vergelijk de twee meetpunten met de installatie uit en tijdens koelen/verwarmen.
+Keep sensor heads outside hot heatsink exhaust, the cold boundary layer around the glass, direct sunlight and radiant heat. One meter separation is a starting point, not proof of representative ambient conditions. Compare both points with the installation off and during heating/cooling.
 
-Houd de sensor met een kort dun kabeltje circa 10-15 cm van de EndPoint-print en monteer hem in een luchtige, geventileerde kap. Geen gezamenlijke dichte doos met de adapter. Vermijd direct thermisch contact met metalen chassis, kabelbundels met voedingsstromen, lijm of coating op de sensoringang. Bescherm tegen druppels en condens zonder de luchttoegang af te sluiten. Zet de interne SHT31-heater tijdens normale metingen uit; die zou temperatuur en RH beïnvloeden.
+Use short thin wires to place each sensor approximately 10–15 cm away from its EndPoint board, inside a ventilated shield. Do not enclose sensor and warm adapter together in a sealed box. Avoid thermal contact with metal chassis, high-current cable bundles, adhesive or coating over the sensing aperture. Protect from droplets/condensation without obstructing air exchange. Keep the SHT31's internal heater off during ordinary measurements to avoid biasing temperature/RH.
 
-De firmware toont beide meetpunten afzonderlijk. Een gemiddelde van twee punten maakt een lokaal verstoorde meting niet automatisch correct. Bepaal pas na de praktijktest welk meetpunt als ambientreferentie voor de latere automatische regeling dient.
+Firmware reports the two points separately. Averaging two disturbed measurements does not make them correct. Choose the ambient reference for future automatic control only after physical comparison.
 
 ## Firmware L.1
 
-Opdracht `ambient` toont per sensor adres, geldigheid, ouderdom, temperatuur in °C, RH in %, en dauwpunt in °C. Metingen zijn ongeveer één keer per seconde per sensor, single-shot high-repeatability zonder clock stretching. Beide CRC-bytes worden gecontroleerd. De firmware stuurt heater-off naar elke SHT31 bij initialisatie en na een communicatiefout.
+`ambient` reports address, validity, age, temperature (°C), RH (%) and dew point (°C) for each sensor. Each sensor is sampled about once per second in single-shot high-repeatability mode without clock stretching. Both CRC bytes are checked. Firmware commands heater-off at initialization and after communication faults.
 
-Dauwpunt gebruikt de Magnus-benadering met a=17,62 en b=243,12 °C, voor ambient -20..60 °C en 0<RH<=100%. Het resultaat is dauwpunt boven vloeibaar water, niet het rijppunt boven ijs. Sensorresolutie is geen absolute nauwkeurigheid; de getoonde decimalen zijn voor diagnose.
+The Magnus approximation uses a=17.62 and b=243.12°C, over ambient −20…60°C and 0<RH≤100%. It estimates dew point over liquid water, not frost point over ice. Resolution is not absolute accuracy; displayed decimals support diagnostics.
 
-Beide sensoren moeten standaard geldig en recent zijn voordat een vermogenspuls start (`REQUIRE_AMBIENT=true`). Een start vereist leeftijd <=1 s. Een actieve proef stopt bij verlopen/ongeldige meetdata (maximale leeftijd 3,5 s). Tijdens de maximaal 2 s heaterpuls wordt geen extra SHT31-busverkeer uitgevoerd, om de software-PWM niet te verstoren. Er is nog geen automatische dauwpuntregeling; dit voegt de meetbasis en foutcontrole toe.
+Both sensors must have valid recent data before a power pulse (`REQUIRE_AMBIENT=true`). Starting requires age ≤1 s; an active test stops when data is invalid/stale, with maximum age 3.5 s. No additional SHT31 traffic occurs during a heater pulse of up to 2 s, to avoid disturbing software PWM. Automatic dew-point control is not implemented.
 
-## Kabel- en meetkwalificatie
+## Cable and measurement qualification
 
-1. Spanningsloos: controleer jumpers, kabelcontinuïteit, correcte 3,3/5 V scheiding en sensoradressen.
-2. Eerst één tak op 1 m, vervolgens beide: meet spanning op de remote module, controleer CRC's en verse waarden.
-3. Controleer alle vier PCA9615 VDDB-aansluitingen binnen 3,0..5,5 V; streef remote naar 4,5..5,25 V. Controleer lokale SDA/SCL hoog rond 3,3 V, nooit 5 V. Controleer lage niveaus en stijgtijden met de scoop.
-4. Test opnieuw met de gewenste maximumkabel en de TEC-regelaars/fan/heater actief; registreer fouten, maximale dataleeftijd en ADC/NTC-continuïteit.
-5. Trek één sensor/kabel los: fout of ontbrekende meetdata moeten zichtbaar zijn en vermogensvrijgave blokkeren/stoppen. Steek bij voorkeur spanningsloos om; hotplug is nog niet gekwalificeerd.
-6. Leg minimaal 30 minuten data vast met de installatie uit en daarna thermisch belast. Controleer of de twee ambientpunten verschuiven door installatiegedrag; verplaats de meetkoppen als dat zo is.
+1. Unpowered: verify jumpers, cable continuity, 3.3/5 V separation and addresses.
+2. Test one 1 m branch, then both. Measure remote supply voltage and check CRCs/fresh readings.
+3. Verify all four PCA9615 VDDB pins remain within 3.0–5.5 V; target 4.5–5.25 V remotely. Local SDA/SCL high level must be about 3.3 V, never 5 V. Check low levels and rise times with a scope.
+4. Repeat using the intended maximum cable length with TEC regulators/fan/heater active. Record faults, maximum data age and ADC/NTC continuity.
+5. Disconnect one sensor/cable: missing data or faults must be visible and inhibit/stop power. Prefer unpowered reconnection; hotplug is not qualified.
+6. Log at least 30 minutes with the installation off, then under thermal load. Reposition heads if installation heat shifts the ambient readings.
 
-Deze proeven zijn nog niet uitgevoerd; vul commissioning-results.csv pas met echte meetgegevens.
+These tests have not been performed. Enter only actual measurements in `commissioning-results.csv`.
 
-## Fabrikantbronnen
+## Manufacturer references
 
-- NXP PCA9615: https://www.nxp.com/docs/en/data-sheet/PCA9615.pdf
-- SparkFun EndPoint: https://www.sparkfun.com/sparkfun-qwiicbus-endpoint.html
-- Officieel adapterschema: https://github.com/sparkfun/QwiicBus_EndPoint/blob/main/Hardware/SparkFun_QwiicBus_Endpoint.sch
-- Adafruit SHT31-D pinout: https://learn.adafruit.com/adafruit-sht31-d-temperature-and-humidity-sensor-breakout/pinouts
-- Sensirion SHT3x-DIS: https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf
+- [NXP PCA9615](https://www.nxp.com/docs/en/data-sheet/PCA9615.pdf)
+- [SparkFun EndPoint](https://www.sparkfun.com/sparkfun-qwiicbus-endpoint.html)
+- [Official adapter schematic](https://github.com/sparkfun/QwiicBus_EndPoint/blob/main/Hardware/SparkFun_QwiicBus_Endpoint.sch)
+- [Adafruit SHT31-D pinout](https://learn.adafruit.com/adafruit-sht31-d-temperature-and-humidity-sensor-breakout/pinouts)
+- [Sensirion SHT3x-DIS](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf)

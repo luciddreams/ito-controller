@@ -1,19 +1,19 @@
-ERC report (2026-09-25T20:03:52+0100, Encoding UTF8)
+ERC report (2026-09-26T08:33:24+0200, Encoding UTF8)
 Report includes: Errors, Warnings
 
 ***** Sheet /
 
 ***** Sheet /01 MCU / 5V / USB/
 
-***** Sheet /02 R7B / ingang / eFuse/
+***** Sheet /02 R7B / input / eFuse/
 
-***** Sheet /03 Relais / noodstop/
+***** Sheet /03 Relay / emergency stop/
 
-***** Sheet /04 Heater / stroommeting/
+***** Sheet /04 Heater / current sensing/
 
-***** Sheet /05 DAC / opampbuffers/
+***** Sheet /05 DAC / op-amp buffers/
 
-***** Sheet /06 TEC-vrijgave/
+***** Sheet /06 TEC enables/
 
 ***** Sheet /07 TEC 1/
 
@@ -23,10 +23,10 @@ Report includes: Errors, Warnings
 
 ***** Sheet /10 TEC 4/
 
-***** Sheet /11 Glas-NTCs / ADC/
+***** Sheet /11 Glass NTCs / ADC/
 
 ***** Sheet /12 Heatsink / fan / I2C/
 
-***** Sheet /13 Remote SHT31-poorten/
+***** Sheet /13 Remote SHT31 ports/
 
  ** ERC messages: 0  Errors 0  Warnings 0
