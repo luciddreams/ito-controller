@@ -1,0 +1,58 @@
+{
+  "status": "CANDIDATE SCREENING; NOT A QUALIFIED RATING",
+  "current_limit_a": {
+    "nominal_datasheet_point": 4.5,
+    "min_including_0p1pct_resistor": 4.180819180819181,
+    "max_including_0p1pct_resistor": 4.81981981981982,
+    "warning": "Transient short-circuit current can exceed the regulated limit."
+  },
+  "ramp": {
+    "nominal_ms_28v": 58.24,
+    "nominal_capacitive_a_600u": 0.28846153846153844,
+    "min_ms_28v": 45.980985306828,
+    "max_ms_28v": 70.48246928378784,
+    "max_capacitive_a_600u": 0.36536842105263156,
+    "energy_j_28v_600u": 0.2352
+  },
+  "thresholds_v": {
+    "uv_rising": {
+      "nominal": 19.92,
+      "low": 19.46156885454546,
+      "high": 20.38005042702702
+    },
+    "ov_rising": {
+      "nominal": 27.96,
+      "low": 27.3149862472028,
+      "high": 28.60732849504504
+    },
+    "pg_rising": {
+      "nominal": 19.2,
+      "low": 18.758277744755247,
+      "high": 19.643279256756752
+    }
+  },
+  "thermal_scenario": {
+    "reverse_fet_ohm_hot_assumption": 0.126,
+    "efuse_ohm_hot_assumption": 0.07,
+    "at_4a_reverse_fet_w": 2.016,
+    "at_4a_efuse_w": 1.12,
+    "not_guaranteed": true
+  },
+  "output_budget_at_4a": [
+    {
+      "vin_v": 20,
+      "total_bus_w_after_assumed_series_losses": 76.864,
+      "tec_w_after_15p125w_aux_at_85pct_efficiency": 52.47815
+    },
+    {
+      "vin_v": 24,
+      "total_bus_w_after_assumed_series_losses": 92.864,
+      "tec_w_after_15p125w_aux_at_85pct_efficiency": 66.07815000000001
+    },
+    {
+      "vin_v": 28,
+      "total_bus_w_after_assumed_series_losses": 108.864,
+      "tec_w_after_15p125w_aux_at_85pct_efficiency": 79.67815
+    }
+  ]
+}

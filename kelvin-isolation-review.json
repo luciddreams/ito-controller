@@ -1,0 +1,90 @@
+[
+  {
+    "net": "T1_VREG",
+    "sense_pin": "U11:25",
+    "target_shunt_pad": "RS1:1",
+    "other_pads_reachable_with_shunt_pad_removed": [],
+    "isolated_until_shunt": true,
+    "sense_component_items": 33
+  },
+  {
+    "net": "T1_OUT",
+    "sense_pin": "U11:26",
+    "target_shunt_pad": "RS1:2",
+    "other_pads_reachable_with_shunt_pad_removed": [],
+    "isolated_until_shunt": true,
+    "sense_component_items": 38
+  },
+  {
+    "net": "T2_VREG",
+    "sense_pin": "U12:25",
+    "target_shunt_pad": "RS2:1",
+    "other_pads_reachable_with_shunt_pad_removed": [],
+    "isolated_until_shunt": true,
+    "sense_component_items": 43
+  },
+  {
+    "net": "T2_OUT",
+    "sense_pin": "U12:26",
+    "target_shunt_pad": "RS2:2",
+    "other_pads_reachable_with_shunt_pad_removed": [],
+    "isolated_until_shunt": true,
+    "sense_component_items": 66
+  },
+  {
+    "net": "T3_VREG",
+    "sense_pin": "U13:25",
+    "target_shunt_pad": "RS3:1",
+    "other_pads_reachable_with_shunt_pad_removed": [],
+    "isolated_until_shunt": true,
+    "sense_component_items": 47
+  },
+  {
+    "net": "T3_OUT",
+    "sense_pin": "U13:26",
+    "target_shunt_pad": "RS3:2",
+    "other_pads_reachable_with_shunt_pad_removed": [],
+    "isolated_until_shunt": true,
+    "sense_component_items": 71
+  },
+  {
+    "net": "T4_VREG",
+    "sense_pin": "U14:25",
+    "target_shunt_pad": "RS4:1",
+    "other_pads_reachable_with_shunt_pad_removed": [],
+    "isolated_until_shunt": true,
+    "sense_component_items": 46
+  },
+  {
+    "net": "T4_OUT",
+    "sense_pin": "U14:26",
+    "target_shunt_pad": "RS4:2",
+    "other_pads_reachable_with_shunt_pad_removed": [],
+    "isolated_until_shunt": true,
+    "sense_component_items": 52
+  },
+  {
+    "net": "HEATER_FUSED",
+    "sense_pin": "U3:10",
+    "target_shunt_pad": "RSH1:1",
+    "other_pads_reachable_with_shunt_pad_removed": [],
+    "isolated_until_shunt": true,
+    "sense_component_items": 39
+  },
+  {
+    "net": "ITO_PLUS",
+    "sense_pin": "U3:9",
+    "target_shunt_pad": "RSH1:2",
+    "other_pads_reachable_with_shunt_pad_removed": [],
+    "isolated_until_shunt": true,
+    "sense_component_items": 11
+  },
+  {
+    "net": "ITO_PLUS",
+    "sense_pin": "U3:8",
+    "target_shunt_pad": "RSH1:2",
+    "other_pads_reachable_with_shunt_pad_removed": [],
+    "isolated_until_shunt": true,
+    "sense_component_items": 41
+  }
+]

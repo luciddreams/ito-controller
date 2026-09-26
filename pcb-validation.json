@@ -1,0 +1,23 @@
+{
+  "revision": "L",
+  "verification_tool": "KiCad 9.0.9 CLI ERC/DRC plus net and geometry audits",
+  "components": 202,
+  "footprints_including_four_holes_and_three_fiducials": 209,
+  "electrical_pins": 638,
+  "schematic_PCB_net_mismatches": 0,
+  "board_mm": [
+    160,
+    110
+  ],
+  "layers": 4,
+  "routed_tracks": 7442,
+  "vias": 323,
+  "native_ERC_errors": 0,
+  "native_ERC_warnings": 0,
+  "native_DRC_violations": 0,
+  "unconnected": 0,
+  "footprint_errors": 0,
+  "status": "PROTOTYPE FABRICATION PACKAGE; POWERED COMMISSIONING REQUIRED",
+  "power_thermal_EMC_qualification": "NOT COMPLETED",
+  "prototype_BOM": "202 positions assigned MPN/specification; stock not checked"
+}

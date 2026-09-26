@@ -1,0 +1,610 @@
+[
+  {
+    "ref": "U90",
+    "value": "TPS26630RGER",
+    "pins": [
+      [
+        "1",
+        "IN",
+        "IN_FET",
+        "power_in"
+      ],
+      [
+        "2",
+        "IN",
+        "IN_FET",
+        "power_in"
+      ],
+      [
+        "3",
+        "B_GATE",
+        "BGATE",
+        "output"
+      ],
+      [
+        "4",
+        "DRV",
+        "BDRV",
+        "output"
+      ],
+      [
+        "5",
+        "IN_SYS",
+        "VIN_SYS",
+        "power_in"
+      ],
+      [
+        "6",
+        "UVLO",
+        "UVLO",
+        "input"
+      ],
+      [
+        "7",
+        "OVP",
+        "OVP",
+        "input"
+      ],
+      [
+        "8",
+        "GND",
+        "GND",
+        "power_in"
+      ],
+      [
+        "9",
+        "dVdT",
+        "DVDT",
+        "passive"
+      ],
+      [
+        "10",
+        "ILIM",
+        "ILIM",
+        "passive"
+      ],
+      [
+        "11",
+        "MODE",
+        null,
+        "input"
+      ],
+      [
+        "12",
+        "SHDN",
+        "RESET_N",
+        "input"
+      ],
+      [
+        "13",
+        "IMON",
+        "IMON",
+        "output"
+      ],
+      [
+        "14",
+        "FLT",
+        "FAULT_N",
+        "open_collector"
+      ],
+      [
+        "15",
+        "PGTH",
+        "PGTH",
+        "input"
+      ],
+      [
+        "16",
+        "PGOOD",
+        "PGOOD",
+        "open_collector"
+      ],
+      [
+        "17",
+        "OUT",
+        "VPROT",
+        "power_out"
+      ],
+      [
+        "18",
+        "OUT",
+        "VPROT",
+        "passive"
+      ],
+      [
+        "19",
+        "NC",
+        null,
+        "no_connect"
+      ],
+      [
+        "20",
+        "NC",
+        null,
+        "no_connect"
+      ],
+      [
+        "21",
+        "NC",
+        null,
+        "no_connect"
+      ],
+      [
+        "22",
+        "NC",
+        null,
+        "no_connect"
+      ],
+      [
+        "23",
+        "NC",
+        null,
+        "no_connect"
+      ],
+      [
+        "24",
+        "NC",
+        null,
+        "no_connect"
+      ],
+      [
+        "25",
+        "EP_GND",
+        "GND",
+        "power_in"
+      ]
+    ],
+    "note": "Candidate; VQFN24 plus exposed pad. PCB footprint and thermal layout pending. MODE deliberately open selects latch-off.",
+    "mpn": "TPS26630RGER"
+  },
+  {
+    "ref": "Q90",
+    "value": "IRL540NPBF",
+    "pins": [
+      [
+        "1",
+        "G",
+        "BGATE",
+        "passive"
+      ],
+      [
+        "2",
+        "D",
+        "IN_FET",
+        "passive"
+      ],
+      [
+        "3",
+        "S",
+        "VIN_SYS",
+        "passive"
+      ]
+    ],
+    "note": "Reverse-block FET only; capacitive-load ramp handled by internal eFuse FET.",
+    "mpn": "IRL540NPBF"
+  },
+  {
+    "ref": "Q91",
+    "value": "BSS138",
+    "pins": [
+      [
+        "1",
+        "G",
+        "BDRV",
+        "passive"
+      ],
+      [
+        "2",
+        "S",
+        "VIN_SYS",
+        "passive"
+      ],
+      [
+        "3",
+        "D",
+        "BGATE",
+        "passive"
+      ]
+    ],
+    "note": "Fast blocking-FET gate pull-down; verify ordered manufacturer/pinout.",
+    "mpn": ""
+  },
+  {
+    "ref": "F90",
+    "value": "10A fuse",
+    "pins": [
+      [
+        "1",
+        "VIN_RAW",
+        "VIN_RAW",
+        "passive"
+      ],
+      [
+        "2",
+        "VIN_SYS",
+        "VIN_SYS",
+        "passive"
+      ]
+    ],
+    "note": "Equivalent to retained F1; fault coordination still required.",
+    "mpn": "0451010.MRL"
+  },
+  {
+    "ref": "D90",
+    "value": "SMBJ33CA",
+    "pins": [
+      [
+        "1",
+        "K",
+        "VIN_SYS",
+        "passive"
+      ],
+      [
+        "2",
+        "A",
+        "GND",
+        "passive"
+      ]
+    ],
+    "note": "Bidirectional TVS; existing source surge coordination remains open.",
+    "mpn": ""
+  },
+  {
+    "ref": "C90",
+    "value": "1uF / 50V X7R",
+    "pins": [
+      [
+        "1",
+        "IN_FET",
+        "IN_FET",
+        "passive"
+      ],
+      [
+        "2",
+        "GND",
+        "GND",
+        "passive"
+      ]
+    ],
+    "note": "Local input bypass.",
+    "mpn": "GRM21BR71H105KA12L"
+  },
+  {
+    "ref": "C91",
+    "value": "100nF / >=16V / 5%",
+    "pins": [
+      [
+        "1",
+        "DVDT",
+        "DVDT",
+        "passive"
+      ],
+      [
+        "2",
+        "GND",
+        "GND",
+        "passive"
+      ]
+    ],
+    "note": "Stable capacitance required; exact MPN and footprint still to select.",
+    "mpn": ""
+  },
+  {
+    "ref": "C92",
+    "value": "470uF / 50V",
+    "pins": [
+      [
+        "1",
+        "VPROT",
+        "VPROT",
+        "passive"
+      ],
+      [
+        "2",
+        "GND",
+        "GND",
+        "passive"
+      ]
+    ],
+    "note": "Represents existing C5, not an additional parallel 470uF.",
+    "mpn": "EEUFR1H471"
+  },
+  {
+    "ref": "R90",
+    "value": "4.02k / 0.1%",
+    "pins": [
+      [
+        "1",
+        "ILIM",
+        "ILIM",
+        "passive"
+      ],
+      [
+        "2",
+        "GND",
+        "GND",
+        "passive"
+      ]
+    ],
+    "note": "Conservative default, nominal ~4.5A active overload limit; reduces TEC power budget.",
+    "mpn": ""
+  },
+  {
+    "ref": "R91",
+    "value": "156k / 0.1%",
+    "pins": [
+      [
+        "1",
+        "VIN_SYS",
+        "VIN_SYS",
+        "passive"
+      ],
+      [
+        "2",
+        "UVLO",
+        "UVLO",
+        "passive"
+      ]
+    ],
+    "note": "",
+    "mpn": ""
+  },
+  {
+    "ref": "R92",
+    "value": "10k / 0.1%",
+    "pins": [
+      [
+        "1",
+        "UVLO",
+        "UVLO",
+        "passive"
+      ],
+      [
+        "2",
+        "GND",
+        "GND",
+        "passive"
+      ]
+    ],
+    "note": "",
+    "mpn": ""
+  },
+  {
+    "ref": "R93",
+    "value": "223k / 0.1%",
+    "pins": [
+      [
+        "1",
+        "VIN_SYS",
+        "VIN_SYS",
+        "passive"
+      ],
+      [
+        "2",
+        "OVP",
+        "OVP",
+        "passive"
+      ]
+    ],
+    "note": "",
+    "mpn": ""
+  },
+  {
+    "ref": "R94",
+    "value": "10k / 0.1%",
+    "pins": [
+      [
+        "1",
+        "OVP",
+        "OVP",
+        "passive"
+      ],
+      [
+        "2",
+        "GND",
+        "GND",
+        "passive"
+      ]
+    ],
+    "note": "",
+    "mpn": ""
+  },
+  {
+    "ref": "R95",
+    "value": "150k / 0.1%",
+    "pins": [
+      [
+        "1",
+        "VPROT",
+        "VPROT",
+        "passive"
+      ],
+      [
+        "2",
+        "PGTH",
+        "PGTH",
+        "passive"
+      ]
+    ],
+    "note": "",
+    "mpn": ""
+  },
+  {
+    "ref": "R96",
+    "value": "10k / 0.1%",
+    "pins": [
+      [
+        "1",
+        "PGTH",
+        "PGTH",
+        "passive"
+      ],
+      [
+        "2",
+        "GND",
+        "GND",
+        "passive"
+      ]
+    ],
+    "note": "",
+    "mpn": ""
+  },
+  {
+    "ref": "R97",
+    "value": "10k",
+    "pins": [
+      [
+        "1",
+        "+3V3",
+        "+3V3",
+        "passive"
+      ],
+      [
+        "2",
+        "PGOOD",
+        "PGOOD",
+        "passive"
+      ]
+    ],
+    "note": "",
+    "mpn": ""
+  },
+  {
+    "ref": "R98",
+    "value": "10k",
+    "pins": [
+      [
+        "1",
+        "+3V3",
+        "+3V3",
+        "passive"
+      ],
+      [
+        "2",
+        "FAULT_N",
+        "FAULT_N",
+        "passive"
+      ]
+    ],
+    "note": "",
+    "mpn": ""
+  },
+  {
+    "ref": "R99",
+    "value": "10k / 0.1%",
+    "pins": [
+      [
+        "1",
+        "IMON",
+        "IMON",
+        "passive"
+      ],
+      [
+        "2",
+        "GND",
+        "GND",
+        "passive"
+      ]
+    ],
+    "note": "",
+    "mpn": ""
+  },
+  {
+    "ref": "SW90",
+    "value": "RESET momentary NO",
+    "pins": [
+      [
+        "1",
+        "A",
+        "RESET_N",
+        "passive"
+      ],
+      [
+        "2",
+        "B",
+        "GND",
+        "passive"
+      ]
+    ],
+    "note": "Normally open. SHDN uses internal pull-up; press to reset latch.",
+    "mpn": ""
+  },
+  {
+    "ref": "J90",
+    "value": "INPUT",
+    "pins": [
+      [
+        "1",
+        "24V",
+        "VIN_RAW",
+        "passive"
+      ],
+      [
+        "2",
+        "GND",
+        "GND",
+        "passive"
+      ]
+    ],
+    "note": "",
+    "mpn": ""
+  },
+  {
+    "ref": "J91",
+    "value": "OUTPUT",
+    "pins": [
+      [
+        "1",
+        "VPROT",
+        "VPROT",
+        "passive"
+      ],
+      [
+        "2",
+        "GND",
+        "GND",
+        "passive"
+      ]
+    ],
+    "note": "",
+    "mpn": ""
+  },
+  {
+    "ref": "J92",
+    "value": "CONTROL",
+    "pins": [
+      [
+        "1",
+        "3V3",
+        "+3V3",
+        "power_in"
+      ],
+      [
+        "2",
+        "PGOOD",
+        "PGOOD",
+        "passive"
+      ],
+      [
+        "3",
+        "FAULT_N",
+        "FAULT_N",
+        "passive"
+      ],
+      [
+        "4",
+        "IMON",
+        "IMON",
+        "passive"
+      ],
+      [
+        "5",
+        "GND",
+        "GND",
+        "passive"
+      ]
+    ],
+    "note": "3V3 supplied by downstream logic; IMON ADC integration still required. PGOOD does not directly drive a load.",
+    "mpn": ""
+  }
+]

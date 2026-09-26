@@ -1,0 +1,78 @@
+{
+  "hardware_tested": false,
+  "production_released": false,
+  "items": [
+    {
+      "id": "inrush_cold",
+      "status": "NOT_RUN",
+      "measurement_files": [],
+      "result": null
+    },
+    {
+      "id": "inrush_hot_repeated",
+      "status": "NOT_RUN",
+      "measurement_files": [],
+      "result": null
+    },
+    {
+      "id": "cc_step",
+      "status": "NOT_RUN",
+      "measurement_files": [],
+      "result": null
+    },
+    {
+      "id": "cv_step",
+      "status": "NOT_RUN",
+      "measurement_files": [],
+      "result": null
+    },
+    {
+      "id": "cc_cv_transition",
+      "status": "NOT_RUN",
+      "measurement_files": [],
+      "result": null
+    },
+    {
+      "id": "sense_ripple",
+      "status": "NOT_RUN",
+      "measurement_files": [],
+      "result": null
+    },
+    {
+      "id": "fault_shutdown",
+      "status": "NOT_RUN",
+      "measurement_files": [],
+      "result": null
+    },
+    {
+      "id": "thermal_one_channel",
+      "status": "NOT_RUN",
+      "measurement_files": [],
+      "result": null
+    },
+    {
+      "id": "thermal_four_channels",
+      "status": "NOT_RUN",
+      "measurement_files": [],
+      "result": null
+    },
+    {
+      "id": "total_input_budget",
+      "status": "NOT_RUN",
+      "measurement_files": [],
+      "result": null
+    },
+    {
+      "id": "heater_tec_interlock",
+      "status": "NOT_RUN",
+      "measurement_files": [],
+      "result": null
+    },
+    {
+      "id": "bias_source_transition",
+      "status": "NOT_RUN",
+      "measurement_files": [],
+      "result": null
+    }
+  ]
+}

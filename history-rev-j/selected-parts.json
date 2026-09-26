@@ -1,0 +1,1060 @@
+{
+  "M1": {
+    "ref": "M1",
+    "value": "TSR 1-2450",
+    "pins": [
+      [
+        "1",
+        "IN",
+        "+24_PROT",
+        "passive"
+      ],
+      [
+        "2",
+        "GND",
+        "GND",
+        "passive"
+      ],
+      [
+        "3",
+        "OUT",
+        "+5_AUX",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:Converter_DCDC_TRACO_TSR-1_THT",
+    "note": "5 V / 1 A, input 6.5\u201336 V; SIP3 IN-GND-OUT 2.54mm verified. Keep JP1 open when USB supplies MCU.",
+    "section": "01 MCU en voeding van de logica",
+    "source_footprint": "Converter_DCDC:Converter_DCDC_TRACO_TSR-1_THT",
+    "footprint_status": "selected part; dimensional and pinout review performed; prototype qualification pending",
+    "mpn": "TSR 1-2450",
+    "manufacturer": "Traco Power",
+    "datasheet": "https://www.tracopower.com/sites/default/files/products/datasheets/tsr1_datasheet.pdf"
+  },
+  "F1": {
+    "ref": "F1",
+    "value": "10A / 125V DC 0451010.MRL",
+    "pins": [
+      [
+        "1",
+        "1",
+        "+24_IN",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "+24_FUSED",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:Littelfuse_451",
+    "note": "10 A, 125 VDC series. 25% continuous-current derating plus temperature rerating. NOT a precise current limiter; supply short-circuit behavior and pulse I2t must be coordinated.",
+    "section": "02 Ingangsbeveiliging",
+    "source_footprint": "Custom manufacturer landpattern: Littelfuse 451/453",
+    "footprint_status": "selected MPN and landpattern; source fault-current and pulse coordination NOT qualified",
+    "mpn": "0451010.MRL",
+    "manufacturer": "Littelfuse",
+    "datasheet": "https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1"
+  },
+  "Q2": {
+    "ref": "Q2",
+    "value": "IRL540NPBF",
+    "pins": [
+      [
+        "1",
+        "G",
+        "PROT_G1",
+        "passive"
+      ],
+      [
+        "2",
+        "D",
+        "+24_FUSED",
+        "passive"
+      ],
+      [
+        "3",
+        "S",
+        "PROT_COMMON",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:TO-220-3_Vertical",
+    "note": "100 V logic-level G-D-S TO-220. Requires heatsink <=10 K/W per device for 6 A design envelope. Startup SOA requires bench validation.",
+    "section": "02 Ingangsbeveiliging",
+    "source_footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+    "footprint_status": "selected part; dimensional and pinout review performed; prototype qualification pending",
+    "mpn": "IRL540NPBF",
+    "manufacturer": "Infineon",
+    "datasheet": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-irl540n-datasheet-en.pdf"
+  },
+  "Q3": {
+    "ref": "Q3",
+    "value": "IRL540NPBF",
+    "pins": [
+      [
+        "1",
+        "G",
+        "PROT_G2",
+        "passive"
+      ],
+      [
+        "2",
+        "D",
+        "+24_PROT",
+        "passive"
+      ],
+      [
+        "3",
+        "S",
+        "PROT_COMMON",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:TO-220-3_Vertical",
+    "note": "Common-source reverse blocking pair. Drain tabs must be insulated from a shared heatsink. Same heatsink and SOA limits as Q2.",
+    "section": "02 Ingangsbeveiliging",
+    "source_footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+    "footprint_status": "selected part; dimensional and pinout review performed; prototype qualification pending",
+    "mpn": "IRL540NPBF",
+    "manufacturer": "Infineon",
+    "datasheet": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-irl540n-datasheet-en.pdf"
+  },
+  "C5": {
+    "ref": "C5",
+    "value": "470u / 50V EEUFR1H471",
+    "pins": [
+      [
+        "1",
+        "1",
+        "+24_PROT",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:CP_Radial_D12.5mm_P5.00mm",
+    "note": "470uF +/-20%, 50V, diameter12.5 x height20mm, pitch5mm. 2.26Arms at 100kHz; actual waveform and thermal derating must be verified.",
+    "section": "02 Ingangsbeveiliging",
+    "source_footprint": "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm",
+    "footprint_status": "selected MPN; 12.5mm diameter, 5mm pitch checked; ripple/thermal validation pending",
+    "mpn": "EEUFR1H471",
+    "manufacturer": "Panasonic",
+    "datasheet": "https://industrial.panasonic.com/sa/products/pt/aluminum-cap-lead/models/EEUFR1H471"
+  },
+  "F2": {
+    "ref": "F2",
+    "value": "5A / 125V DC 0451005.MRL",
+    "pins": [
+      [
+        "1",
+        "1",
+        "+24_LOAD",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "HEATER_FUSED",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:Littelfuse_451",
+    "note": "5 A, 125 VDC series. 25% continuous-current derating plus temperature rerating. NOT a precise current limiter; supply short-circuit behavior and pulse I2t must be coordinated.",
+    "section": "04 ITO heater",
+    "source_footprint": "Custom manufacturer landpattern: Littelfuse 451/453",
+    "footprint_status": "selected MPN and landpattern; source fault-current and pulse coordination NOT qualified",
+    "mpn": "0451005.MRL",
+    "manufacturer": "Littelfuse",
+    "datasheet": "https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1"
+  },
+  "RSH1": {
+    "ref": "RSH1",
+    "value": "10m / 1W / 1% WSL2512R0100FEA",
+    "pins": [
+      [
+        "1",
+        "1",
+        "HEATER_FUSED",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "ITO_PLUS",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:WSL2512_7m_to_500m",
+    "note": "1 W at 70 C, 1%, component TCR 75 ppm/K. Pads 1.65 x 3.68 mm, inner gap 4.06 mm. Kelvin topology must be checked after footprint change.",
+    "section": "04 ITO heater",
+    "source_footprint": "Custom manufacturer landpattern: Vishay WSL datasheet 30100",
+    "footprint_status": "selected MPN; manufacturer landpattern implemented; measurement and solder qualification pending",
+    "mpn": "WSL2512R0100FEA",
+    "manufacturer": "Vishay",
+    "datasheet": "https://www.vishay.com/docs/30100/wsl.pdf"
+  },
+  "F11": {
+    "ref": "F11",
+    "value": "2.5A / 125V DC 045102.5MRL",
+    "pins": [
+      [
+        "1",
+        "1",
+        "+24_LOAD",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "T1_VIN",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:Littelfuse_451",
+    "note": "2.5 A fuse on converter INPUT. Replaces 2 A reservation for hot/low-input margin. Selected for 24W output and assumed >=85% efficiency down to 20V; input RMS and startup I2t still require measurement.",
+    "section": "07 Peltier stroomregelaar 1",
+    "source_footprint": "Custom manufacturer landpattern: Littelfuse 451/453",
+    "footprint_status": "selected MPN and landpattern; source fault-current and pulse coordination NOT qualified",
+    "mpn": "045102.5MRL",
+    "manufacturer": "Littelfuse",
+    "datasheet": "https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1"
+  },
+  "C101": {
+    "ref": "C101",
+    "value": "10u / 50V X7R",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T1_VIN",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:C_1210_3225Metric",
+    "note": "10uF 50V X7R 10%; nominal total input capacitance 20uF plus local bypass. Effective value at 24-28V must be checked.",
+    "section": "07 Peltier stroomregelaar 1",
+    "source_footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "footprint_status": "selected MPN; 1210 envelope checked; effective capacitance at bias pending",
+    "mpn": "GRM32ER71H106KA12L",
+    "manufacturer": "Murata",
+    "datasheet": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER71H106KA12%23"
+  },
+  "C102": {
+    "ref": "C102",
+    "value": "10u / 50V X7R",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T1_VIN",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:C_1210_3225Metric",
+    "note": "10uF 50V X7R 10%; nominal total input capacitance 20uF plus local bypass. Effective value at 24-28V must be checked.",
+    "section": "07 Peltier stroomregelaar 1",
+    "source_footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "footprint_status": "selected MPN; 1210 envelope checked; effective capacitance at bias pending",
+    "mpn": "GRM32ER71H106KA12L",
+    "manufacturer": "Murata",
+    "datasheet": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER71H106KA12%23"
+  },
+  "C103": {
+    "ref": "C103",
+    "value": "1u / 50V X7R",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T1_VIN",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:C_0805_2012Metric",
+    "note": "1uF / 50V X7R 0805 local VIN bypass. Effective capacitance under 24V bias still requires curve/measurement; retains two 10uF bulk input capacitors.",
+    "section": "07 Peltier stroomregelaar 1",
+    "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "footprint_status": "selected part; dimensional and pinout review performed; prototype qualification pending",
+    "mpn": "GRM21BR71H105KA12L",
+    "manufacturer": "Murata",
+    "datasheet": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71H105KA12-01.pdf"
+  },
+  "L1": {
+    "ref": "L1",
+    "value": "10uH IHLP6767GZEK100M11",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T1_SW",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "T1_VREG",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:L_Vishay_IHLP-6767",
+    "note": "10uH \u00b120%; DCR max 9.33mOhm at 25C; typical Isat 17A at 20% drop, not a guaranteed hot limit. Footprint pad envelope checked; operating temperature test remains.",
+    "section": "07 Peltier stroomregelaar 1",
+    "source_footprint": "Inductor_SMD:L_Vishay_IHLP-6767",
+    "footprint_status": "selected part; dimensional and pinout review performed; prototype qualification pending",
+    "mpn": "IHLP6767GZEK100M11",
+    "manufacturer": "Vishay",
+    "datasheet": "https://www.vishay.com/docs/34282/ihlp-6767gz-11.pdf"
+  },
+  "C107": {
+    "ref": "C107",
+    "value": "47u / 25V X7R C2220C476M3R2C7186",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T1_VREG",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:KEMET_KPS_2220_Double",
+    "note": "47uF 25V X7R +/-20%, stacked MLCC. Typical DC bias about -13% at12V from manufacturer simulation; not guaranteed minimum. Body6x5mm, height5mm +/-0.5. Pads2.08x4.78mm at +/-2.69mm.",
+    "section": "07 Peltier stroomregelaar 1",
+    "source_footprint": "Custom manufacturer KPS landpattern, C1129 04/26",
+    "footprint_status": "selected MPN; manufacturer landpattern implemented; stability and thermal qualification pending",
+    "mpn": "C2220C476M3R2C7186",
+    "manufacturer": "KEMET / Yageo",
+    "datasheet": "https://search.kemet.com/download/specsheet/C2220C476M3R2C7186"
+  },
+  "C108": {
+    "ref": "C108",
+    "value": "47u / 25V X7R C2220C476M3R2C7186",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T1_VREG",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:KEMET_KPS_2220_Double",
+    "note": "47uF 25V X7R +/-20%, stacked MLCC. Typical DC bias about -13% at12V from manufacturer simulation; not guaranteed minimum. Body6x5mm, height5mm +/-0.5. Pads2.08x4.78mm at +/-2.69mm.",
+    "section": "07 Peltier stroomregelaar 1",
+    "source_footprint": "Custom manufacturer KPS landpattern, C1129 04/26",
+    "footprint_status": "selected MPN; manufacturer landpattern implemented; stability and thermal qualification pending",
+    "mpn": "C2220C476M3R2C7186",
+    "manufacturer": "KEMET / Yageo",
+    "datasheet": "https://search.kemet.com/download/specsheet/C2220C476M3R2C7186"
+  },
+  "RS1": {
+    "ref": "RS1",
+    "value": "25m / 1W / 1% WSL2512R0250FEA",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T1_VREG",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "T1_OUT",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:WSL2512_7m_to_500m",
+    "note": "1 W at 70 C, 1%, component TCR 75 ppm/K. Pads 1.65 x 3.68 mm, inner gap 4.06 mm. Kelvin topology must be checked after footprint change.",
+    "section": "07 Peltier stroomregelaar 1",
+    "source_footprint": "Custom manufacturer landpattern: Vishay WSL datasheet 30100",
+    "footprint_status": "selected MPN; manufacturer landpattern implemented; measurement and solder qualification pending",
+    "mpn": "WSL2512R0250FEA",
+    "manufacturer": "Vishay",
+    "datasheet": "https://www.vishay.com/docs/30100/wsl.pdf"
+  },
+  "F12": {
+    "ref": "F12",
+    "value": "2.5A / 125V DC 045102.5MRL",
+    "pins": [
+      [
+        "1",
+        "1",
+        "+24_LOAD",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "T2_VIN",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:Littelfuse_451",
+    "note": "2.5 A fuse on converter INPUT. Replaces 2 A reservation for hot/low-input margin. Selected for 24W output and assumed >=85% efficiency down to 20V; input RMS and startup I2t still require measurement.",
+    "section": "08 Peltier stroomregelaar 2",
+    "source_footprint": "Custom manufacturer landpattern: Littelfuse 451/453",
+    "footprint_status": "selected MPN and landpattern; source fault-current and pulse coordination NOT qualified",
+    "mpn": "045102.5MRL",
+    "manufacturer": "Littelfuse",
+    "datasheet": "https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1"
+  },
+  "C201": {
+    "ref": "C201",
+    "value": "10u / 50V X7R",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T2_VIN",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:C_1210_3225Metric",
+    "note": "10uF 50V X7R 10%; nominal total input capacitance 20uF plus local bypass. Effective value at 24-28V must be checked.",
+    "section": "08 Peltier stroomregelaar 2",
+    "source_footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "footprint_status": "selected MPN; 1210 envelope checked; effective capacitance at bias pending",
+    "mpn": "GRM32ER71H106KA12L",
+    "manufacturer": "Murata",
+    "datasheet": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER71H106KA12%23"
+  },
+  "C202": {
+    "ref": "C202",
+    "value": "10u / 50V X7R",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T2_VIN",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:C_1210_3225Metric",
+    "note": "10uF 50V X7R 10%; nominal total input capacitance 20uF plus local bypass. Effective value at 24-28V must be checked.",
+    "section": "08 Peltier stroomregelaar 2",
+    "source_footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "footprint_status": "selected MPN; 1210 envelope checked; effective capacitance at bias pending",
+    "mpn": "GRM32ER71H106KA12L",
+    "manufacturer": "Murata",
+    "datasheet": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER71H106KA12%23"
+  },
+  "C203": {
+    "ref": "C203",
+    "value": "1u / 50V X7R",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T2_VIN",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:C_0805_2012Metric",
+    "note": "1uF / 50V X7R 0805 local VIN bypass. Effective capacitance under 24V bias still requires curve/measurement; retains two 10uF bulk input capacitors.",
+    "section": "08 Peltier stroomregelaar 2",
+    "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "footprint_status": "selected part; dimensional and pinout review performed; prototype qualification pending",
+    "mpn": "GRM21BR71H105KA12L",
+    "manufacturer": "Murata",
+    "datasheet": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71H105KA12-01.pdf"
+  },
+  "L2": {
+    "ref": "L2",
+    "value": "10uH IHLP6767GZEK100M11",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T2_SW",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "T2_VREG",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:L_Vishay_IHLP-6767",
+    "note": "10uH \u00b120%; DCR max 9.33mOhm at 25C; typical Isat 17A at 20% drop, not a guaranteed hot limit. Footprint pad envelope checked; operating temperature test remains.",
+    "section": "08 Peltier stroomregelaar 2",
+    "source_footprint": "Inductor_SMD:L_Vishay_IHLP-6767",
+    "footprint_status": "selected part; dimensional and pinout review performed; prototype qualification pending",
+    "mpn": "IHLP6767GZEK100M11",
+    "manufacturer": "Vishay",
+    "datasheet": "https://www.vishay.com/docs/34282/ihlp-6767gz-11.pdf"
+  },
+  "C207": {
+    "ref": "C207",
+    "value": "47u / 25V X7R C2220C476M3R2C7186",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T2_VREG",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:KEMET_KPS_2220_Double",
+    "note": "47uF 25V X7R +/-20%, stacked MLCC. Typical DC bias about -13% at12V from manufacturer simulation; not guaranteed minimum. Body6x5mm, height5mm +/-0.5. Pads2.08x4.78mm at +/-2.69mm.",
+    "section": "08 Peltier stroomregelaar 2",
+    "source_footprint": "Custom manufacturer KPS landpattern, C1129 04/26",
+    "footprint_status": "selected MPN; manufacturer landpattern implemented; stability and thermal qualification pending",
+    "mpn": "C2220C476M3R2C7186",
+    "manufacturer": "KEMET / Yageo",
+    "datasheet": "https://search.kemet.com/download/specsheet/C2220C476M3R2C7186"
+  },
+  "C208": {
+    "ref": "C208",
+    "value": "47u / 25V X7R C2220C476M3R2C7186",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T2_VREG",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:KEMET_KPS_2220_Double",
+    "note": "47uF 25V X7R +/-20%, stacked MLCC. Typical DC bias about -13% at12V from manufacturer simulation; not guaranteed minimum. Body6x5mm, height5mm +/-0.5. Pads2.08x4.78mm at +/-2.69mm.",
+    "section": "08 Peltier stroomregelaar 2",
+    "source_footprint": "Custom manufacturer KPS landpattern, C1129 04/26",
+    "footprint_status": "selected MPN; manufacturer landpattern implemented; stability and thermal qualification pending",
+    "mpn": "C2220C476M3R2C7186",
+    "manufacturer": "KEMET / Yageo",
+    "datasheet": "https://search.kemet.com/download/specsheet/C2220C476M3R2C7186"
+  },
+  "RS2": {
+    "ref": "RS2",
+    "value": "25m / 1W / 1% WSL2512R0250FEA",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T2_VREG",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "T2_OUT",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:WSL2512_7m_to_500m",
+    "note": "1 W at 70 C, 1%, component TCR 75 ppm/K. Pads 1.65 x 3.68 mm, inner gap 4.06 mm. Kelvin topology must be checked after footprint change.",
+    "section": "08 Peltier stroomregelaar 2",
+    "source_footprint": "Custom manufacturer landpattern: Vishay WSL datasheet 30100",
+    "footprint_status": "selected MPN; manufacturer landpattern implemented; measurement and solder qualification pending",
+    "mpn": "WSL2512R0250FEA",
+    "manufacturer": "Vishay",
+    "datasheet": "https://www.vishay.com/docs/30100/wsl.pdf"
+  },
+  "F13": {
+    "ref": "F13",
+    "value": "2.5A / 125V DC 045102.5MRL",
+    "pins": [
+      [
+        "1",
+        "1",
+        "+24_LOAD",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "T3_VIN",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:Littelfuse_451",
+    "note": "2.5 A fuse on converter INPUT. Replaces 2 A reservation for hot/low-input margin. Selected for 24W output and assumed >=85% efficiency down to 20V; input RMS and startup I2t still require measurement.",
+    "section": "09 Peltier stroomregelaar 3",
+    "source_footprint": "Custom manufacturer landpattern: Littelfuse 451/453",
+    "footprint_status": "selected MPN and landpattern; source fault-current and pulse coordination NOT qualified",
+    "mpn": "045102.5MRL",
+    "manufacturer": "Littelfuse",
+    "datasheet": "https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1"
+  },
+  "C301": {
+    "ref": "C301",
+    "value": "10u / 50V X7R",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T3_VIN",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:C_1210_3225Metric",
+    "note": "10uF 50V X7R 10%; nominal total input capacitance 20uF plus local bypass. Effective value at 24-28V must be checked.",
+    "section": "09 Peltier stroomregelaar 3",
+    "source_footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "footprint_status": "selected MPN; 1210 envelope checked; effective capacitance at bias pending",
+    "mpn": "GRM32ER71H106KA12L",
+    "manufacturer": "Murata",
+    "datasheet": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER71H106KA12%23"
+  },
+  "C302": {
+    "ref": "C302",
+    "value": "10u / 50V X7R",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T3_VIN",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:C_1210_3225Metric",
+    "note": "10uF 50V X7R 10%; nominal total input capacitance 20uF plus local bypass. Effective value at 24-28V must be checked.",
+    "section": "09 Peltier stroomregelaar 3",
+    "source_footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "footprint_status": "selected MPN; 1210 envelope checked; effective capacitance at bias pending",
+    "mpn": "GRM32ER71H106KA12L",
+    "manufacturer": "Murata",
+    "datasheet": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER71H106KA12%23"
+  },
+  "C303": {
+    "ref": "C303",
+    "value": "1u / 50V X7R",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T3_VIN",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:C_0805_2012Metric",
+    "note": "1uF / 50V X7R 0805 local VIN bypass. Effective capacitance under 24V bias still requires curve/measurement; retains two 10uF bulk input capacitors.",
+    "section": "09 Peltier stroomregelaar 3",
+    "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "footprint_status": "selected part; dimensional and pinout review performed; prototype qualification pending",
+    "mpn": "GRM21BR71H105KA12L",
+    "manufacturer": "Murata",
+    "datasheet": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71H105KA12-01.pdf"
+  },
+  "L3": {
+    "ref": "L3",
+    "value": "10uH IHLP6767GZEK100M11",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T3_SW",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "T3_VREG",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:L_Vishay_IHLP-6767",
+    "note": "10uH \u00b120%; DCR max 9.33mOhm at 25C; typical Isat 17A at 20% drop, not a guaranteed hot limit. Footprint pad envelope checked; operating temperature test remains.",
+    "section": "09 Peltier stroomregelaar 3",
+    "source_footprint": "Inductor_SMD:L_Vishay_IHLP-6767",
+    "footprint_status": "selected part; dimensional and pinout review performed; prototype qualification pending",
+    "mpn": "IHLP6767GZEK100M11",
+    "manufacturer": "Vishay",
+    "datasheet": "https://www.vishay.com/docs/34282/ihlp-6767gz-11.pdf"
+  },
+  "C307": {
+    "ref": "C307",
+    "value": "47u / 25V X7R C2220C476M3R2C7186",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T3_VREG",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:KEMET_KPS_2220_Double",
+    "note": "47uF 25V X7R +/-20%, stacked MLCC. Typical DC bias about -13% at12V from manufacturer simulation; not guaranteed minimum. Body6x5mm, height5mm +/-0.5. Pads2.08x4.78mm at +/-2.69mm.",
+    "section": "09 Peltier stroomregelaar 3",
+    "source_footprint": "Custom manufacturer KPS landpattern, C1129 04/26",
+    "footprint_status": "selected MPN; manufacturer landpattern implemented; stability and thermal qualification pending",
+    "mpn": "C2220C476M3R2C7186",
+    "manufacturer": "KEMET / Yageo",
+    "datasheet": "https://search.kemet.com/download/specsheet/C2220C476M3R2C7186"
+  },
+  "C308": {
+    "ref": "C308",
+    "value": "47u / 25V X7R C2220C476M3R2C7186",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T3_VREG",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:KEMET_KPS_2220_Double",
+    "note": "47uF 25V X7R +/-20%, stacked MLCC. Typical DC bias about -13% at12V from manufacturer simulation; not guaranteed minimum. Body6x5mm, height5mm +/-0.5. Pads2.08x4.78mm at +/-2.69mm.",
+    "section": "09 Peltier stroomregelaar 3",
+    "source_footprint": "Custom manufacturer KPS landpattern, C1129 04/26",
+    "footprint_status": "selected MPN; manufacturer landpattern implemented; stability and thermal qualification pending",
+    "mpn": "C2220C476M3R2C7186",
+    "manufacturer": "KEMET / Yageo",
+    "datasheet": "https://search.kemet.com/download/specsheet/C2220C476M3R2C7186"
+  },
+  "RS3": {
+    "ref": "RS3",
+    "value": "25m / 1W / 1% WSL2512R0250FEA",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T3_VREG",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "T3_OUT",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:WSL2512_7m_to_500m",
+    "note": "1 W at 70 C, 1%, component TCR 75 ppm/K. Pads 1.65 x 3.68 mm, inner gap 4.06 mm. Kelvin topology must be checked after footprint change.",
+    "section": "09 Peltier stroomregelaar 3",
+    "source_footprint": "Custom manufacturer landpattern: Vishay WSL datasheet 30100",
+    "footprint_status": "selected MPN; manufacturer landpattern implemented; measurement and solder qualification pending",
+    "mpn": "WSL2512R0250FEA",
+    "manufacturer": "Vishay",
+    "datasheet": "https://www.vishay.com/docs/30100/wsl.pdf"
+  },
+  "F14": {
+    "ref": "F14",
+    "value": "2.5A / 125V DC 045102.5MRL",
+    "pins": [
+      [
+        "1",
+        "1",
+        "+24_LOAD",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "T4_VIN",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:Littelfuse_451",
+    "note": "2.5 A fuse on converter INPUT. Replaces 2 A reservation for hot/low-input margin. Selected for 24W output and assumed >=85% efficiency down to 20V; input RMS and startup I2t still require measurement.",
+    "section": "10 Peltier stroomregelaar 4",
+    "source_footprint": "Custom manufacturer landpattern: Littelfuse 451/453",
+    "footprint_status": "selected MPN and landpattern; source fault-current and pulse coordination NOT qualified",
+    "mpn": "045102.5MRL",
+    "manufacturer": "Littelfuse",
+    "datasheet": "https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1"
+  },
+  "C401": {
+    "ref": "C401",
+    "value": "10u / 50V X7R",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T4_VIN",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:C_1210_3225Metric",
+    "note": "10uF 50V X7R 10%; nominal total input capacitance 20uF plus local bypass. Effective value at 24-28V must be checked.",
+    "section": "10 Peltier stroomregelaar 4",
+    "source_footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "footprint_status": "selected MPN; 1210 envelope checked; effective capacitance at bias pending",
+    "mpn": "GRM32ER71H106KA12L",
+    "manufacturer": "Murata",
+    "datasheet": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER71H106KA12%23"
+  },
+  "C402": {
+    "ref": "C402",
+    "value": "10u / 50V X7R",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T4_VIN",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:C_1210_3225Metric",
+    "note": "10uF 50V X7R 10%; nominal total input capacitance 20uF plus local bypass. Effective value at 24-28V must be checked.",
+    "section": "10 Peltier stroomregelaar 4",
+    "source_footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "footprint_status": "selected MPN; 1210 envelope checked; effective capacitance at bias pending",
+    "mpn": "GRM32ER71H106KA12L",
+    "manufacturer": "Murata",
+    "datasheet": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER71H106KA12%23"
+  },
+  "C403": {
+    "ref": "C403",
+    "value": "1u / 50V X7R",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T4_VIN",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:C_0805_2012Metric",
+    "note": "1uF / 50V X7R 0805 local VIN bypass. Effective capacitance under 24V bias still requires curve/measurement; retains two 10uF bulk input capacitors.",
+    "section": "10 Peltier stroomregelaar 4",
+    "source_footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "footprint_status": "selected part; dimensional and pinout review performed; prototype qualification pending",
+    "mpn": "GRM21BR71H105KA12L",
+    "manufacturer": "Murata",
+    "datasheet": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71H105KA12-01.pdf"
+  },
+  "L4": {
+    "ref": "L4",
+    "value": "10uH IHLP6767GZEK100M11",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T4_SW",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "T4_VREG",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:L_Vishay_IHLP-6767",
+    "note": "10uH \u00b120%; DCR max 9.33mOhm at 25C; typical Isat 17A at 20% drop, not a guaranteed hot limit. Footprint pad envelope checked; operating temperature test remains.",
+    "section": "10 Peltier stroomregelaar 4",
+    "source_footprint": "Inductor_SMD:L_Vishay_IHLP-6767",
+    "footprint_status": "selected part; dimensional and pinout review performed; prototype qualification pending",
+    "mpn": "IHLP6767GZEK100M11",
+    "manufacturer": "Vishay",
+    "datasheet": "https://www.vishay.com/docs/34282/ihlp-6767gz-11.pdf"
+  },
+  "C407": {
+    "ref": "C407",
+    "value": "47u / 25V X7R C2220C476M3R2C7186",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T4_VREG",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:KEMET_KPS_2220_Double",
+    "note": "47uF 25V X7R +/-20%, stacked MLCC. Typical DC bias about -13% at12V from manufacturer simulation; not guaranteed minimum. Body6x5mm, height5mm +/-0.5. Pads2.08x4.78mm at +/-2.69mm.",
+    "section": "10 Peltier stroomregelaar 4",
+    "source_footprint": "Custom manufacturer KPS landpattern, C1129 04/26",
+    "footprint_status": "selected MPN; manufacturer landpattern implemented; stability and thermal qualification pending",
+    "mpn": "C2220C476M3R2C7186",
+    "manufacturer": "KEMET / Yageo",
+    "datasheet": "https://search.kemet.com/download/specsheet/C2220C476M3R2C7186"
+  },
+  "C408": {
+    "ref": "C408",
+    "value": "47u / 25V X7R C2220C476M3R2C7186",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T4_VREG",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "GND",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:KEMET_KPS_2220_Double",
+    "note": "47uF 25V X7R +/-20%, stacked MLCC. Typical DC bias about -13% at12V from manufacturer simulation; not guaranteed minimum. Body6x5mm, height5mm +/-0.5. Pads2.08x4.78mm at +/-2.69mm.",
+    "section": "10 Peltier stroomregelaar 4",
+    "source_footprint": "Custom manufacturer KPS landpattern, C1129 04/26",
+    "footprint_status": "selected MPN; manufacturer landpattern implemented; stability and thermal qualification pending",
+    "mpn": "C2220C476M3R2C7186",
+    "manufacturer": "KEMET / Yageo",
+    "datasheet": "https://search.kemet.com/download/specsheet/C2220C476M3R2C7186"
+  },
+  "RS4": {
+    "ref": "RS4",
+    "value": "25m / 1W / 1% WSL2512R0250FEA",
+    "pins": [
+      [
+        "1",
+        "1",
+        "T4_VREG",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "T4_OUT",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:WSL2512_7m_to_500m",
+    "note": "1 W at 70 C, 1%, component TCR 75 ppm/K. Pads 1.65 x 3.68 mm, inner gap 4.06 mm. Kelvin topology must be checked after footprint change.",
+    "section": "10 Peltier stroomregelaar 4",
+    "source_footprint": "Custom manufacturer landpattern: Vishay WSL datasheet 30100",
+    "footprint_status": "selected MPN; manufacturer landpattern implemented; measurement and solder qualification pending",
+    "mpn": "WSL2512R0250FEA",
+    "manufacturer": "Vishay",
+    "datasheet": "https://www.vishay.com/docs/30100/wsl.pdf"
+  },
+  "F3": {
+    "ref": "F3",
+    "value": "1A / 125V DC 0451001.MRL",
+    "pins": [
+      [
+        "1",
+        "1",
+        "+24_PROT",
+        "passive"
+      ],
+      [
+        "2",
+        "2",
+        "FAN_24",
+        "passive"
+      ]
+    ],
+    "foot": "ITO_PCB:Littelfuse_451",
+    "note": "1 A, 125 VDC series. 25% continuous-current derating plus temperature rerating. NOT a precise current limiter; supply short-circuit behavior and pulse I2t must be coordinated.",
+    "section": "12 Heatsink, luchtvochtigheid en ventilator",
+    "source_footprint": "Custom manufacturer landpattern: Littelfuse 451/453",
+    "footprint_status": "selected MPN and landpattern; source fault-current and pulse coordination NOT qualified",
+    "mpn": "0451001.MRL",
+    "manufacturer": "Littelfuse",
+    "datasheet": "https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1"
+  }
+}

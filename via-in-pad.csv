@@ -1,0 +1,17 @@
+IC,X_mm,Y_mm,Finished_hole_mm,Copper_diameter_mm,Requirement
+U1,30.55,95.45,0.25,0.55,IPC-4761 type VII fill and copper cap
+U11,17.0,26.75,0.25,0.55,IPC-4761 type VII fill and copper cap
+U11,17.0,28.0,0.25,0.55,IPC-4761 type VII fill and copper cap
+U12,55.0,28.0,0.25,0.55,IPC-4761 type VII fill and copper cap
+U12,55.0,29.25,0.25,0.55,IPC-4761 type VII fill and copper cap
+U1,30.55,96.55,0.25,0.55,IPC-4761 type VII fill and copper cap
+U12,55.0,26.75,0.25,0.55,IPC-4761 type VII fill and copper cap
+U14,131.0,29.25,0.25,0.55,IPC-4761 type VII fill and copper cap
+U13,93.0,29.25,0.25,0.55,IPC-4761 type VII fill and copper cap
+U1,29.45,96.55,0.25,0.55,IPC-4761 type VII fill and copper cap
+U14,131.0,26.75,0.25,0.55,IPC-4761 type VII fill and copper cap
+U14,131.0,28.0,0.25,0.55,IPC-4761 type VII fill and copper cap
+U1,29.45,95.45,0.25,0.55,IPC-4761 type VII fill and copper cap
+U13,93.0,26.75,0.25,0.55,IPC-4761 type VII fill and copper cap
+U11,17.0,29.25,0.25,0.55,IPC-4761 type VII fill and copper cap
+U13,93.0,28.0,0.25,0.55,IPC-4761 type VII fill and copper cap

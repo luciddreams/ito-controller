@@ -1,0 +1,41 @@
+{
+  "method": "Outward straight-entry corridors, approximate models; enclosure and cable bend not modelled",
+  "ports": [
+    {
+      "reference": "J13",
+      "direction": "PCB north (-Y)",
+      "straight_entry_space_mm": 10,
+      "component_interferences": []
+    },
+    {
+      "reference": "J14",
+      "direction": "PCB north (-Y)",
+      "straight_entry_space_mm": 10,
+      "component_interferences": []
+    },
+    {
+      "reference": "J11",
+      "direction": "PCB north (-Y)",
+      "straight_entry_space_mm": 10,
+      "component_interferences": []
+    },
+    {
+      "reference": "J3",
+      "direction": "PCB north (-Y)",
+      "straight_entry_space_mm": 10,
+      "component_interferences": []
+    },
+    {
+      "reference": "J12",
+      "direction": "PCB north (-Y)",
+      "straight_entry_space_mm": 10,
+      "component_interferences": []
+    },
+    {
+      "reference": "J30",
+      "direction": "PCB south (+Y), outward from lower edge",
+      "straight_entry_space_mm": 20,
+      "component_interferences": []
+    }
+  ]
+}

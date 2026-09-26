@@ -1,0 +1,221 @@
+(footprint "L_Vishay_IHLP-6767"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Inductor, Vishay, IHLP series, 17.0mmx17.0mm")
+	(tags "inductor vishay ihlp smd")
+	(property "Reference" "REF**"
+		(at 0 -9.509 0)
+		(layer "F.Fab")
+		(uuid "c58a2507-85a5-4946-bd1e-108600957a01")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_Vishay_IHLP-6767"
+		(at 0 10.009 0)
+		(layer "F.Fab")
+		(uuid "2f89194a-2479-4260-a4f6-1c473a3c49a6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3bae3da8-ac80-489d-825c-1fc0f1cc6074")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "892423b9-f2ac-4da5-9a19-0d66ed35d0a8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -10.3 -8.8)
+		(end -10.3 8.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "9f16d32c-5163-4906-a4a3-6979e5a7bf13")
+	)
+	(fp_line
+		(start -10.3 8.8)
+		(end 10.3 8.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "37ad44ee-0159-4a37-8ccf-60a76a4241ef")
+	)
+	(fp_line
+		(start 10.3 -8.8)
+		(end -10.3 -8.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "090d0ca3-3c24-4f63-a034-554630706a96")
+	)
+	(fp_line
+		(start 10.3 8.8)
+		(end 10.3 -8.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "a6063656-c323-484d-9768-48d5ec55339a")
+	)
+	(fp_line
+		(start -8.609 -8.609)
+		(end 8.609 -8.609)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "810ea73d-4d33-4ca7-b9e3-d651ceefb74c")
+	)
+	(fp_line
+		(start -8.609 -6.46)
+		(end -8.609 -8.609)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "631bb752-0adf-4c42-88ce-12649a2cec50")
+	)
+	(fp_line
+		(start -8.609 6.46)
+		(end -8.609 8.609)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "8fa6a8f5-fa3c-4793-aab4-597e0ba04ff5")
+	)
+	(fp_line
+		(start -8.609 8.609)
+		(end 8.609 8.609)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "5f1e2b2a-798b-48c6-be3c-95a5a15d7591")
+	)
+	(fp_line
+		(start -8.509 -8.509)
+		(end -8.509 8.509)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "f7170096-9b68-499b-b387-4923bab7cb9d")
+	)
+	(fp_line
+		(start -8.509 8.509)
+		(end 8.509 8.509)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "7076ce1e-44fb-4c8c-8832-df9ce5409f54")
+	)
+	(fp_line
+		(start 8.509 -8.509)
+		(end -8.509 -8.509)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "edebba71-6ca3-4e03-bc21-bac1959d3503")
+	)
+	(fp_line
+		(start 8.509 8.509)
+		(end 8.509 -8.509)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "a9a5d0cb-2f89-4c8c-9085-7e54e695148e")
+	)
+	(fp_line
+		(start 8.609 -8.609)
+		(end 8.609 -6.46)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "064a9d33-703d-4cd3-916d-5d7ef4aa5a74")
+	)
+	(fp_line
+		(start 8.609 8.609)
+		(end 8.609 6.46)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "705cf0f4-f4d4-43f9-bf22-b85c232b69d3")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "ec0eb83e-fc85-4e11-bec1-3976c976addb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -8.1225 0)
+		(size 3.825 12.32)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a9631dad-9689-4206-a501-d28d0bb3a2c4")
+	)
+	(pad "2" smd rect
+		(at 8.1225 0)
+		(size 3.825 12.32)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4059a3ac-cd62-4490-95f1-8a0b7781dc3b")
+	)
+	(embedded_fonts no)
+
+	(model "${KIPRJMOD}/3dmodels/L_Vishay_IHLP-6767.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+)

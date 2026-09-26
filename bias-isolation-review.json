@@ -1,0 +1,34 @@
+[
+  {
+    "net": "T1_VREG",
+    "sense_pin": "U11:22",
+    "target_capacitor_pad": "C107:1",
+    "other_pads_reachable_with_shunt_pad_removed": [],
+    "isolated_until_capacitor": true,
+    "sense_component_items": 56
+  },
+  {
+    "net": "T2_VREG",
+    "sense_pin": "U12:22",
+    "target_capacitor_pad": "C207:1",
+    "other_pads_reachable_with_shunt_pad_removed": [],
+    "isolated_until_capacitor": true,
+    "sense_component_items": 71
+  },
+  {
+    "net": "T3_VREG",
+    "sense_pin": "U13:22",
+    "target_capacitor_pad": "C307:1",
+    "other_pads_reachable_with_shunt_pad_removed": [],
+    "isolated_until_capacitor": true,
+    "sense_component_items": 70
+  },
+  {
+    "net": "T4_VREG",
+    "sense_pin": "U14:22",
+    "target_capacitor_pad": "C407:1",
+    "other_pads_reachable_with_shunt_pad_removed": [],
+    "isolated_until_capacitor": true,
+    "sense_component_items": 79
+  }
+]

@@ -1,0 +1,438 @@
+[
+  {
+    "id": "TSR1",
+    "source_url": "https://www.tracopower.com/sites/default/files/products/datasheets/tsr1_datasheet.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.tracopower.com/sites/default/files/products/datasheets/tsr1_datasheet.pdf",
+    "status": "downloaded",
+    "file": "TSR1.pdf",
+    "bytes": 805232,
+    "sha256": "bedf240fea9eebaf2d0e4c5635e6ccde8de2a088e200ecaa92e39a8bbb68aa79"
+  },
+  {
+    "id": "LT8613",
+    "source_url": "https://www.analog.com/media/en/technical-documentation/data-sheets/lt8613.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.analog.com/media/en/technical-documentation/data-sheets/lt8613.pdf",
+    "status": "downloaded",
+    "file": "LT8613.pdf",
+    "bytes": 1960359,
+    "sha256": "8a698959d481813c99cb32a19e9e7607cda8a2faad112774d177cb10735aa4f4"
+  },
+  {
+    "id": "MCP4728",
+    "source_url": "https://ww1.microchip.com/downloads/en/DeviceDoc/22187E.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://ww1.microchip.com/downloads/en/DeviceDoc/22187E.pdf",
+    "status": "downloaded",
+    "file": "MCP4728.pdf",
+    "bytes": 3007694,
+    "sha256": "7e6515c45a02ffe4ad7506f3347cce7714cdd56659ff2fb22b858fc0472f381e"
+  },
+  {
+    "id": "IRLB4030",
+    "source_url": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-irlb4030-datasheet-en.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.infineon.com/assets/row/public/documents/24/49/infineon-irlb4030-datasheet-en.pdf",
+    "status": "downloaded",
+    "file": "IRLB4030.pdf",
+    "bytes": 296377,
+    "sha256": "b2ceacb4254a30aa2a3fc7b13b31cfe22c9ed24c89f886eb28144dfc1206535f"
+  },
+  {
+    "id": "BSS138",
+    "source_url": "https://www.onsemi.com/pdf/datasheet/bss138-d.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.onsemi.com/pdf/datasheet/bss138-d.pdf",
+    "status": "downloaded",
+    "file": "BSS138.pdf",
+    "bytes": 420992,
+    "sha256": "95ecd20743e0fa701be648991606dbc298a11f1d96c74f50e0901a165b4fb2ce"
+  },
+  {
+    "id": "MMBT3904",
+    "source_url": "https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf",
+    "status": "downloaded",
+    "file": "MMBT3904.pdf",
+    "bytes": 316927,
+    "sha256": "856f97900806ae3af1fd6b8c23ea5f6c1464937f1a92ea5dabbe0149051f73bf"
+  },
+  {
+    "id": "STP55NF06L",
+    "source_url": "https://www.st.com/resource/en/datasheet/stp55nf06l.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.st.com/resource/en/datasheet/stp55nf06l.pdf",
+    "status": "downloaded",
+    "file": "STP55NF06L.pdf",
+    "bytes": 340945,
+    "sha256": "7e5b235a4d071fd797943bcf9638e9c17cc9b99d071dccd59ae51696f5504f25"
+  },
+  {
+    "id": "1N4007",
+    "source_url": "https://www.vishay.com/docs/88503/1n4001.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.vishay.com/docs/88503/1n4001.pdf",
+    "status": "downloaded",
+    "file": "1N4007.pdf",
+    "bytes": 74632,
+    "sha256": "56a77c6615c90c11993d37d94e67f335cf3a2d1fe00f25d2a1a4833834356d07"
+  },
+  {
+    "id": "WSL",
+    "source_url": "https://www.vishay.com/docs/30100/wsl.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.vishay.com/docs/30100/wsl.pdf",
+    "status": "downloaded",
+    "file": "WSL.pdf",
+    "bytes": 142434,
+    "sha256": "96c2dc89ae1e3039815ed6c41f566a6e9f6b53035f8e45ea2ada1697935a44dc"
+  },
+  {
+    "id": "IHLP6767GZ",
+    "source_url": "https://www.vishay.com/docs/34282/ihlp-6767gz-11.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.vishay.com/docs/34282/ihlp-6767gz-11.pdf",
+    "status": "downloaded",
+    "file": "IHLP6767GZ.pdf",
+    "bytes": 523354,
+    "sha256": "76dff46e9281d9ba121d6a283113aa0c565387d15e88bfabf084fa96837807db"
+  },
+  {
+    "id": "GST160A",
+    "source_url": "https://www.meanwell.com/Upload/PDF/GST160A/GST160A-SPEC.PDF",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.meanwell.com/Upload/PDF/GST160A/GST160A-SPEC.PDF",
+    "status": "downloaded",
+    "file": "GST160A.pdf",
+    "bytes": 1022793,
+    "sha256": "de16ce6f9910201db3c7f8da53af2644dba367b64949291d90376e3cfd7ab709"
+  },
+  {
+    "id": "KPJX-4S",
+    "source_url": "https://www.kycon.com/Pub_Eng_Draw/KPJX-4S.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.kycon.com/Pub_Eng_Draw/KPJX-4S.pdf",
+    "status": "downloaded",
+    "file": "KPJX-4S.pdf",
+    "bytes": 136085,
+    "sha256": "98cd0bbe70d166fda79c6661563f862e5ded922368ef0bd836dc686c71db1687"
+  },
+  {
+    "id": "JST-XH",
+    "source_url": "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf",
+    "status": "downloaded",
+    "file": "JST-XH.pdf",
+    "bytes": 175724,
+    "sha256": "9426b136902f11900825077535e5c65032b7fbc31ffb59c5e9e1f463bb20fb90"
+  },
+  {
+    "id": "PCA9615",
+    "source_url": "https://www.nxp.com/docs/en/data-sheet/PCA9615.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.nxp.com/docs/en/data-sheet/PCA9615.pdf",
+    "status": "downloaded",
+    "file": "PCA9615.pdf",
+    "bytes": 1062896,
+    "sha256": "b5cc52ef2d5e375b96606066494a4e6bf0190810b51fb509df45bef4b4e6c457"
+  },
+  {
+    "id": "SHT3x-DIS",
+    "source_url": "https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf",
+    "status": "downloaded",
+    "file": "SHT3x-DIS.pdf",
+    "bytes": 810136,
+    "sha256": "095b1853e7f4328f5897c9ca6c392a7dd8b0202eda66b0a2629f9cb840dd496d"
+  },
+  {
+    "id": "TEC1-12706-reference",
+    "source_url": "https://www.hebeiltd.com.cn/peltier.datasheet/TEC1-12706.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.hebeiltd.com.cn/peltier.datasheet/TEC1-12706.pdf",
+    "status": "downloaded",
+    "file": "TEC1-12706-reference.pdf",
+    "bytes": 320346,
+    "sha256": "fee81a772f3162a76444be4c3a58465d4cf4c4ff751102f390dbe4a70459ca4b"
+  },
+  {
+    "id": "KEMET-KPS-X7R",
+    "source_url": "https://content.kemet.com/datasheets/KEM_C1129_KPS_X7R.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://content.kemet.com/datasheets/KEM_C1129_KPS_X7R.pdf",
+    "status": "downloaded",
+    "file": "KEMET-KPS-X7R.pdf",
+    "bytes": 3799066,
+    "sha256": "4b755052787422dd439768f763801219df9aba3541527f1f40810d2436412502"
+  },
+  {
+    "id": "Panasonic-FR",
+    "source_url": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1259.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1259.pdf",
+    "status": "downloaded",
+    "file": "Panasonic-FR.pdf",
+    "bytes": 855742,
+    "sha256": "47cf18461482e03270f72e475f855080e11e2154e3f343f735e5cb0e61e27df7"
+  },
+  {
+    "id": "Littelfuse-451-453",
+    "source_url": "https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1",
+    "status": "downloaded",
+    "file": "Littelfuse-451-453.pdf",
+    "bytes": 491885,
+    "sha256": "399d3cc9da991aa3192638f807fb568f137407d10a4b0d35d106a82b5c2bace2"
+  },
+  {
+    "id": "Yageo-RC",
+    "source_url": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L",
+    "status": "downloaded",
+    "file": "Yageo-RC.pdf",
+    "bytes": 542969,
+    "sha256": "7b6f0ae72708ca4b38126f84b5407a3e970a94cb60bc1a0afdaeb25a23d839bb"
+  },
+  {
+    "id": "Yageo-RT",
+    "source_url": "https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L",
+    "status": "downloaded",
+    "file": "Yageo-RT.pdf",
+    "bytes": 547014,
+    "sha256": "00a9148c2958122200e8a93292e389392a795adcfe40562d6ca4f690d1e5d7d1"
+  },
+  {
+    "id": "Omron-G2RL",
+    "source_url": "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf",
+    "status": "downloaded",
+    "file": "Omron-G2RL.pdf",
+    "bytes": 1592143,
+    "sha256": "89ce57abbc4b089234dd5e0d9dce7d6ea9e23765fbf01a64d1bf1252d96365fd"
+  },
+  {
+    "id": "Samtec-SSW",
+    "source_url": "https://suddendocs.samtec.com/catalog_english/ssw_th.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://suddendocs.samtec.com/catalog_english/ssw_th.pdf",
+    "status": "downloaded",
+    "file": "Samtec-SSW.pdf",
+    "bytes": 471452,
+    "sha256": "6d89f5c186a49e0f52f37d7bf7b5095081aff8f98e5ba18a85b0811caaf6f509"
+  },
+  {
+    "id": "Samtec-TSW",
+    "source_url": "https://suddendocs.samtec.com/catalog_english/tsw_th.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://suddendocs.samtec.com/catalog_english/tsw_th.pdf",
+    "status": "downloaded",
+    "file": "Samtec-TSW.pdf",
+    "bytes": 1385386,
+    "sha256": "3a5770b11668f4e5a11ba9ceeb4817a23f467b8507e3592f55fb6bd8f96e71bc"
+  },
+  {
+    "id": "SMBJ",
+    "source_url": "https://www.littelfuse.com/assetdocs/tvs-diodes-smbj-series-datasheet?assetguid=ba555e99-a12d-4f72-a0b6-86b06c67171e",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.littelfuse.com/assetdocs/tvs-diodes-smbj-series-datasheet?assetguid=ba555e99-a12d-4f72-a0b6-86b06c67171e",
+    "status": "downloaded",
+    "file": "SMBJ.pdf",
+    "bytes": 947504,
+    "sha256": "d7df155be4b1f612085401e8c946f065e284d65a0e7de22b9225a7b73946e51b"
+  },
+  {
+    "id": "Panasonic-ERJP06",
+    "source_url": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDO0000/AOA0000C332.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDO0000/AOA0000C332.pdf",
+    "status": "downloaded",
+    "file": "Panasonic-ERJP06.pdf",
+    "bytes": 1036367,
+    "sha256": "0a298dd0ab516de1226326aab65dfb4aea75f97e29a91de16a39d37f9a44e889"
+  },
+  {
+    "id": "KEMET-C0G",
+    "source_url": "https://content.kemet.com/datasheets/KEM_C1003_C0G_SMD.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://content.kemet.com/datasheets/KEM_C1003_C0G_SMD.pdf",
+    "status": "downloaded",
+    "file": "KEMET-C0G.pdf",
+    "bytes": 824883,
+    "sha256": "02d179914aeb9585eb2229ba8e18ef9d6b01c77c056de2af295d6950a2a5cc0d"
+  },
+  {
+    "id": "TPS2663",
+    "source_url": "https://www.ti.com/lit/ds/symlink/tps2663.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.ti.com/lit/ds/symlink/tps2663.pdf",
+    "status": "downloaded",
+    "file": "TPS2663.pdf",
+    "bytes": 5728602,
+    "sha256": "bb61314ace65ed37684bd07f541fc676081d7cf81cb24020e7c5c2065bfe16b2"
+  },
+  {
+    "id": "SN74AHC1G08",
+    "source_url": "https://www.ti.com/lit/ds/symlink/sn74ahc1g08.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.ti.com/lit/ds/symlink/sn74ahc1g08.pdf",
+    "status": "downloaded",
+    "file": "SN74AHC1G08.pdf",
+    "bytes": 1244310,
+    "sha256": "fdefdf1be0436a7d7bacfb4769980599f84d9041080e1337d0c89104e0f683fc"
+  },
+  {
+    "id": "UCC27511",
+    "source_url": "https://www.ti.com/lit/ds/symlink/ucc27511.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.ti.com/lit/ds/symlink/ucc27511.pdf",
+    "status": "downloaded",
+    "file": "UCC27511.pdf",
+    "bytes": 1183094,
+    "sha256": "781cc451dbb371a4137337a4bdecbe11a9f1ff8979a11e238e97d8a80a287b31"
+  },
+  {
+    "id": "INA226",
+    "source_url": "https://www.ti.com/lit/ds/symlink/ina226.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.ti.com/lit/ds/symlink/ina226.pdf",
+    "status": "downloaded",
+    "file": "INA226.pdf",
+    "bytes": 1516957,
+    "sha256": "c9b67f886d4a5241a5e070723f7b61867409eeb27eed768b9cdd9cb17e03ca2d"
+  },
+  {
+    "id": "OPA333",
+    "source_url": "https://www.ti.com/lit/ds/symlink/opa333.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.ti.com/lit/ds/symlink/opa333.pdf",
+    "status": "downloaded",
+    "file": "OPA333.pdf",
+    "bytes": 1944689,
+    "sha256": "df60da7154848c5706e2c7743b5d532fb9b4db97b74b88d0b62b657f73c1f1b7"
+  },
+  {
+    "id": "TCA9534",
+    "source_url": "https://www.ti.com/lit/ds/symlink/tca9534.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.ti.com/lit/ds/symlink/tca9534.pdf",
+    "status": "downloaded",
+    "file": "TCA9534.pdf",
+    "bytes": 1475980,
+    "sha256": "797c1fc96502df7c60b0e82d3d615593fa722de521e36c78cda40450360f8713"
+  },
+  {
+    "id": "SN74LVC08A",
+    "source_url": "https://www.ti.com/lit/ds/symlink/sn74lvc08a.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.ti.com/lit/ds/symlink/sn74lvc08a.pdf",
+    "status": "downloaded",
+    "file": "SN74LVC08A.pdf",
+    "bytes": 3451095,
+    "sha256": "e5af3b29e61782a243d18a2e0a24e0f8bbda23a4c46cdea98b01dae91a96e97d"
+  },
+  {
+    "id": "ADS1115",
+    "source_url": "https://www.ti.com/lit/ds/symlink/ads1115.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://www.ti.com/lit/ds/symlink/ads1115.pdf",
+    "status": "downloaded",
+    "file": "ADS1115.pdf",
+    "bytes": 2654255,
+    "sha256": "eefff4d412ce2dcd7e659f47238edc9b2fa02e5971f2625af730502033701834"
+  },
+  {
+    "id": "GRM21BR61E106KA73L",
+    "source_url": "https://static.chipdip.ru/lib/971/DOC031971891.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://static.chipdip.ru/lib/971/DOC031971891.pdf",
+    "status": "downloaded",
+    "file": "GRM21BR61E106KA73L.pdf",
+    "bytes": 560727,
+    "sha256": "a6856d78bee17c5dd7e993f2c2d65a9c0a1a8a3ce94bacb3dc9d30cd6691d2e5"
+  },
+  {
+    "id": "GRM21BR71H104KA01L",
+    "source_url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71H104KA01-01.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GRM21BR71H104KA01-01-EN_PDF_CERAMICCAPACITORSMD",
+    "status": "downloaded",
+    "file": "GRM21BR71H104KA01L.pdf",
+    "bytes": 842865,
+    "sha256": "11fb7313a3a964a8d1bc350da14e0330c7de326aa5c7e2b5ec734fbecb7073cc"
+  },
+  {
+    "id": "GRM21BR71H105KA12L",
+    "source_url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71H105KA12-01.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://pim.murata.com/asset/pim4/ceramicCapacitorSMD/GRM21BR71H105KA12-01-EN_PDF_CERAMICCAPACITORSMD",
+    "status": "downloaded",
+    "file": "GRM21BR71H105KA12L.pdf",
+    "bytes": 863920,
+    "sha256": "9921ee74a9703bfed89f091cba34075e54707b2487c428a984253470da53c52e"
+  },
+  {
+    "id": "GRM32ER71H106KA12L",
+    "source_url": "https://datasheet.ciiva.com/3777/4286grm32er71h106ka1223-3777306.pdf",
+    "checked_date": "2026-09-26",
+    "status": "unavailable",
+    "error": "HTTP Error 502: Bad Gateway"
+  },
+  {
+    "id": "GRM21BR71H103KA01L",
+    "source_url": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM21BR71H103KA01%23",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://pim.murata.com/en-global/pim/details/?partNum=GRM21BR71H103KA01%23&displayChangeClass=productDetailPrint",
+    "status": "unavailable",
+    "error": "Response is not a PDF"
+  },
+  {
+    "id": "XIAO-nRF52840-schematic",
+    "source_url": "https://files.seeedstudio.com/wiki/XIAO-BLE/Seeed_Studio_XIAO_nRF52840_PDF.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://files.seeedstudio.com/wiki/XIAO-BLE/Seeed_Studio_XIAO_nRF52840_PDF.pdf",
+    "status": "downloaded",
+    "file": "XIAO-nRF52840-schematic.pdf",
+    "bytes": 646363,
+    "sha256": "1cec202595d8a1ad33ee3bfd3bed94f6c0229574ad55d29a804dd021ec605342"
+  },
+  {
+    "id": "XIAO-series-manual",
+    "source_url": "https://files.seeedstudio.com/wiki/XIAO/Seeed-Studio-XIAO-Series-SOM-Datasheet.pdf",
+    "checked_date": "2026-09-26",
+    "resolved_url": "https://files.seeedstudio.com/wiki/XIAO/Seeed-Studio-XIAO-Series-SOM-Datasheet.pdf",
+    "status": "downloaded",
+    "file": "XIAO-series-manual.pdf",
+    "bytes": 2854945,
+    "sha256": "98e1131e034b3f4d0bbc365181de821bf7c84391c33a06007b4641896b3baeba"
+  },
+  {
+    "id": "Murata-GRM-catalog",
+    "source_url": "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx",
+    "checked_date": "2026-09-26",
+    "status": "unavailable",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "Phoenix-1715721",
+    "source_url": "https://www.phoenixcontact.com/services/products/1715721/pdf",
+    "checked_date": "2026-09-26",
+    "status": "unavailable",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "SparkFun-EndPoint-schematic",
+    "source_url": "https://cdn.sparkfun.com/assets/8/6/8/3/6/QwiicBus_EndPoint_Schematic.pdf",
+    "checked_date": "2026-09-26",
+    "status": "unavailable",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

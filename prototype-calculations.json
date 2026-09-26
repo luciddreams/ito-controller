@@ -1,0 +1,981 @@
+{
+  "model": "capacitive linear ramp; excludes live downstream loads and thermal foldback",
+  "corners": [
+    {
+      "vin": 22.8,
+      "cout_F": 0.00047,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.03826191189691341,
+      "capacitive_inrush_A": 0.2800696428571428,
+      "pass_energy_J": 0.1221624
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.00047,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.030523547693043277,
+      "capacitive_inrush_A": 0.3510732142857142,
+      "pass_energy_J": 0.1221624
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.00047,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.034582881906825576,
+      "capacitive_inrush_A": 0.30986428571428565,
+      "pass_energy_J": 0.1221624
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.00047,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.02758859118409681,
+      "capacitive_inrush_A": 0.3884214285714285,
+      "pass_energy_J": 0.1221624
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.0546598741384477,
+      "capacitive_inrush_A": 0.19604875,
+      "pass_energy_J": 0.1221624
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.04360506813291896,
+      "capacitive_inrush_A": 0.24575124999999998,
+      "pass_energy_J": 0.1221624
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.04940411700975081,
+      "capacitive_inrush_A": 0.216905,
+      "pass_energy_J": 0.1221624
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.039412273120138286,
+      "capacitive_inrush_A": 0.271895,
+      "pass_energy_J": 0.1221624
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.0694180401558286,
+      "capacitive_inrush_A": 0.15436909448818895,
+      "pass_energy_J": 0.1221624
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.055378436528807085,
+      "capacitive_inrush_A": 0.19350492125984248,
+      "pass_energy_J": 0.1221624
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.06274322860238354,
+      "capacitive_inrush_A": 0.17079133858267714,
+      "pass_energy_J": 0.1221624
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.05005358686257563,
+      "capacitive_inrush_A": 0.21409055118110232,
+      "pass_energy_J": 0.1221624
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.0006,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.03826191189691341,
+      "capacitive_inrush_A": 0.35753571428571423,
+      "pass_energy_J": 0.155952
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.0006,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.030523547693043277,
+      "capacitive_inrush_A": 0.44817857142857126,
+      "pass_energy_J": 0.155952
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.0006,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.034582881906825576,
+      "capacitive_inrush_A": 0.3955714285714285,
+      "pass_energy_J": 0.155952
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.0006,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.02758859118409681,
+      "capacitive_inrush_A": 0.4958571428571428,
+      "pass_energy_J": 0.155952
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.0546598741384477,
+      "capacitive_inrush_A": 0.25027499999999997,
+      "pass_energy_J": 0.155952
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.04360506813291896,
+      "capacitive_inrush_A": 0.3137249999999999,
+      "pass_energy_J": 0.155952
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.04940411700975081,
+      "capacitive_inrush_A": 0.2769,
+      "pass_energy_J": 0.155952
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.039412273120138286,
+      "capacitive_inrush_A": 0.3471,
+      "pass_energy_J": 0.155952
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.0694180401558286,
+      "capacitive_inrush_A": 0.19706692913385823,
+      "pass_energy_J": 0.155952
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.055378436528807085,
+      "capacitive_inrush_A": 0.24702755905511803,
+      "pass_energy_J": 0.155952
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.06274322860238354,
+      "capacitive_inrush_A": 0.2180314960629921,
+      "pass_energy_J": 0.155952
+    },
+    {
+      "vin": 22.8,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.05005358686257563,
+      "capacitive_inrush_A": 0.2733070866141732,
+      "pass_energy_J": 0.155952
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.00047,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.04027569673359305,
+      "capacitive_inrush_A": 0.2800696428571428,
+      "pass_energy_J": 0.13536
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.00047,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.03213005020320345,
+      "capacitive_inrush_A": 0.3510732142857142,
+      "pass_energy_J": 0.13536
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.00047,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.03640303358613218,
+      "capacitive_inrush_A": 0.30986428571428565,
+      "pass_energy_J": 0.13536
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.00047,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.029040622299049267,
+      "capacitive_inrush_A": 0.3884214285714285,
+      "pass_energy_J": 0.13536
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.05753670961941864,
+      "capacitive_inrush_A": 0.19604875,
+      "pass_energy_J": 0.13536
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.04590007171886206,
+      "capacitive_inrush_A": 0.24575124999999998,
+      "pass_energy_J": 0.13536
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.05200433369447454,
+      "capacitive_inrush_A": 0.216905,
+      "pass_energy_J": 0.13536
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.04148660328435609,
+      "capacitive_inrush_A": 0.271895,
+      "pass_energy_J": 0.13536
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.07307162121666168,
+      "capacitive_inrush_A": 0.15436909448818895,
+      "pass_energy_J": 0.13536
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.05829309108295483,
+      "capacitive_inrush_A": 0.19350492125984248,
+      "pass_energy_J": 0.13536
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.06604550379198268,
+      "capacitive_inrush_A": 0.17079133858267714,
+      "pass_energy_J": 0.13536
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.052687986171132246,
+      "capacitive_inrush_A": 0.21409055118110232,
+      "pass_energy_J": 0.13536
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.0006,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.04027569673359305,
+      "capacitive_inrush_A": 0.35753571428571423,
+      "pass_energy_J": 0.1728
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.0006,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.03213005020320345,
+      "capacitive_inrush_A": 0.44817857142857126,
+      "pass_energy_J": 0.1728
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.0006,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.03640303358613218,
+      "capacitive_inrush_A": 0.3955714285714285,
+      "pass_energy_J": 0.1728
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.0006,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.029040622299049267,
+      "capacitive_inrush_A": 0.4958571428571428,
+      "pass_energy_J": 0.1728
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.05753670961941864,
+      "capacitive_inrush_A": 0.25027499999999997,
+      "pass_energy_J": 0.1728
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.04590007171886206,
+      "capacitive_inrush_A": 0.3137249999999999,
+      "pass_energy_J": 0.1728
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.05200433369447454,
+      "capacitive_inrush_A": 0.2769,
+      "pass_energy_J": 0.1728
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.04148660328435609,
+      "capacitive_inrush_A": 0.3471,
+      "pass_energy_J": 0.1728
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.07307162121666168,
+      "capacitive_inrush_A": 0.19706692913385823,
+      "pass_energy_J": 0.1728
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.05829309108295483,
+      "capacitive_inrush_A": 0.24702755905511803,
+      "pass_energy_J": 0.1728
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.06604550379198268,
+      "capacitive_inrush_A": 0.2180314960629921,
+      "pass_energy_J": 0.1728
+    },
+    {
+      "vin": 24,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.052687986171132246,
+      "capacitive_inrush_A": 0.2733070866141732,
+      "pass_energy_J": 0.1728
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.00047,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.0422894815702727,
+      "capacitive_inrush_A": 0.2800696428571428,
+      "pass_energy_J": 0.1492344
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.00047,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.033736552713363614,
+      "capacitive_inrush_A": 0.3510732142857142,
+      "pass_energy_J": 0.1492344
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.00047,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.03822318526543879,
+      "capacitive_inrush_A": 0.30986428571428565,
+      "pass_energy_J": 0.1492344
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.00047,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.03049265341400173,
+      "capacitive_inrush_A": 0.3884214285714285,
+      "pass_energy_J": 0.1492344
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.06041354510038958,
+      "capacitive_inrush_A": 0.19604875,
+      "pass_energy_J": 0.1492344
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.048195075304805164,
+      "capacitive_inrush_A": 0.24575124999999998,
+      "pass_energy_J": 0.1492344
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.05460455037919827,
+      "capacitive_inrush_A": 0.216905,
+      "pass_energy_J": 0.1492344
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.0435609334485739,
+      "capacitive_inrush_A": 0.271895,
+      "pass_energy_J": 0.1492344
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.07672520227749477,
+      "capacitive_inrush_A": 0.15436909448818895,
+      "pass_energy_J": 0.1492344
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.061207745637102566,
+      "capacitive_inrush_A": 0.19350492125984248,
+      "pass_energy_J": 0.1492344
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.06934777898158181,
+      "capacitive_inrush_A": 0.17079133858267714,
+      "pass_energy_J": 0.1492344
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.05532238547968886,
+      "capacitive_inrush_A": 0.21409055118110232,
+      "pass_energy_J": 0.1492344
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.0006,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.0422894815702727,
+      "capacitive_inrush_A": 0.35753571428571423,
+      "pass_energy_J": 0.19051199999999996
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.0006,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.033736552713363614,
+      "capacitive_inrush_A": 0.44817857142857126,
+      "pass_energy_J": 0.19051199999999996
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.0006,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.03822318526543879,
+      "capacitive_inrush_A": 0.3955714285714285,
+      "pass_energy_J": 0.19051199999999996
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.0006,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.03049265341400173,
+      "capacitive_inrush_A": 0.4958571428571428,
+      "pass_energy_J": 0.19051199999999996
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.06041354510038958,
+      "capacitive_inrush_A": 0.25027499999999997,
+      "pass_energy_J": 0.19051199999999996
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.048195075304805164,
+      "capacitive_inrush_A": 0.3137249999999999,
+      "pass_energy_J": 0.19051199999999996
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.05460455037919827,
+      "capacitive_inrush_A": 0.2769,
+      "pass_energy_J": 0.19051199999999996
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.0435609334485739,
+      "capacitive_inrush_A": 0.3471,
+      "pass_energy_J": 0.19051199999999996
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.07672520227749477,
+      "capacitive_inrush_A": 0.19706692913385823,
+      "pass_energy_J": 0.19051199999999996
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.061207745637102566,
+      "capacitive_inrush_A": 0.24702755905511803,
+      "pass_energy_J": 0.19051199999999996
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.06934777898158181,
+      "capacitive_inrush_A": 0.2180314960629921,
+      "pass_energy_J": 0.19051199999999996
+    },
+    {
+      "vin": 25.2,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.05532238547968886,
+      "capacitive_inrush_A": 0.2733070866141732,
+      "pass_energy_J": 0.19051199999999996
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.00047,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.04698831285585857,
+      "capacitive_inrush_A": 0.2800696428571428,
+      "pass_energy_J": 0.18424
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.00047,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.037485058570404024,
+      "capacitive_inrush_A": 0.3510732142857142,
+      "pass_energy_J": 0.18424
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.00047,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.04247020585048755,
+      "capacitive_inrush_A": 0.30986428571428565,
+      "pass_energy_J": 0.18424
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.00047,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.033880726015557486,
+      "capacitive_inrush_A": 0.3884214285714285,
+      "pass_energy_J": 0.18424
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.06712616122265508,
+      "capacitive_inrush_A": 0.19604875,
+      "pass_energy_J": 0.18424
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.05355008367200574,
+      "capacitive_inrush_A": 0.24575124999999998,
+      "pass_energy_J": 0.18424
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.06067172264355363,
+      "capacitive_inrush_A": 0.216905,
+      "pass_energy_J": 0.18424
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.04840103716508211,
+      "capacitive_inrush_A": 0.271895,
+      "pass_energy_J": 0.18424
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.08525022475277197,
+      "capacitive_inrush_A": 0.15436909448818895,
+      "pass_energy_J": 0.18424
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.06800860626344729,
+      "capacitive_inrush_A": 0.19350492125984248,
+      "pass_energy_J": 0.18424
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.07705308775731312,
+      "capacitive_inrush_A": 0.17079133858267714,
+      "pass_energy_J": 0.18424
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.00047,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.06146931719965429,
+      "capacitive_inrush_A": 0.21409055118110232,
+      "pass_energy_J": 0.18424
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.0006,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.04698831285585857,
+      "capacitive_inrush_A": 0.35753571428571423,
+      "pass_energy_J": 0.2352
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.0006,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.037485058570404024,
+      "capacitive_inrush_A": 0.44817857142857126,
+      "pass_energy_J": 0.2352
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.0006,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.04247020585048755,
+      "capacitive_inrush_A": 0.3955714285714285,
+      "pass_energy_J": 0.2352
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.0006,
+      "cdvdt_F": 7e-08,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.033880726015557486,
+      "capacitive_inrush_A": 0.4958571428571428,
+      "pass_energy_J": 0.2352
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.06712616122265508,
+      "capacitive_inrush_A": 0.25027499999999997,
+      "pass_energy_J": 0.2352
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.05355008367200574,
+      "capacitive_inrush_A": 0.3137249999999999,
+      "pass_energy_J": 0.2352
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.06067172264355363,
+      "capacitive_inrush_A": 0.2769,
+      "pass_energy_J": 0.2352
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1e-07,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.04840103716508211,
+      "capacitive_inrush_A": 0.3471,
+      "pass_energy_J": 0.2352
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.08525022475277197,
+      "capacitive_inrush_A": 0.19706692913385823,
+      "pass_energy_J": 0.2352
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 23.5,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.06800860626344729,
+      "capacitive_inrush_A": 0.24702755905511803,
+      "pass_energy_J": 0.2352
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 26,
+      "charge_A": 1.775e-06,
+      "ramp_s": 0.07705308775731312,
+      "capacitive_inrush_A": 0.2180314960629921,
+      "pass_energy_J": 0.2352
+    },
+    {
+      "vin": 28,
+      "cout_F": 0.0006,
+      "cdvdt_F": 1.27e-07,
+      "ramp_gain": 26,
+      "charge_A": 2.225e-06,
+      "ramp_s": 0.06146931719965429,
+      "capacitive_inrush_A": 0.2733070866141732,
+      "pass_energy_J": 0.2352
+    }
+  ],
+  "max_capacitive_inrush_A": 0.4958571428571428,
+  "min_ramp_s": 0.02758859118409681,
+  "max_ramp_s": 0.08525022475277197,
+  "Q2_loss_4A_25C_W": 0.072,
+  "Q2_loss_4A_at_2x_Rds_W": 0.144,
+  "eFuse_loss_4A_at_53mOhm_W": 0.848,
+  "heater_ideal_W": 80.0,
+  "ambient_extension_L": {
+    "ports": 2,
+    "fuse_A_each": 0.25,
+    "normal_5V_budget_A_each": 0.15,
+    "total_5V_budget_A": 0.3,
+    "remote_modules_required": 4,
+    "sensor_modules": 2,
+    "measured": false
+  }
+}

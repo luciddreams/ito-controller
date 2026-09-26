@@ -1,0 +1,13 @@
+{
+  "original_track_net_changes": [],
+  "schematic_pcb_parity": "PASS",
+  "J30_plated_slot_count": 4,
+  "J30_finished_slot_mm": [
+    0.6,
+    2.7
+  ],
+  "J30_supply_min_track_width_mm": 2,
+  "prototype_limit_A": 4,
+  "ERC_DRC": "0 violations / 0 unconnected",
+  "mechanical_model": "simplified; physical mating verification required"
+}

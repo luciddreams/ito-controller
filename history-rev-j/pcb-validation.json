@@ -1,0 +1,28 @@
+{
+  "revision": "J",
+  "verification_tool": "KiCad 9.0.9 native ERC / pcbnew DRC",
+  "components": 191,
+  "footprints_including_mounting_holes": 195,
+  "electrical_pins": 588,
+  "schematic_PCB_net_mismatches": 0,
+  "board_mm": [
+    160,
+    110
+  ],
+  "layers": 4,
+  "routed_tracks": 4168,
+  "vias": 259,
+  "native_ERC_errors": 0,
+  "native_ERC_warnings": 0,
+  "native_DRC_violations": 0,
+  "unconnected": 0,
+  "footprint_errors": 0,
+  "status": "ROUTING COMPLETE; ENGINEERING REVIEW REQUIRED BEFORE FABRICATION",
+  "power_thermal_EMC_qualification": "NOT COMPLETED",
+  "exact_BOM_qualification": "NOT COMPLETED",
+  "kelvin_topology_checks": 11,
+  "kelvin_topology_failures": 0,
+  "bias_topology_checks": 4,
+  "bias_topology_failures": 0,
+  "component_value_footprint_mismatches": 0
+}

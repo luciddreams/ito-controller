@@ -1,0 +1,10 @@
+{
+  "layout_update": "2026-09-24 R7B input J30 and rotated J3/J11-J14; previous C5/resistor layout retained",
+  "board_sha256": "94e26b0159dc112d9fe51a5cce2872bfe5b97c0d8600d464bc04b36c9e7ec8d8",
+  "added_component": "J30 Kycon KPJX-4S",
+  "models_covered_footprints": 202,
+  "DRC_violations": 0,
+  "unconnected": 0,
+  "model_intersections_reported": 0,
+  "prototype_current_limit_A": 4
+}

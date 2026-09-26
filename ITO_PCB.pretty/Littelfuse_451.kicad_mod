@@ -1,0 +1,108 @@
+(footprint "Littelfuse_451"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Littelfuse 451/453 recommended pad layout rev2025-12-01; manufacturer landpattern, assembly qualification pending")
+	(property "Reference" "REF**"
+		(at 0 -3 0)
+		(layer "F.Fab")
+		(uuid "ed00e69c-9d6e-40fd-a133-2d89297b74f9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "5A / 125V DC 0451005.MRL"
+		(at 0 3 0)
+		(layer "F.Fab")
+		(uuid "33e55dbd-d22a-4516-a599-9de729f7c5cd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "96da782a-ca01-4ef1-86c6-bd73f5b1af85")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6f566e04-2671-4085-8723-2270f92024f3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -3.685 -1.825)
+		(end 3.685 -1.825)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "15e54103-32aa-4b33-aa30-7527203f2a12")
+	)
+	(fp_line
+		(start -3.685 1.825)
+		(end -3.685 -1.825)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "2de274d6-6be9-42b5-a2a7-eac0f29e3da9")
+	)
+	(fp_line
+		(start 3.685 -1.825)
+		(end 3.685 1.825)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "b97d1dde-1955-4134-ade6-8774065d4e87")
+	)
+	(fp_line
+		(start 3.685 1.825)
+		(end -3.685 1.825)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "897d5dbb-4e96-413b-98ec-17315bff7a72")
+	)
+	(pad "1" smd rect
+		(at -2.455 0)
+		(size 1.96 3.15)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "51eb809e-7f09-4e01-8129-46d0fd6255f7")
+	)
+	(pad "2" smd rect
+		(at 2.455 0)
+		(size 1.96 3.15)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8130798c-157a-4979-96c5-c1a24e52a48e")
+	)
+	(embedded_fonts no)
+
+	(model "${KIPRJMOD}/3dmodels/Littelfuse_451.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+)

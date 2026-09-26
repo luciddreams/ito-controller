@@ -1,0 +1,48 @@
+{
+  "board_mm": [
+    160,
+    110
+  ],
+  "copper_layers": [
+    [
+      [
+        "top",
+        "copper"
+      ],
+      4404
+    ],
+    [
+      [
+        "bottom",
+        "copper"
+      ],
+      2383
+    ],
+    [
+      [
+        "inner_2",
+        "copper"
+      ],
+      2150
+    ],
+    [
+      [
+        "inner_1",
+        "copper"
+      ],
+      770
+    ]
+  ],
+  "excellon_holes": {
+    "PTH": 423,
+    "NPTH": 7
+  },
+  "native_holes": {
+    "PTH": 423,
+    "NPTH": 7
+  },
+  "comparison": "PASS",
+  "source_board_sha256": "94e26b0159dc112d9fe51a5cce2872bfe5b97c0d8600d464bc04b36c9e7ec8d8",
+  "status": "Parsed exported Gerbers/Excellon with independent gerbonara reader; rendered both sides",
+  "visual_review": "Updated KiCad isometric/top renders and top-copper Gerber readback reviewed"
+}

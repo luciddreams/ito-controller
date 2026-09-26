@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/workspace/scratch/c19fc32cfc63/output/ito-controller-rev-j/input-stage-candidate/input-stage-candidate.kicad_sch</source>
+    <date>2026-09-23T22:19:26+0100</date>
+    <tool>Eeschema 9.0.9-9.0.9~ubuntu24.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>ITO input-stage candidate - NOT INTEGRATED INTO PCB J</title>
+        <company/>
+        <rev>CANDIDATE 1</rev>
+        <date>2026-09-23</date>
+        <source>input-stage-candidate.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C90">
+      <value>1uF / 50V X7R</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="C90" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>da737377-994f-47de-87a0-cf8add81c497</tstamps>
+    </comp>
+    <comp ref="C91">
+      <value>100nF / &gt;=16V / 5%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="C91" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8962e3d4-8477-4052-8301-62832cc9b839</tstamps>
+    </comp>
+    <comp ref="C92">
+      <value>470uF / 50V</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="C92" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>55316d9c-26be-4c0b-819b-e9a28d0b9d0d</tstamps>
+    </comp>
+    <comp ref="D90">
+      <value>SMBJ33CA</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="D90" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>860ae7c6-9aa7-45df-8bf1-677c900cb034</tstamps>
+    </comp>
+    <comp ref="F90">
+      <value>10A fuse</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="F90" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>db7a9643-abf2-4435-b202-ff795e5fd956</tstamps>
+    </comp>
+    <comp ref="J90">
+      <value>INPUT</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="J90" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3dcd29bf-d9b7-45b0-9aa6-93325f299374</tstamps>
+    </comp>
+    <comp ref="J91">
+      <value>OUTPUT</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="J91" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>75cd5cd5-a228-4fd9-9463-49599ada25f8</tstamps>
+    </comp>
+    <comp ref="J92">
+      <value>CONTROL</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="J92" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>08db39be-99e8-4139-bc54-0da20ec868dc</tstamps>
+    </comp>
+    <comp ref="Q90">
+      <value>IRL540NPBF</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="Q90" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2d12827d-eec4-4c48-8ac7-17036ecc7e0f</tstamps>
+    </comp>
+    <comp ref="Q91">
+      <value>BSS138</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="Q91" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7c81ea8b-63ad-4eab-af7d-feb4f331902c</tstamps>
+    </comp>
+    <comp ref="R90">
+      <value>4.02k / 0.1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="R90" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8b27b718-b489-4b06-985b-2bd810c15a89</tstamps>
+    </comp>
+    <comp ref="R91">
+      <value>156k / 0.1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="R91" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9e1db9e0-1257-4e9b-a243-bcc9aa7ab801</tstamps>
+    </comp>
+    <comp ref="R92">
+      <value>10k / 0.1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="R92" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fb66c138-cbda-42e3-b37b-494a93fa7563</tstamps>
+    </comp>
+    <comp ref="R93">
+      <value>223k / 0.1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="R93" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a2d93e93-1708-47e5-8926-5ad8156fe5b4</tstamps>
+    </comp>
+    <comp ref="R94">
+      <value>10k / 0.1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="R94" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>08a8932c-a75f-4631-be99-0305fba49fff</tstamps>
+    </comp>
+    <comp ref="R95">
+      <value>150k / 0.1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="R95" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9932554d-db6f-4daa-a454-1ac72464f9ff</tstamps>
+    </comp>
+    <comp ref="R96">
+      <value>10k / 0.1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="R96" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>83c03624-4774-4105-b6bd-6146501d5a8b</tstamps>
+    </comp>
+    <comp ref="R97">
+      <value>10k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="R97" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7d4ed38f-b7a8-451b-85ec-9af1eeb24e66</tstamps>
+    </comp>
+    <comp ref="R98">
+      <value>10k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="R98" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>82236485-8edb-48b3-962f-cc3d521ea8e8</tstamps>
+    </comp>
+    <comp ref="R99">
+      <value>10k / 0.1%</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="R99" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d4f967f5-f8ea-4894-a885-671ffbeea6a9</tstamps>
+    </comp>
+    <comp ref="SW90">
+      <value>RESET momentary NO</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="SW90" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7a40770c-d952-4a39-93cd-9ba57ed342e8</tstamps>
+    </comp>
+    <comp ref="U90">
+      <value>TPS26630RGER</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CAND" part="U90" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="input-stage-candidate.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5268e27d-7321-452a-bbbb-e9103c3770d1</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="CAND" part="C90">
+      <fields>
+        <field name="Reference">C90</field>
+        <field name="Value">1uF / 50V X7R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IN_FET" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="C91">
+      <fields>
+        <field name="Reference">C91</field>
+        <field name="Value">100nF / &gt;=16V / 5%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="DVDT" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="C92">
+      <fields>
+        <field name="Reference">C92</field>
+        <field name="Value">470uF / 50V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VPROT" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="D90">
+      <fields>
+        <field name="Reference">D90</field>
+        <field name="Value">SMBJ33CA</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="F90">
+      <fields>
+        <field name="Reference">F90</field>
+        <field name="Value">10A fuse</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN_RAW" type="passive"/>
+        <pin num="2" name="VIN_SYS" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="J90">
+      <fields>
+        <field name="Reference">J90</field>
+        <field name="Value">INPUT</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="24V" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="J91">
+      <fields>
+        <field name="Reference">J91</field>
+        <field name="Value">OUTPUT</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VPROT" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="J92">
+      <fields>
+        <field name="Reference">J92</field>
+        <field name="Value">CONTROL</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="3V3" type="power_in"/>
+        <pin num="2" name="PGOOD" type="passive"/>
+        <pin num="3" name="FAULT_N" type="passive"/>
+        <pin num="4" name="IMON" type="passive"/>
+        <pin num="5" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="Q90">
+      <fields>
+        <field name="Reference">Q90</field>
+        <field name="Value">IRL540NPBF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="passive"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="Q91">
+      <fields>
+        <field name="Reference">Q91</field>
+        <field name="Value">BSS138</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="R90">
+      <fields>
+        <field name="Reference">R90</field>
+        <field name="Value">4.02k / 0.1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="ILIM" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="R91">
+      <fields>
+        <field name="Reference">R91</field>
+        <field name="Value">156k / 0.1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN_SYS" type="passive"/>
+        <pin num="2" name="UVLO" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="R92">
+      <fields>
+        <field name="Reference">R92</field>
+        <field name="Value">10k / 0.1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="UVLO" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="R93">
+      <fields>
+        <field name="Reference">R93</field>
+        <field name="Value">223k / 0.1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN_SYS" type="passive"/>
+        <pin num="2" name="OVP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="R94">
+      <fields>
+        <field name="Reference">R94</field>
+        <field name="Value">10k / 0.1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OVP" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="R95">
+      <fields>
+        <field name="Reference">R95</field>
+        <field name="Value">150k / 0.1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VPROT" type="passive"/>
+        <pin num="2" name="PGTH" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="R96">
+      <fields>
+        <field name="Reference">R96</field>
+        <field name="Value">10k / 0.1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="PGTH" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="R97">
+      <fields>
+        <field name="Reference">R97</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="+3V3" type="passive"/>
+        <pin num="2" name="PGOOD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="R98">
+      <fields>
+        <field name="Reference">R98</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="+3V3" type="passive"/>
+        <pin num="2" name="FAULT_N" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="R99">
+      <fields>
+        <field name="Reference">R99</field>
+        <field name="Value">10k / 0.1%</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IMON" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="SW90">
+      <fields>
+        <field name="Reference">SW90</field>
+        <field name="Value">RESET momentary NO</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CAND" part="U90">
+      <fields>
+        <field name="Reference">U90</field>
+        <field name="Value">TPS26630RGER</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="IN" type="power_in"/>
+        <pin num="3" name="B_GATE" type="output"/>
+        <pin num="4" name="DRV" type="output"/>
+        <pin num="5" name="IN_SYS" type="power_in"/>
+        <pin num="6" name="UVLO" type="input"/>
+        <pin num="7" name="OVP" type="input"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="dVdT" type="passive"/>
+        <pin num="10" name="ILIM" type="passive"/>
+        <pin num="11" name="MODE" type="input"/>
+        <pin num="12" name="SHDN" type="input"/>
+        <pin num="13" name="IMON" type="output"/>
+        <pin num="14" name="FLT" type="open_collector"/>
+        <pin num="15" name="PGTH" type="input"/>
+        <pin num="16" name="PGOOD" type="open_collector"/>
+        <pin num="17" name="OUT" type="power_out"/>
+        <pin num="18" name="OUT" type="passive"/>
+        <pin num="19" name="NC" type="no_connect"/>
+        <pin num="20" name="NC" type="no_connect"/>
+        <pin num="21" name="NC" type="no_connect"/>
+        <pin num="22" name="NC" type="no_connect"/>
+        <pin num="23" name="NC" type="no_connect"/>
+        <pin num="24" name="NC" type="no_connect"/>
+        <pin num="25" name="EP_GND" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="CAND">
+      <uri>/workspace/scratch/c19fc32cfc63/output/ito-controller-rev-j/input-stage-candidate/CAND.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/+3V3" class="Default">
+      <node ref="J92" pin="1" pinfunction="3V3" pintype="power_in"/>
+      <node ref="R97" pin="1" pinfunction="+3V3" pintype="passive"/>
+      <node ref="R98" pin="1" pinfunction="+3V3" pintype="passive"/>
+    </net>
+    <net code="2" name="/BDRV" class="Default">
+      <node ref="Q91" pin="1" pinfunction="G" pintype="passive"/>
+      <node ref="U90" pin="4" pinfunction="DRV" pintype="output"/>
+    </net>
+    <net code="3" name="/BGATE" class="Default">
+      <node ref="Q90" pin="1" pinfunction="G" pintype="passive"/>
+      <node ref="Q91" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="U90" pin="3" pinfunction="B_GATE" pintype="output"/>
+    </net>
+    <net code="4" name="/DVDT" class="Default">
+      <node ref="C91" pin="1" pinfunction="DVDT" pintype="passive"/>
+      <node ref="U90" pin="9" pinfunction="dVdT" pintype="passive"/>
+    </net>
+    <net code="5" name="/FAULT_N" class="Default">
+      <node ref="J92" pin="3" pinfunction="FAULT_N" pintype="passive"/>
+      <node ref="R98" pin="2" pinfunction="FAULT_N" pintype="passive"/>
+      <node ref="U90" pin="14" pinfunction="FLT" pintype="open_collector"/>
+    </net>
+    <net code="6" name="/GND" class="Default">
+      <node ref="C90" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="C91" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="C92" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="D90" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J90" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="J91" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="J92" pin="5" pinfunction="GND" pintype="passive"/>
+      <node ref="R90" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="R92" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="R94" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="R96" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="R99" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="SW90" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="U90" pin="25" pinfunction="EP_GND" pintype="power_in"/>
+      <node ref="U90" pin="8" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="7" name="/ILIM" class="Default">
+      <node ref="R90" pin="1" pinfunction="ILIM" pintype="passive"/>
+      <node ref="U90" pin="10" pinfunction="ILIM" pintype="passive"/>
+    </net>
+    <net code="8" name="/IMON" class="Default">
+      <node ref="J92" pin="4" pinfunction="IMON" pintype="passive"/>
+      <node ref="R99" pin="1" pinfunction="IMON" pintype="passive"/>
+      <node ref="U90" pin="13" pinfunction="IMON" pintype="output"/>
+    </net>
+    <net code="9" name="/IN_FET" class="Default">
+      <node ref="C90" pin="1" pinfunction="IN_FET" pintype="passive"/>
+      <node ref="Q90" pin="2" pinfunction="D" pintype="passive"/>
+      <node ref="U90" pin="1" pinfunction="IN" pintype="power_in"/>
+      <node ref="U90" pin="2" pinfunction="IN" pintype="power_in"/>
+    </net>
+    <net code="10" name="/OVP" class="Default">
+      <node ref="R93" pin="2" pinfunction="OVP" pintype="passive"/>
+      <node ref="R94" pin="1" pinfunction="OVP" pintype="passive"/>
+      <node ref="U90" pin="7" pinfunction="OVP" pintype="input"/>
+    </net>
+    <net code="11" name="/PGOOD" class="Default">
+      <node ref="J92" pin="2" pinfunction="PGOOD" pintype="passive"/>
+      <node ref="R97" pin="2" pinfunction="PGOOD" pintype="passive"/>
+      <node ref="U90" pin="16" pinfunction="PGOOD" pintype="open_collector"/>
+    </net>
+    <net code="12" name="/PGTH" class="Default">
+      <node ref="R95" pin="2" pinfunction="PGTH" pintype="passive"/>
+      <node ref="R96" pin="1" pinfunction="PGTH" pintype="passive"/>
+      <node ref="U90" pin="15" pinfunction="PGTH" pintype="input"/>
+    </net>
+    <net code="13" name="/RESET_N" class="Default">
+      <node ref="SW90" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="U90" pin="12" pinfunction="SHDN" pintype="input"/>
+    </net>
+    <net code="14" name="/UVLO" class="Default">
+      <node ref="R91" pin="2" pinfunction="UVLO" pintype="passive"/>
+      <node ref="R92" pin="1" pinfunction="UVLO" pintype="passive"/>
+      <node ref="U90" pin="6" pinfunction="UVLO" pintype="input"/>
+    </net>
+    <net code="15" name="/VIN_RAW" class="Default">
+      <node ref="F90" pin="1" pinfunction="VIN_RAW" pintype="passive"/>
+      <node ref="J90" pin="1" pinfunction="24V" pintype="passive"/>
+    </net>
+    <net code="16" name="/VIN_SYS" class="Default">
+      <node ref="D90" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="F90" pin="2" pinfunction="VIN_SYS" pintype="passive"/>
+      <node ref="Q90" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="Q91" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R91" pin="1" pinfunction="VIN_SYS" pintype="passive"/>
+      <node ref="R93" pin="1" pinfunction="VIN_SYS" pintype="passive"/>
+      <node ref="U90" pin="5" pinfunction="IN_SYS" pintype="power_in"/>
+    </net>
+    <net code="17" name="/VPROT" class="Default">
+      <node ref="C92" pin="1" pinfunction="VPROT" pintype="passive"/>
+      <node ref="J91" pin="1" pinfunction="VPROT" pintype="passive"/>
+      <node ref="R95" pin="1" pinfunction="VPROT" pintype="passive"/>
+      <node ref="U90" pin="17" pinfunction="OUT" pintype="power_out"/>
+      <node ref="U90" pin="18" pinfunction="OUT" pintype="passive"/>
+    </net>
+    <net code="18" name="unconnected-(U90-MODE-Pad11)" class="Default">
+      <node ref="U90" pin="11" pinfunction="MODE" pintype="input+no_connect"/>
+    </net>
+    <net code="19" name="unconnected-(U90-NC-Pad19)" class="Default">
+      <node ref="U90" pin="19" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="20" name="unconnected-(U90-NC-Pad20)" class="Default">
+      <node ref="U90" pin="20" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="21" name="unconnected-(U90-NC-Pad21)" class="Default">
+      <node ref="U90" pin="21" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="22" name="unconnected-(U90-NC-Pad22)" class="Default">
+      <node ref="U90" pin="22" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="23" name="unconnected-(U90-NC-Pad23)" class="Default">
+      <node ref="U90" pin="23" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="24" name="unconnected-(U90-NC-Pad24)" class="Default">
+      <node ref="U90" pin="24" pinfunction="NC" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

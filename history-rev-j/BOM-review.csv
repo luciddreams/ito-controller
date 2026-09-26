@@ -1,0 +1,192 @@
+Reference,Value,Footprint,MPN,Manufacturer,Status,Notes,Datasheet
+J1,XIAO linker socket 1x7,ITO_PCB:PinSocket_1x07_P2.54mm_Vertical,,,package candidate; verify exact ordered part,"Bovenaanzicht, USB boven; pin 1 boven.",
+J2,XIAO rechter socket 1x7,ITO_PCB:PinSocket_1x07_P2.54mm_Vertical,,,package candidate; verify exact ordered part,Pin 1 boven. Rijafstand nog mechanisch controleren.,
+M1,TSR 1-2450,ITO_PCB:Converter_DCDC_TRACO_TSR-1_THT,TSR 1-2450,Traco Power,selected part; dimensional and pinout review performed; prototype qualification pending,"5 V / 1 A, input 6.5–36 V; SIP3 IN-GND-OUT 2.54mm verified. Keep JP1 open when USB supplies MCU.",https://www.tracopower.com/sites/default/files/products/datasheets/tsr1_datasheet.pdf
+JP1,Voedingsjumper - standaard OPEN,ITO_PCB:PinHeader_1x02_P2.54mm_Vertical,,,package candidate; verify exact ordered part,Alleen sluiten zonder USB-VBUS; geen automatische bronselectie.,
+C1,10u / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C2,10u / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R1,4k7,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R2,4k7,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R3,10k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+J5,Connector 2 pins,ITO_PCB:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical,,,package candidate; verify exact ordered part,"Externe drukknop, normaal open.",
+R4,100k 0.1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R5,100k 0.1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R6,1k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C3,100n,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R7,4k7,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,Strong TEC_ARM reset pulldown; absorbs UCC27511 IN- internal pullup current.,
+J3,Connector 2 pins,"ITO_PCB:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",,,package candidate; verify exact ordered part,"24V DC, gestabiliseerd; ontwerpbudget 10A. Connector >=15A.",
+F1,10A / 125V DC 0451010.MRL,ITO_PCB:Littelfuse_451,0451010.MRL,Littelfuse,selected MPN and landpattern; source fault-current and pulse coordination NOT qualified,"10 A, 125 VDC series. 25% continuous-current derating plus temperature rerating. NOT a precise current limiter; supply short-circuit behavior and pulse I2t must be coordinated.",https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1
+D1,SMBJ33CA bidirectioneel,ITO_PCB:D_SMB,,,package candidate; verify exact ordered part,Transientkeuze nog toetsen op bronimpedantie en pulsenergie.,
+U1,LTC4365ITS8,ITO_PCB:TSOT-23-8,,,package candidate; verify exact ordered part,,
+R10,390k 0.1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R11,10k 0.1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,"Nominale UV-drempel 20.0V, comparator-tolerantie komt erbij.",
+R12,549k 0.1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R13,10k 0.1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,"Nominale OV-drempel 27.95V, geen harde spanningsklem.",
+R14,100k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R15,10k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+Q2,IRL540NPBF,ITO_PCB:TO-220-3_Vertical,IRL540NPBF,Infineon,selected part; dimensional and pinout review performed; prototype qualification pending,100 V logic-level G-D-S TO-220. Requires heatsink <=10 K/W per device for 6 A design envelope. Startup SOA requires bench validation.,https://www.infineon.com/assets/row/public/documents/24/49/infineon-irl540n-datasheet-en.pdf
+Q3,IRL540NPBF,ITO_PCB:TO-220-3_Vertical,IRL540NPBF,Infineon,selected part; dimensional and pinout review performed; prototype qualification pending,Common-source reverse blocking pair. Drain tabs must be insulated from a shared heatsink. Same heatsink and SOA limits as Q2.,https://www.infineon.com/assets/row/public/documents/24/49/infineon-irl540n-datasheet-en.pdf
+R16,10R,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R17,10R,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R18,5k1,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C4,10n / 100V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,Startwaarde; inrush en uitschakeltransient meten.,
+C5,470u / 50V EEUFR1H471,ITO_PCB:CP_Radial_D12.5mm_P5.00mm,EEUFR1H471,Panasonic,"selected MPN; 12.5mm diameter, 5mm pitch checked; ripple/thermal validation pending","470uF +/-20%, 50V, diameter12.5 x height20mm, pitch5mm. 2.26Arms at 100kHz; actual waveform and thermal derating must be verified.",https://industrial.panasonic.com/sa/products/pt/aluminum-cap-lead/models/EEUFR1H471
+C6,100n / 100V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+J6,Connector 2 pins,ITO_PCB:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical,,,package candidate; verify exact ordered part,"Vergrendelende noodstop, NC contact, geschikt voor 24V DC spoelkring.",
+J7,Connector 2 pins,ITO_PCB:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical,,,package candidate; verify exact ordered part,"Externe NC glasthermostaat, handmatige reset; grens nog te bepalen.",
+J8,Connector 2 pins,ITO_PCB:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical,,,package candidate; verify exact ordered part,"Externe NC heatsinkthermostaat, handmatige reset; grens nog te bepalen.",
+K1,G2RL-1A-E DC24,ITO_PCB:G2RL_1A_E_review,,,package candidate; verify exact ordered part,Beide pennen per contact aansluiten. DC/inrush-belasting nog toetsen; geen hulpcontact.,
+D2,1N4007,ITO_PCB:D_DO-41_SOD81_P10.16mm_Horizontal,,,package candidate; verify exact ordered part,Vrijloopdiode direct over spoel; verlengt afvaltijd.,
+Q4,MMBT3904,ITO_PCB:SOT-23,,,package candidate; verify exact ordered part,,
+R20,2k2,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R21,100k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+Q5,MMBT3904,ITO_PCB:SOT-23,,,package candidate; verify exact ordered part,,
+R22,100k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R23,100k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R24,10k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R25,10k / 0.25W,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,Ontladen en gedefinieerde uit-status. Terugmelding heeft wachttijd nodig.,
+TP1,Connector 3 pins,ITO_PCB:PinHeader_1x03_P2.54mm_Vertical,,,package candidate; verify exact ordered part,"Meetpunten; LOAD_PRESENT_N laag betekent spanning aanwezig, geen gecertificeerde contactbewaking.",
+F2,5A / 125V DC 0451005.MRL,ITO_PCB:Littelfuse_451,0451005.MRL,Littelfuse,selected MPN and landpattern; source fault-current and pulse coordination NOT qualified,"5 A, 125 VDC series. 25% continuous-current derating plus temperature rerating. NOT a precise current limiter; supply short-circuit behavior and pulse I2t must be coordinated.",https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1
+RSH1,10m / 1W / 1% WSL2512R0100FEA,ITO_PCB:WSL2512_7m_to_500m,WSL2512R0100FEA,Vishay,selected MPN; manufacturer landpattern implemented; measurement and solder qualification pending,"1 W at 70 C, 1%, component TCR 75 ppm/K. Pads 1.65 x 3.68 mm, inner gap 4.06 mm. Kelvin topology must be checked after footprint change.",https://www.vishay.com/docs/30100/wsl.pdf
+J4,Connector 2 pins,"ITO_PCB:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",,,package candidate; verify exact ordered part,Busbars. Connector >=6A. R nominaal 7.2 ohm; eerst echte busbarweerstand meten.,
+Q1,STP55NF06L,ITO_PCB:TO-220-3_Vertical,,,package candidate; verify exact ordered part,"Drain ook op metalen tab; circa 0.22W bij 3.33A, Rds 20m bij 5V en 25C.",
+U2,UCC27511DBV,ITO_PCB:SOT-23-6,,,package candidate; verify exact ordered part,Hardware interlock: IN- pin5=TEC_ARM blocks heater while TEC channels are enabled. IN+ is HEATER_PWM.,
+R30,22R,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R31,10R,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R32,100k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R33,100k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C10,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C11,1u / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+U3,INA226AIDGS,ITO_PCB:VSSOP-10_3x3mm_P0.5mm,,,package candidate; verify exact ordered part,I2C 0x40. CAL=0x0800 voor 0.25mA/bit en 10m shunt. PWM-meting over meerdere cycli middelen.,
+C12,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+U4,MCP4728-E-UN,ITO_PCB:MSOP-10_3x3mm_P0.5mm,,,package candidate; verify exact ordered part,"Adres 0x60 controleren. Interne referentie 2.048V, gain 1. Alle kanalen eerst nul zetten.",
+C20,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R42,10k 0.1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R43,10k 0.1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C21,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R44,10k 0.1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R45,10k 0.1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C22,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R46,10k 0.1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R47,10k 0.1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C23,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R48,10k 0.1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R49,10k 0.1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C24,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+U5,OPA2333AID,ITO_PCB:SOIC-8_3.9x4.9mm_P1.27mm,,,package candidate; verify exact ordered part,Eenheidsversterking; vervangt de foutieve OPA4333-vermelding in revisie B.,
+C26,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+U6,OPA2333AID,ITO_PCB:SOIC-8_3.9x4.9mm_P1.27mm,,,package candidate; verify exact ordered part,Eenheidsversterking; vervangt de foutieve OPA4333-vermelding in revisie B.,
+C28,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+U7,TCA9534PWR,ITO_PCB:TSSOP-16_4.4x5mm_P0.65mm,,,package candidate; verify exact ordered part,"I2C 0x20. P4 ingang; P5-P7 als lage uitgangen configureren. P0-P3 eerst data=0, dan output.",
+U8,SN74LVC08APWR,ITO_PCB:TSSOP-14_4.4x5mm_P0.65mm,,,package candidate; verify exact ordered part,,
+C30,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C31,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R51,100k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R55,100k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R52,100k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R56,100k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R53,100k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R57,100k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R54,100k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R58,100k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+U11,LT8613EUDE,ITO_PCB:QFN-28-1EP_3x6mm_P0.5mm_EP1.7x4.75mm,,,package candidate; verify exact ordered part,"QFN-28 3x6mm + EP29. BIAS=GND vanwege variabele uitgang. EP/PGND direct thermisch grondvlak. Rev J: BIAS powered from local VREG output capacitor, before load shunt; separate from ISP Kelvin route.",
+F11,2.5A / 125V DC 045102.5MRL,ITO_PCB:Littelfuse_451,045102.5MRL,Littelfuse,selected MPN and landpattern; source fault-current and pulse coordination NOT qualified,2.5 A fuse on converter INPUT. Replaces 2 A reservation for hot/low-input margin. Selected for 24W output and assumed >=85% efficiency down to 20V; input RMS and startup I2t still require measurement.,https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1
+C101,10u / 50V X7R,ITO_PCB:C_1210_3225Metric,GRM32ER71H106KA12L,Murata,selected MPN; 1210 envelope checked; effective capacitance at bias pending,10uF 50V X7R 10%; nominal total input capacitance 20uF plus local bypass. Effective value at 24-28V must be checked.,https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER71H106KA12%23
+C102,10u / 50V X7R,ITO_PCB:C_1210_3225Metric,GRM32ER71H106KA12L,Murata,selected MPN; 1210 envelope checked; effective capacitance at bias pending,10uF 50V X7R 10%; nominal total input capacitance 20uF plus local bypass. Effective value at 24-28V must be checked.,https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER71H106KA12%23
+C103,1u / 50V X7R,ITO_PCB:C_0805_2012Metric,GRM21BR71H105KA12L,Murata,selected part; dimensional and pinout review performed; prototype qualification pending,1uF / 50V X7R 0805 local VIN bypass. Effective capacitance under 24V bias still requires curve/measurement; retains two 10uF bulk input capacitors.,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71H105KA12-01.pdf
+C104,1u / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C105,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C106,10n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R101,88k7 1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,500kHz nominale schakelfrequentie.,
+L1,10uH IHLP6767GZEK100M11,ITO_PCB:L_Vishay_IHLP-6767,IHLP6767GZEK100M11,Vishay,selected part; dimensional and pinout review performed; prototype qualification pending,"10uH ±20%; DCR max 9.33mOhm at 25C; typical Isat 17A at 20% drop, not a guaranteed hot limit. Footprint pad envelope checked; operating temperature test remains.",https://www.vishay.com/docs/34282/ihlp-6767gz-11.pdf
+C107,47u / 25V X7R C2220C476M3R2C7186,ITO_PCB:KEMET_KPS_2220_Double,C2220C476M3R2C7186,KEMET / Yageo,selected MPN; manufacturer landpattern implemented; stability and thermal qualification pending,"47uF 25V X7R +/-20%, stacked MLCC. Typical DC bias about -13% at12V from manufacturer simulation; not guaranteed minimum. Body6x5mm, height5mm +/-0.5. Pads2.08x4.78mm at +/-2.69mm.",https://search.kemet.com/download/specsheet/C2220C476M3R2C7186
+C108,47u / 25V X7R C2220C476M3R2C7186,ITO_PCB:KEMET_KPS_2220_Double,C2220C476M3R2C7186,KEMET / Yageo,selected MPN; manufacturer landpattern implemented; stability and thermal qualification pending,"47uF 25V X7R +/-20%, stacked MLCC. Typical DC bias about -13% at12V from manufacturer simulation; not guaranteed minimum. Body6x5mm, height5mm +/-0.5. Pads2.08x4.78mm at +/-2.69mm.",https://search.kemet.com/download/specsheet/C2220C476M3R2C7186
+RS1,25m / 1W / 1% WSL2512R0250FEA,ITO_PCB:WSL2512_7m_to_500m,WSL2512R0250FEA,Vishay,selected MPN; manufacturer landpattern implemented; measurement and solder qualification pending,"1 W at 70 C, 1%, component TCR 75 ppm/K. Pads 1.65 x 3.68 mm, inner gap 4.06 mm. Kelvin topology must be checked after footprint change.",https://www.vishay.com/docs/30100/wsl.pdf
+R102,1M13 1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R103,100k 1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C109,10p C0G,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,Spanningslimiet ca.11.93V; stroomregeling domineert normaal.,
+J11,Connector 2 pins,"ITO_PCB:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",,,package candidate; verify exact ordered part,TEC1: polariteit zo aansluiten dat glaszijde koelt; connector >=3A.,
+TP11,Connector 2 pins,ITO_PCB:PinHeader_1x02_P2.54mm_Vertical,,,package candidate; verify exact ordered part,"IMON = 20 x shuntspanning, ca.0.5V/A. Testpunt, geen actieve bewaking door MCU.",
+U12,LT8613EUDE,ITO_PCB:QFN-28-1EP_3x6mm_P0.5mm_EP1.7x4.75mm,,,package candidate; verify exact ordered part,"QFN-28 3x6mm + EP29. BIAS=GND vanwege variabele uitgang. EP/PGND direct thermisch grondvlak. Rev J: BIAS powered from local VREG output capacitor, before load shunt; separate from ISP Kelvin route.",
+F12,2.5A / 125V DC 045102.5MRL,ITO_PCB:Littelfuse_451,045102.5MRL,Littelfuse,selected MPN and landpattern; source fault-current and pulse coordination NOT qualified,2.5 A fuse on converter INPUT. Replaces 2 A reservation for hot/low-input margin. Selected for 24W output and assumed >=85% efficiency down to 20V; input RMS and startup I2t still require measurement.,https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1
+C201,10u / 50V X7R,ITO_PCB:C_1210_3225Metric,GRM32ER71H106KA12L,Murata,selected MPN; 1210 envelope checked; effective capacitance at bias pending,10uF 50V X7R 10%; nominal total input capacitance 20uF plus local bypass. Effective value at 24-28V must be checked.,https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER71H106KA12%23
+C202,10u / 50V X7R,ITO_PCB:C_1210_3225Metric,GRM32ER71H106KA12L,Murata,selected MPN; 1210 envelope checked; effective capacitance at bias pending,10uF 50V X7R 10%; nominal total input capacitance 20uF plus local bypass. Effective value at 24-28V must be checked.,https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER71H106KA12%23
+C203,1u / 50V X7R,ITO_PCB:C_0805_2012Metric,GRM21BR71H105KA12L,Murata,selected part; dimensional and pinout review performed; prototype qualification pending,1uF / 50V X7R 0805 local VIN bypass. Effective capacitance under 24V bias still requires curve/measurement; retains two 10uF bulk input capacitors.,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71H105KA12-01.pdf
+C204,1u / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C205,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C206,10n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R201,88k7 1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,500kHz nominale schakelfrequentie.,
+L2,10uH IHLP6767GZEK100M11,ITO_PCB:L_Vishay_IHLP-6767,IHLP6767GZEK100M11,Vishay,selected part; dimensional and pinout review performed; prototype qualification pending,"10uH ±20%; DCR max 9.33mOhm at 25C; typical Isat 17A at 20% drop, not a guaranteed hot limit. Footprint pad envelope checked; operating temperature test remains.",https://www.vishay.com/docs/34282/ihlp-6767gz-11.pdf
+C207,47u / 25V X7R C2220C476M3R2C7186,ITO_PCB:KEMET_KPS_2220_Double,C2220C476M3R2C7186,KEMET / Yageo,selected MPN; manufacturer landpattern implemented; stability and thermal qualification pending,"47uF 25V X7R +/-20%, stacked MLCC. Typical DC bias about -13% at12V from manufacturer simulation; not guaranteed minimum. Body6x5mm, height5mm +/-0.5. Pads2.08x4.78mm at +/-2.69mm.",https://search.kemet.com/download/specsheet/C2220C476M3R2C7186
+C208,47u / 25V X7R C2220C476M3R2C7186,ITO_PCB:KEMET_KPS_2220_Double,C2220C476M3R2C7186,KEMET / Yageo,selected MPN; manufacturer landpattern implemented; stability and thermal qualification pending,"47uF 25V X7R +/-20%, stacked MLCC. Typical DC bias about -13% at12V from manufacturer simulation; not guaranteed minimum. Body6x5mm, height5mm +/-0.5. Pads2.08x4.78mm at +/-2.69mm.",https://search.kemet.com/download/specsheet/C2220C476M3R2C7186
+RS2,25m / 1W / 1% WSL2512R0250FEA,ITO_PCB:WSL2512_7m_to_500m,WSL2512R0250FEA,Vishay,selected MPN; manufacturer landpattern implemented; measurement and solder qualification pending,"1 W at 70 C, 1%, component TCR 75 ppm/K. Pads 1.65 x 3.68 mm, inner gap 4.06 mm. Kelvin topology must be checked after footprint change.",https://www.vishay.com/docs/30100/wsl.pdf
+R202,1M13 1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R203,100k 1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C209,10p C0G,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,Spanningslimiet ca.11.93V; stroomregeling domineert normaal.,
+J12,Connector 2 pins,"ITO_PCB:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",,,package candidate; verify exact ordered part,TEC2: polariteit zo aansluiten dat glaszijde koelt; connector >=3A.,
+TP12,Connector 2 pins,ITO_PCB:PinHeader_1x02_P2.54mm_Vertical,,,package candidate; verify exact ordered part,"IMON = 20 x shuntspanning, ca.0.5V/A. Testpunt, geen actieve bewaking door MCU.",
+U13,LT8613EUDE,ITO_PCB:QFN-28-1EP_3x6mm_P0.5mm_EP1.7x4.75mm,,,package candidate; verify exact ordered part,"QFN-28 3x6mm + EP29. BIAS=GND vanwege variabele uitgang. EP/PGND direct thermisch grondvlak. Rev J: BIAS powered from local VREG output capacitor, before load shunt; separate from ISP Kelvin route.",
+F13,2.5A / 125V DC 045102.5MRL,ITO_PCB:Littelfuse_451,045102.5MRL,Littelfuse,selected MPN and landpattern; source fault-current and pulse coordination NOT qualified,2.5 A fuse on converter INPUT. Replaces 2 A reservation for hot/low-input margin. Selected for 24W output and assumed >=85% efficiency down to 20V; input RMS and startup I2t still require measurement.,https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1
+C301,10u / 50V X7R,ITO_PCB:C_1210_3225Metric,GRM32ER71H106KA12L,Murata,selected MPN; 1210 envelope checked; effective capacitance at bias pending,10uF 50V X7R 10%; nominal total input capacitance 20uF plus local bypass. Effective value at 24-28V must be checked.,https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER71H106KA12%23
+C302,10u / 50V X7R,ITO_PCB:C_1210_3225Metric,GRM32ER71H106KA12L,Murata,selected MPN; 1210 envelope checked; effective capacitance at bias pending,10uF 50V X7R 10%; nominal total input capacitance 20uF plus local bypass. Effective value at 24-28V must be checked.,https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER71H106KA12%23
+C303,1u / 50V X7R,ITO_PCB:C_0805_2012Metric,GRM21BR71H105KA12L,Murata,selected part; dimensional and pinout review performed; prototype qualification pending,1uF / 50V X7R 0805 local VIN bypass. Effective capacitance under 24V bias still requires curve/measurement; retains two 10uF bulk input capacitors.,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71H105KA12-01.pdf
+C304,1u / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C305,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C306,10n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R301,88k7 1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,500kHz nominale schakelfrequentie.,
+L3,10uH IHLP6767GZEK100M11,ITO_PCB:L_Vishay_IHLP-6767,IHLP6767GZEK100M11,Vishay,selected part; dimensional and pinout review performed; prototype qualification pending,"10uH ±20%; DCR max 9.33mOhm at 25C; typical Isat 17A at 20% drop, not a guaranteed hot limit. Footprint pad envelope checked; operating temperature test remains.",https://www.vishay.com/docs/34282/ihlp-6767gz-11.pdf
+C307,47u / 25V X7R C2220C476M3R2C7186,ITO_PCB:KEMET_KPS_2220_Double,C2220C476M3R2C7186,KEMET / Yageo,selected MPN; manufacturer landpattern implemented; stability and thermal qualification pending,"47uF 25V X7R +/-20%, stacked MLCC. Typical DC bias about -13% at12V from manufacturer simulation; not guaranteed minimum. Body6x5mm, height5mm +/-0.5. Pads2.08x4.78mm at +/-2.69mm.",https://search.kemet.com/download/specsheet/C2220C476M3R2C7186
+C308,47u / 25V X7R C2220C476M3R2C7186,ITO_PCB:KEMET_KPS_2220_Double,C2220C476M3R2C7186,KEMET / Yageo,selected MPN; manufacturer landpattern implemented; stability and thermal qualification pending,"47uF 25V X7R +/-20%, stacked MLCC. Typical DC bias about -13% at12V from manufacturer simulation; not guaranteed minimum. Body6x5mm, height5mm +/-0.5. Pads2.08x4.78mm at +/-2.69mm.",https://search.kemet.com/download/specsheet/C2220C476M3R2C7186
+RS3,25m / 1W / 1% WSL2512R0250FEA,ITO_PCB:WSL2512_7m_to_500m,WSL2512R0250FEA,Vishay,selected MPN; manufacturer landpattern implemented; measurement and solder qualification pending,"1 W at 70 C, 1%, component TCR 75 ppm/K. Pads 1.65 x 3.68 mm, inner gap 4.06 mm. Kelvin topology must be checked after footprint change.",https://www.vishay.com/docs/30100/wsl.pdf
+R302,1M13 1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R303,100k 1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C309,10p C0G,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,Spanningslimiet ca.11.93V; stroomregeling domineert normaal.,
+J13,Connector 2 pins,"ITO_PCB:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",,,package candidate; verify exact ordered part,TEC3: polariteit zo aansluiten dat glaszijde koelt; connector >=3A.,
+TP13,Connector 2 pins,ITO_PCB:PinHeader_1x02_P2.54mm_Vertical,,,package candidate; verify exact ordered part,"IMON = 20 x shuntspanning, ca.0.5V/A. Testpunt, geen actieve bewaking door MCU.",
+U14,LT8613EUDE,ITO_PCB:QFN-28-1EP_3x6mm_P0.5mm_EP1.7x4.75mm,,,package candidate; verify exact ordered part,"QFN-28 3x6mm + EP29. BIAS=GND vanwege variabele uitgang. EP/PGND direct thermisch grondvlak. Rev J: BIAS powered from local VREG output capacitor, before load shunt; separate from ISP Kelvin route.",
+F14,2.5A / 125V DC 045102.5MRL,ITO_PCB:Littelfuse_451,045102.5MRL,Littelfuse,selected MPN and landpattern; source fault-current and pulse coordination NOT qualified,2.5 A fuse on converter INPUT. Replaces 2 A reservation for hot/low-input margin. Selected for 24W output and assumed >=85% efficiency down to 20V; input RMS and startup I2t still require measurement.,https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1
+C401,10u / 50V X7R,ITO_PCB:C_1210_3225Metric,GRM32ER71H106KA12L,Murata,selected MPN; 1210 envelope checked; effective capacitance at bias pending,10uF 50V X7R 10%; nominal total input capacitance 20uF plus local bypass. Effective value at 24-28V must be checked.,https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER71H106KA12%23
+C402,10u / 50V X7R,ITO_PCB:C_1210_3225Metric,GRM32ER71H106KA12L,Murata,selected MPN; 1210 envelope checked; effective capacitance at bias pending,10uF 50V X7R 10%; nominal total input capacitance 20uF plus local bypass. Effective value at 24-28V must be checked.,https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER71H106KA12%23
+C403,1u / 50V X7R,ITO_PCB:C_0805_2012Metric,GRM21BR71H105KA12L,Murata,selected part; dimensional and pinout review performed; prototype qualification pending,1uF / 50V X7R 0805 local VIN bypass. Effective capacitance under 24V bias still requires curve/measurement; retains two 10uF bulk input capacitors.,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71H105KA12-01.pdf
+C404,1u / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C405,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C406,10n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R401,88k7 1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,500kHz nominale schakelfrequentie.,
+L4,10uH IHLP6767GZEK100M11,ITO_PCB:L_Vishay_IHLP-6767,IHLP6767GZEK100M11,Vishay,selected part; dimensional and pinout review performed; prototype qualification pending,"10uH ±20%; DCR max 9.33mOhm at 25C; typical Isat 17A at 20% drop, not a guaranteed hot limit. Footprint pad envelope checked; operating temperature test remains.",https://www.vishay.com/docs/34282/ihlp-6767gz-11.pdf
+C407,47u / 25V X7R C2220C476M3R2C7186,ITO_PCB:KEMET_KPS_2220_Double,C2220C476M3R2C7186,KEMET / Yageo,selected MPN; manufacturer landpattern implemented; stability and thermal qualification pending,"47uF 25V X7R +/-20%, stacked MLCC. Typical DC bias about -13% at12V from manufacturer simulation; not guaranteed minimum. Body6x5mm, height5mm +/-0.5. Pads2.08x4.78mm at +/-2.69mm.",https://search.kemet.com/download/specsheet/C2220C476M3R2C7186
+C408,47u / 25V X7R C2220C476M3R2C7186,ITO_PCB:KEMET_KPS_2220_Double,C2220C476M3R2C7186,KEMET / Yageo,selected MPN; manufacturer landpattern implemented; stability and thermal qualification pending,"47uF 25V X7R +/-20%, stacked MLCC. Typical DC bias about -13% at12V from manufacturer simulation; not guaranteed minimum. Body6x5mm, height5mm +/-0.5. Pads2.08x4.78mm at +/-2.69mm.",https://search.kemet.com/download/specsheet/C2220C476M3R2C7186
+RS4,25m / 1W / 1% WSL2512R0250FEA,ITO_PCB:WSL2512_7m_to_500m,WSL2512R0250FEA,Vishay,selected MPN; manufacturer landpattern implemented; measurement and solder qualification pending,"1 W at 70 C, 1%, component TCR 75 ppm/K. Pads 1.65 x 3.68 mm, inner gap 4.06 mm. Kelvin topology must be checked after footprint change.",https://www.vishay.com/docs/30100/wsl.pdf
+R402,1M13 1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R403,100k 1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C409,10p C0G,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,Spanningslimiet ca.11.93V; stroomregeling domineert normaal.,
+J14,Connector 2 pins,"ITO_PCB:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",,,package candidate; verify exact ordered part,TEC4: polariteit zo aansluiten dat glaszijde koelt; connector >=3A.,
+TP14,Connector 2 pins,ITO_PCB:PinHeader_1x02_P2.54mm_Vertical,,,package candidate; verify exact ordered part,"IMON = 20 x shuntspanning, ca.0.5V/A. Testpunt, geen actieve bewaking door MCU.",
+U9,ADS1115IDGS,ITO_PCB:VSSOP-10_3x3mm_P0.5mm,,,package candidate; verify exact ordered part,"I2C 0x48, single-ended PGA +/-4.096V. NTC karakteristiek en 3V3 meten/calibreren.",
+C40,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R61,10k 0.1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R65,1k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C41,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+J21,Connector 2 pins,ITO_PCB:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical,,,package candidate; verify exact ordered part,"Externe 10k NTC, een per glaszone. Beta/coefficienten nog kiezen.",
+R62,10k 0.1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R66,1k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C42,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+J22,Connector 2 pins,ITO_PCB:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical,,,package candidate; verify exact ordered part,"Externe 10k NTC, een per glaszone. Beta/coefficienten nog kiezen.",
+R63,10k 0.1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R67,1k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C43,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+J23,Connector 2 pins,ITO_PCB:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical,,,package candidate; verify exact ordered part,"Externe 10k NTC, een per glaszone. Beta/coefficienten nog kiezen.",
+R64,10k 0.1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R68,1k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C44,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+J24,Connector 2 pins,ITO_PCB:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical,,,package candidate; verify exact ordered part,"Externe 10k NTC, een per glaszone. Beta/coefficienten nog kiezen.",
+R70,10k 0.1%,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R71,1k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+C50,100n / 10V,ITO_PCB:C_0805_2012Metric,,,package candidate; verify exact ordered part,,
+J25,Connector 2 pins,ITO_PCB:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical,,,package candidate; verify exact ordered part,Externe 10k NTC op hete warmtewisselaar.,
+J26,Connector 4 pins,ITO_PCB:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical,,,package candidate; verify exact ordered part,"Externe SHT31 breakout op 3.3V, adres 0x44. Extra pullups beoordelen; buiten condenszone.",
+F3,1A / 125V DC 0451001.MRL,ITO_PCB:Littelfuse_451,0451001.MRL,Littelfuse,selected MPN and landpattern; source fault-current and pulse coordination NOT qualified,"1 A, 125 VDC series. 25% continuous-current derating plus temperature rerating. NOT a precise current limiter; supply short-circuit behavior and pulse I2t must be coordinated.",https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1
+J27,Connector 4 pins,ITO_PCB:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical,,,package candidate; verify exact ordered part,"24V vierdraads fan, open-collector PWM en tach vereist. Pinvolgorde definitief type controleren.",
+Q6,MMBT3904,ITO_PCB:SOT-23,,,package candidate; verify exact ordered part,,
+R72,4k7,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R73,100k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,
+R74,10k,ITO_PCB:R_0805_2012Metric,,,package candidate; verify exact ordered part,,

@@ -1,0 +1,5 @@
+(kicad_wks (version 20220228) (generator "pl_editor")
+(setup (textsize 1.5 1.5) (linewidth 0.15) (textlinewidth 0.15) (left_margin 10) (right_margin 10) (top_margin 10) (bottom_margin 5))
+(rect (name "border") (start 0 0 ltcorner) (end 0 0 rbcorner) (linewidth 0.15))
+(tbtext "${TITLE} | ${REVISION}" (name "title") (pos 2 2 lbcorner) (font (size 1.2 1.2)) (justify left bottom))
+(tbtext "${#}/${##}" (name "page") (pos 2 2 rbcorner) (font (size 1.2 1.2)) (justify right bottom)))

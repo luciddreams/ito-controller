@@ -1,0 +1,726 @@
+[
+  {
+    "manufacturer": "Samtec",
+    "mpn": "SSW-107-01-G-S",
+    "references": [
+      "J1",
+      "J2"
+    ],
+    "document_id": "Samtec-SSW",
+    "local_pdf": "Samtec-SSW.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "TRACO Power",
+    "mpn": "TSR 1-2450",
+    "references": [
+      "M1"
+    ],
+    "document_id": "TSR1",
+    "local_pdf": "TSR1.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Samtec",
+    "mpn": "TSW-102-07-G-S",
+    "references": [
+      "JP1",
+      "TP11",
+      "TP12",
+      "TP13",
+      "TP14"
+    ],
+    "document_id": "Samtec-TSW",
+    "local_pdf": "Samtec-TSW.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Murata",
+    "mpn": "GRM21BR61E106KA73L",
+    "references": [
+      "C1",
+      "C2"
+    ],
+    "document_id": "GRM21BR61E106KA73L",
+    "local_pdf": "GRM21BR61E106KA73L.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Yageo",
+    "mpn": "RC0805FR-072K2L",
+    "references": [
+      "R1",
+      "R2",
+      "R20"
+    ],
+    "document_id": "Yageo-RC",
+    "local_pdf": "Yageo-RC.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Yageo",
+    "mpn": "RC0805FR-0710KL",
+    "references": [
+      "R3",
+      "R15",
+      "R24",
+      "R74"
+    ],
+    "document_id": "Yageo-RC",
+    "local_pdf": "Yageo-RC.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "JST",
+    "mpn": "B2B-XH-A(LF)(SN)",
+    "references": [
+      "J5",
+      "J6",
+      "J7",
+      "J8",
+      "J21",
+      "J22",
+      "J23",
+      "J24",
+      "J25",
+      "J9"
+    ],
+    "document_id": "JST-XH",
+    "local_pdf": "JST-XH.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Yageo",
+    "mpn": "RC0805JR-070RL",
+    "references": [
+      "R4"
+    ],
+    "document_id": "Yageo-RC",
+    "local_pdf": "Yageo-RC.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Yageo",
+    "mpn": "RT0805BRD0710KL",
+    "references": [
+      "R5",
+      "R11",
+      "R13",
+      "R17",
+      "R42",
+      "R43",
+      "R44",
+      "R45",
+      "R46",
+      "R47",
+      "R48",
+      "R49",
+      "R61",
+      "R62",
+      "R63",
+      "R64",
+      "R70"
+    ],
+    "document_id": "Yageo-RT",
+    "local_pdf": "Yageo-RT.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Yageo",
+    "mpn": "RC0805FR-071KL",
+    "references": [
+      "R6",
+      "R18",
+      "R65",
+      "R66",
+      "R67",
+      "R68",
+      "R71"
+    ],
+    "document_id": "Yageo-RC",
+    "local_pdf": "Yageo-RC.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Murata",
+    "mpn": "GRM21BR71H104KA01L",
+    "references": [
+      "C3",
+      "C4",
+      "C10",
+      "C12",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C28",
+      "C30",
+      "C31",
+      "C105",
+      "C205",
+      "C305",
+      "C405",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C50",
+      "C7"
+    ],
+    "document_id": "GRM21BR71H104KA01L",
+    "local_pdf": "GRM21BR71H104KA01L.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Yageo",
+    "mpn": "RC0805FR-074K7L",
+    "references": [
+      "R7",
+      "R72"
+    ],
+    "document_id": "Yageo-RC",
+    "local_pdf": "Yageo-RC.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Phoenix Contact",
+    "mpn": "1715721",
+    "references": [
+      "J3",
+      "J4",
+      "J11",
+      "J12",
+      "J13",
+      "J14"
+    ],
+    "document_id": "Phoenix-1715721",
+    "local_pdf": null,
+    "status": "unavailable"
+  },
+  {
+    "manufacturer": "Littelfuse",
+    "mpn": "0451010.MRL",
+    "references": [
+      "F1"
+    ],
+    "document_id": "Littelfuse-451-453",
+    "local_pdf": "Littelfuse-451-453.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Littelfuse",
+    "mpn": "SMBJ33CA",
+    "references": [
+      "D1"
+    ],
+    "document_id": "SMBJ",
+    "local_pdf": "SMBJ.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Texas Instruments",
+    "mpn": "TPS26630RGER",
+    "references": [
+      "U1"
+    ],
+    "document_id": "TPS2663",
+    "local_pdf": "TPS2663.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Yageo",
+    "mpn": "RT0805BRD07156KL",
+    "references": [
+      "R10"
+    ],
+    "document_id": "Yageo-RT",
+    "local_pdf": "Yageo-RT.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Yageo",
+    "mpn": "RT0805BRD07223KL",
+    "references": [
+      "R12"
+    ],
+    "document_id": "Yageo-RT",
+    "local_pdf": "Yageo-RT.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Yageo",
+    "mpn": "RT0805BRD074K02L",
+    "references": [
+      "R14"
+    ],
+    "document_id": "Yageo-RT",
+    "local_pdf": "Yageo-RT.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Infineon",
+    "mpn": "IRLB4030PBF",
+    "references": [
+      "Q2"
+    ],
+    "document_id": "IRLB4030",
+    "local_pdf": "IRLB4030.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "onsemi",
+    "mpn": "BSS138LT1G",
+    "references": [
+      "Q3"
+    ],
+    "document_id": "BSS138",
+    "local_pdf": "BSS138.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Yageo",
+    "mpn": "RT0805BRD07150KL",
+    "references": [
+      "R16"
+    ],
+    "document_id": "Yageo-RT",
+    "local_pdf": "Yageo-RT.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Panasonic",
+    "mpn": "EEUFR1H471",
+    "references": [
+      "C5"
+    ],
+    "document_id": "Panasonic-FR",
+    "local_pdf": "Panasonic-FR.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Murata",
+    "mpn": "GRM21BR71H105KA12L",
+    "references": [
+      "C6",
+      "C11",
+      "C103",
+      "C104",
+      "C203",
+      "C204",
+      "C303",
+      "C304",
+      "C403",
+      "C404",
+      "C51",
+      "C52"
+    ],
+    "document_id": "GRM21BR71H105KA12L",
+    "local_pdf": "GRM21BR71H105KA12L.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Omron",
+    "mpn": "G2RL-1A-E DC24",
+    "references": [
+      "K1"
+    ],
+    "document_id": "Omron-G2RL",
+    "local_pdf": "Omron-G2RL.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Vishay",
+    "mpn": "1N4007-E3/54",
+    "references": [
+      "D2"
+    ],
+    "document_id": "1N4007",
+    "local_pdf": "1N4007.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "onsemi",
+    "mpn": "MMBT3904LT1G",
+    "references": [
+      "Q4",
+      "Q5",
+      "Q6"
+    ],
+    "document_id": "MMBT3904",
+    "local_pdf": "MMBT3904.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Yageo",
+    "mpn": "RC0805FR-07100KL",
+    "references": [
+      "R21",
+      "R22",
+      "R23",
+      "R32",
+      "R33",
+      "R51",
+      "R55",
+      "R52",
+      "R56",
+      "R53",
+      "R57",
+      "R54",
+      "R58",
+      "R103",
+      "R203",
+      "R303",
+      "R403",
+      "R73",
+      "R19"
+    ],
+    "document_id": "Yageo-RC",
+    "local_pdf": "Yageo-RC.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Panasonic",
+    "mpn": "ERJP06F1002V",
+    "references": [
+      "R25"
+    ],
+    "document_id": "Panasonic-ERJP06",
+    "local_pdf": "Panasonic-ERJP06.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Samtec",
+    "mpn": "TSW-103-07-G-S",
+    "references": [
+      "TP1"
+    ],
+    "document_id": "Samtec-TSW",
+    "local_pdf": "Samtec-TSW.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Littelfuse",
+    "mpn": "0451005.MRL",
+    "references": [
+      "F2"
+    ],
+    "document_id": "Littelfuse-451-453",
+    "local_pdf": "Littelfuse-451-453.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Vishay",
+    "mpn": "WSL2512R0100FEA",
+    "references": [
+      "RSH1"
+    ],
+    "document_id": "WSL",
+    "local_pdf": "WSL.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "STMicroelectronics",
+    "mpn": "STP55NF06L",
+    "references": [
+      "Q1"
+    ],
+    "document_id": "STP55NF06L",
+    "local_pdf": "STP55NF06L.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Texas Instruments",
+    "mpn": "UCC27511DBVR",
+    "references": [
+      "U2"
+    ],
+    "document_id": "UCC27511",
+    "local_pdf": "UCC27511.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Yageo",
+    "mpn": "RC0805FR-0722RL",
+    "references": [
+      "R30"
+    ],
+    "document_id": "Yageo-RC",
+    "local_pdf": "Yageo-RC.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Yageo",
+    "mpn": "RC0805FR-0710RL",
+    "references": [
+      "R31"
+    ],
+    "document_id": "Yageo-RC",
+    "local_pdf": "Yageo-RC.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Texas Instruments",
+    "mpn": "INA226AIDGSR",
+    "references": [
+      "U3"
+    ],
+    "document_id": "INA226",
+    "local_pdf": "INA226.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Microchip",
+    "mpn": "MCP4728-E/UN",
+    "references": [
+      "U4"
+    ],
+    "document_id": "MCP4728",
+    "local_pdf": "MCP4728.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Texas Instruments",
+    "mpn": "OPA2333AIDR",
+    "references": [
+      "U5",
+      "U6"
+    ],
+    "document_id": "OPA333",
+    "local_pdf": "OPA333.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Texas Instruments",
+    "mpn": "TCA9534PWR",
+    "references": [
+      "U7"
+    ],
+    "document_id": "TCA9534",
+    "local_pdf": "TCA9534.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Texas Instruments",
+    "mpn": "SN74LVC08APWR",
+    "references": [
+      "U8"
+    ],
+    "document_id": "SN74LVC08A",
+    "local_pdf": "SN74LVC08A.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Analog Devices",
+    "mpn": "LT8613EUDE#PBF",
+    "references": [
+      "U11",
+      "U12",
+      "U13",
+      "U14"
+    ],
+    "document_id": "LT8613",
+    "local_pdf": "LT8613.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Littelfuse",
+    "mpn": "045102.5MRL",
+    "references": [
+      "F11",
+      "F12",
+      "F13",
+      "F14"
+    ],
+    "document_id": "Littelfuse-451-453",
+    "local_pdf": "Littelfuse-451-453.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Murata",
+    "mpn": "GRM32ER71H106KA12L",
+    "references": [
+      "C101",
+      "C102",
+      "C201",
+      "C202",
+      "C301",
+      "C302",
+      "C401",
+      "C402"
+    ],
+    "document_id": "GRM32ER71H106KA12L",
+    "local_pdf": null,
+    "status": "unavailable"
+  },
+  {
+    "manufacturer": "Murata",
+    "mpn": "GRM21BR71H103KA01L",
+    "references": [
+      "C106",
+      "C206",
+      "C306",
+      "C406"
+    ],
+    "document_id": "GRM21BR71H103KA01L",
+    "local_pdf": null,
+    "status": "unavailable"
+  },
+  {
+    "manufacturer": "Yageo",
+    "mpn": "RC0805FR-0788K7L",
+    "references": [
+      "R101",
+      "R201",
+      "R301",
+      "R401"
+    ],
+    "document_id": "Yageo-RC",
+    "local_pdf": "Yageo-RC.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Vishay",
+    "mpn": "IHLP6767GZEK100M11",
+    "references": [
+      "L1",
+      "L2",
+      "L3",
+      "L4"
+    ],
+    "document_id": "IHLP6767GZ",
+    "local_pdf": "IHLP6767GZ.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "KEMET",
+    "mpn": "C2220C476M3R2C7186",
+    "references": [
+      "C107",
+      "C108",
+      "C207",
+      "C208",
+      "C307",
+      "C308",
+      "C407",
+      "C408"
+    ],
+    "document_id": "KEMET-KPS-X7R",
+    "local_pdf": "KEMET-KPS-X7R.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Vishay",
+    "mpn": "WSL2512R0250FEA",
+    "references": [
+      "RS1",
+      "RS2",
+      "RS3",
+      "RS4"
+    ],
+    "document_id": "WSL",
+    "local_pdf": "WSL.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Yageo",
+    "mpn": "RC0805FR-071M13L",
+    "references": [
+      "R102",
+      "R202",
+      "R302",
+      "R402"
+    ],
+    "document_id": "Yageo-RC",
+    "local_pdf": "Yageo-RC.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "KEMET",
+    "mpn": "C0805C100J5GACTU",
+    "references": [
+      "C109",
+      "C209",
+      "C309",
+      "C409"
+    ],
+    "document_id": "KEMET-C0G",
+    "local_pdf": "KEMET-C0G.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Texas Instruments",
+    "mpn": "ADS1115IDGSR",
+    "references": [
+      "U9"
+    ],
+    "document_id": "ADS1115",
+    "local_pdf": "ADS1115.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "JST",
+    "mpn": "B4B-XH-A(LF)(SN)",
+    "references": [
+      "J26",
+      "J27"
+    ],
+    "document_id": "JST-XH",
+    "local_pdf": "JST-XH.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Littelfuse",
+    "mpn": "0451001.MRL",
+    "references": [
+      "F3"
+    ],
+    "document_id": "Littelfuse-451-453",
+    "local_pdf": "Littelfuse-451-453.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Texas Instruments",
+    "mpn": "SN74AHC1G08DBVR",
+    "references": [
+      "U15"
+    ],
+    "document_id": "SN74AHC1G08",
+    "local_pdf": "SN74AHC1G08.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "JST",
+    "mpn": "B5B-XH-A(LF)(SN)",
+    "references": [
+      "J28",
+      "J29"
+    ],
+    "document_id": "JST-XH",
+    "local_pdf": "JST-XH.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Littelfuse",
+    "mpn": "0451.250MRL",
+    "references": [
+      "F4",
+      "F5"
+    ],
+    "document_id": "Littelfuse-451-453",
+    "local_pdf": "Littelfuse-451-453.pdf",
+    "status": "downloaded"
+  },
+  {
+    "manufacturer": "Kycon",
+    "mpn": "KPJX-4S",
+    "references": [
+      "J30"
+    ],
+    "document_id": "KPJX-4S",
+    "local_pdf": "KPJX-4S.pdf",
+    "status": "downloaded"
+  }
+]

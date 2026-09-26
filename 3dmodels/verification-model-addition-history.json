@@ -1,0 +1,7 @@
+{
+  "only_model_expressions_changed": true,
+  "covered_footprints": 201,
+  "non_component_footprints": 7,
+  "board_before_sha256": "e39f1065b677d3b6be92ebc866d2df5f90f40d21c9ddedafac7842ece6fe349b",
+  "board_after_sha256": "daa1660f43a5a70afbb346e5ffc8d304d23306270104b65f34bdaefd272b3306"
+}

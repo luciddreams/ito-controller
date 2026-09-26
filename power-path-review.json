@@ -1,0 +1,3937 @@
+[
+  {
+    "net": "+24_FUSED",
+    "paths": [
+      {
+        "from": "F1:2",
+        "to": "D1:1",
+        "bottleneck_track_width_mm": 1.5,
+        "narrow_segments": []
+      },
+      {
+        "from": "F1:2",
+        "to": "U1:5",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track9",
+            "width": 0.15,
+            "length_mm": 0.438
+          },
+          {
+            "id": "track12",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track16",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track150",
+            "width": 0.15,
+            "length_mm": 2.25
+          },
+          {
+            "id": "track151",
+            "width": 0.15,
+            "length_mm": 0.05
+          },
+          {
+            "id": "track144",
+            "width": 0.15,
+            "length_mm": 0.05
+          },
+          {
+            "id": "track135",
+            "width": 0.15,
+            "length_mm": 0.1
+          },
+          {
+            "id": "track148",
+            "width": 0.15,
+            "length_mm": 1.626
+          },
+          {
+            "id": "track133",
+            "width": 0.15,
+            "length_mm": 0.354
+          },
+          {
+            "id": "track142",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track149",
+            "width": 0.15,
+            "length_mm": 0.1
+          },
+          {
+            "id": "track134",
+            "width": 0.15,
+            "length_mm": 0.4
+          },
+          {
+            "id": "track0",
+            "width": 0.15,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track79",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track39",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track92",
+            "width": 0.15,
+            "length_mm": 0.495
+          },
+          {
+            "id": "track45",
+            "width": 0.15,
+            "length_mm": 0.45
+          },
+          {
+            "id": "track8",
+            "width": 0.15,
+            "length_mm": 0.15
+          },
+          {
+            "id": "track47",
+            "width": 0.15,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track94",
+            "width": 0.15,
+            "length_mm": 7.85
+          },
+          {
+            "id": "track53",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track60",
+            "width": 0.15,
+            "length_mm": 0.354
+          },
+          {
+            "id": "track83",
+            "width": 0.15,
+            "length_mm": 1.1
+          },
+          {
+            "id": "track86",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track33",
+            "width": 0.15,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track103",
+            "width": 0.15,
+            "length_mm": 0.5
+          },
+          {
+            "id": "track123",
+            "width": 0.15,
+            "length_mm": 0.636
+          },
+          {
+            "id": "track66",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track65",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track27",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track32",
+            "width": 0.15,
+            "length_mm": 0.45
+          },
+          {
+            "id": "track93",
+            "width": 0.15,
+            "length_mm": 1.838
+          },
+          {
+            "id": "track40",
+            "width": 0.15,
+            "length_mm": 0.141
+          }
+        ]
+      },
+      {
+        "from": "F1:2",
+        "to": "R12:1",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track3",
+            "width": 0.15,
+            "length_mm": 1.98
+          },
+          {
+            "id": "track25",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track122",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track49",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track106",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track72",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track125",
+            "width": 0.15,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track82",
+            "width": 0.15,
+            "length_mm": 0.3
+          },
+          {
+            "id": "track34",
+            "width": 0.15,
+            "length_mm": 0.1
+          },
+          {
+            "id": "track81",
+            "width": 0.15,
+            "length_mm": 3.677
+          },
+          {
+            "id": "track153",
+            "width": 0.15,
+            "length_mm": 0.495
+          },
+          {
+            "id": "track148",
+            "width": 0.15,
+            "length_mm": 1.626
+          },
+          {
+            "id": "track133",
+            "width": 0.15,
+            "length_mm": 0.354
+          },
+          {
+            "id": "track142",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track149",
+            "width": 0.15,
+            "length_mm": 0.1
+          },
+          {
+            "id": "track134",
+            "width": 0.15,
+            "length_mm": 0.4
+          },
+          {
+            "id": "track0",
+            "width": 0.15,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track79",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track39",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track92",
+            "width": 0.15,
+            "length_mm": 0.495
+          },
+          {
+            "id": "track45",
+            "width": 0.15,
+            "length_mm": 0.45
+          },
+          {
+            "id": "track8",
+            "width": 0.15,
+            "length_mm": 0.15
+          },
+          {
+            "id": "track47",
+            "width": 0.15,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track94",
+            "width": 0.15,
+            "length_mm": 7.85
+          },
+          {
+            "id": "track53",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track60",
+            "width": 0.15,
+            "length_mm": 0.354
+          },
+          {
+            "id": "track83",
+            "width": 0.15,
+            "length_mm": 1.1
+          },
+          {
+            "id": "track86",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track33",
+            "width": 0.15,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track103",
+            "width": 0.15,
+            "length_mm": 0.5
+          },
+          {
+            "id": "track123",
+            "width": 0.15,
+            "length_mm": 0.636
+          },
+          {
+            "id": "track66",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track65",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track27",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track32",
+            "width": 0.15,
+            "length_mm": 0.45
+          },
+          {
+            "id": "track93",
+            "width": 0.15,
+            "length_mm": 1.838
+          },
+          {
+            "id": "track40",
+            "width": 0.15,
+            "length_mm": 0.141
+          }
+        ]
+      },
+      {
+        "from": "F1:2",
+        "to": "R10:1",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track94",
+            "width": 0.15,
+            "length_mm": 7.85
+          },
+          {
+            "id": "track53",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track60",
+            "width": 0.15,
+            "length_mm": 0.354
+          },
+          {
+            "id": "track83",
+            "width": 0.15,
+            "length_mm": 1.1
+          },
+          {
+            "id": "track86",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track33",
+            "width": 0.15,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track103",
+            "width": 0.15,
+            "length_mm": 0.5
+          },
+          {
+            "id": "track123",
+            "width": 0.15,
+            "length_mm": 0.636
+          },
+          {
+            "id": "track66",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track65",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track27",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track32",
+            "width": 0.15,
+            "length_mm": 0.45
+          },
+          {
+            "id": "track93",
+            "width": 0.15,
+            "length_mm": 1.838
+          },
+          {
+            "id": "track40",
+            "width": 0.15,
+            "length_mm": 0.141
+          }
+        ]
+      },
+      {
+        "from": "F1:2",
+        "to": "Q2:3",
+        "bottleneck_track_width_mm": 2.0,
+        "narrow_segments": []
+      },
+      {
+        "from": "F1:2",
+        "to": "Q3:2",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track121",
+            "width": 0.15,
+            "length_mm": 1.556
+          },
+          {
+            "id": "track138",
+            "width": 0.15,
+            "length_mm": 1.344
+          },
+          {
+            "id": "track152",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track154",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track136",
+            "width": 0.15,
+            "length_mm": 1.65
+          },
+          {
+            "id": "track158",
+            "width": 0.15,
+            "length_mm": 2.4
+          },
+          {
+            "id": "track134",
+            "width": 0.15,
+            "length_mm": 0.4
+          },
+          {
+            "id": "track0",
+            "width": 0.15,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track79",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track39",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track92",
+            "width": 0.15,
+            "length_mm": 0.495
+          },
+          {
+            "id": "track45",
+            "width": 0.15,
+            "length_mm": 0.45
+          },
+          {
+            "id": "track8",
+            "width": 0.15,
+            "length_mm": 0.15
+          },
+          {
+            "id": "track47",
+            "width": 0.15,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track94",
+            "width": 0.15,
+            "length_mm": 7.85
+          },
+          {
+            "id": "track53",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track60",
+            "width": 0.15,
+            "length_mm": 0.354
+          },
+          {
+            "id": "track83",
+            "width": 0.15,
+            "length_mm": 1.1
+          },
+          {
+            "id": "track86",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track33",
+            "width": 0.15,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track103",
+            "width": 0.15,
+            "length_mm": 0.5
+          },
+          {
+            "id": "track123",
+            "width": 0.15,
+            "length_mm": 0.636
+          },
+          {
+            "id": "track66",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track65",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track27",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track32",
+            "width": 0.15,
+            "length_mm": 0.45
+          },
+          {
+            "id": "track93",
+            "width": 0.15,
+            "length_mm": 1.838
+          },
+          {
+            "id": "track40",
+            "width": 0.15,
+            "length_mm": 0.141
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "net": "+24_IN",
+    "paths": [
+      {
+        "from": "J3:1",
+        "to": "J30:1",
+        "bottleneck_track_width_mm": 2.0,
+        "narrow_segments": []
+      },
+      {
+        "from": "J3:1",
+        "to": "J30:4",
+        "bottleneck_track_width_mm": 2.0,
+        "narrow_segments": []
+      },
+      {
+        "from": "J3:1",
+        "to": "F1:1",
+        "bottleneck_track_width_mm": 2.0,
+        "narrow_segments": []
+      }
+    ]
+  },
+  {
+    "net": "+24_LOAD",
+    "paths": [
+      {
+        "from": "TP1:2",
+        "to": "R25:1",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track490",
+            "width": 0.25,
+            "length_mm": 4.533
+          },
+          {
+            "id": "track535",
+            "width": 0.25,
+            "length_mm": 7.299
+          },
+          {
+            "id": "track536",
+            "width": 0.25,
+            "length_mm": 3.544
+          },
+          {
+            "id": "track525",
+            "width": 0.25,
+            "length_mm": 2.198
+          },
+          {
+            "id": "track523",
+            "width": 0.25,
+            "length_mm": 11.332
+          },
+          {
+            "id": "track532",
+            "width": 0.25,
+            "length_mm": 2.643
+          },
+          {
+            "id": "track524",
+            "width": 0.25,
+            "length_mm": 2.024
+          },
+          {
+            "id": "track522",
+            "width": 0.25,
+            "length_mm": 1.127
+          }
+        ]
+      },
+      {
+        "from": "TP1:2",
+        "to": "F2:1",
+        "bottleneck_track_width_mm": 1.6998,
+        "narrow_segments": []
+      },
+      {
+        "from": "TP1:2",
+        "to": "K1:3",
+        "bottleneck_track_width_mm": 1.6998,
+        "narrow_segments": []
+      },
+      {
+        "from": "TP1:2",
+        "to": "K1:4",
+        "bottleneck_track_width_mm": 1.6998,
+        "narrow_segments": []
+      },
+      {
+        "from": "TP1:2",
+        "to": "F12:1",
+        "bottleneck_track_width_mm": 1.6998,
+        "narrow_segments": []
+      },
+      {
+        "from": "TP1:2",
+        "to": "F11:1",
+        "bottleneck_track_width_mm": 1.6998,
+        "narrow_segments": []
+      },
+      {
+        "from": "TP1:2",
+        "to": "F14:1",
+        "bottleneck_track_width_mm": 1.6998,
+        "narrow_segments": []
+      },
+      {
+        "from": "TP1:2",
+        "to": "R22:1",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track508",
+            "width": 0.25,
+            "length_mm": 1.435
+          },
+          {
+            "id": "track507",
+            "width": 0.25,
+            "length_mm": 1.938
+          },
+          {
+            "id": "track535",
+            "width": 0.25,
+            "length_mm": 7.299
+          },
+          {
+            "id": "track536",
+            "width": 0.25,
+            "length_mm": 3.544
+          },
+          {
+            "id": "track525",
+            "width": 0.25,
+            "length_mm": 2.198
+          },
+          {
+            "id": "track523",
+            "width": 0.25,
+            "length_mm": 11.332
+          },
+          {
+            "id": "track532",
+            "width": 0.25,
+            "length_mm": 2.643
+          },
+          {
+            "id": "track524",
+            "width": 0.25,
+            "length_mm": 2.024
+          },
+          {
+            "id": "track522",
+            "width": 0.25,
+            "length_mm": 1.127
+          }
+        ]
+      },
+      {
+        "from": "TP1:2",
+        "to": "F13:1",
+        "bottleneck_track_width_mm": 1.6998,
+        "narrow_segments": []
+      }
+    ]
+  },
+  {
+    "net": "+24_PROT",
+    "paths": [
+      {
+        "from": "R16:1",
+        "to": "TP1:1",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track673",
+            "width": 0.15,
+            "length_mm": 5.091
+          },
+          {
+            "id": "track815",
+            "width": 0.15,
+            "length_mm": 3.253
+          },
+          {
+            "id": "track807",
+            "width": 0.15,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track743",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track748",
+            "width": 0.15,
+            "length_mm": 0.35
+          },
+          {
+            "id": "track732",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track787",
+            "width": 0.15,
+            "length_mm": 0.636
+          },
+          {
+            "id": "track791",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track753",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track805",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track735",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track795",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track737",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track751",
+            "width": 0.15,
+            "length_mm": 0.354
+          },
+          {
+            "id": "track788",
+            "width": 0.15,
+            "length_mm": 0.05
+          },
+          {
+            "id": "track639",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track577",
+            "width": 0.15,
+            "length_mm": 0.707
+          }
+        ]
+      },
+      {
+        "from": "R16:1",
+        "to": "M1:1",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track639",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track577",
+            "width": 0.15,
+            "length_mm": 0.707
+          }
+        ]
+      },
+      {
+        "from": "R16:1",
+        "to": "U1:17",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track662",
+            "width": 0.24,
+            "length_mm": 0.812
+          },
+          {
+            "id": "track537",
+            "width": 0.5,
+            "length_mm": 0.8
+          },
+          {
+            "id": "track588",
+            "width": 0.15,
+            "length_mm": 0.407
+          },
+          {
+            "id": "track639",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track577",
+            "width": 0.15,
+            "length_mm": 0.707
+          }
+        ]
+      },
+      {
+        "from": "R16:1",
+        "to": "U1:18",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track670",
+            "width": 0.24,
+            "length_mm": 0.812
+          },
+          {
+            "id": "track537",
+            "width": 0.5,
+            "length_mm": 0.8
+          },
+          {
+            "id": "track588",
+            "width": 0.15,
+            "length_mm": 0.407
+          },
+          {
+            "id": "track639",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track577",
+            "width": 0.15,
+            "length_mm": 0.707
+          }
+        ]
+      },
+      {
+        "from": "R16:1",
+        "to": "C5:1",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track639",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track577",
+            "width": 0.15,
+            "length_mm": 0.707
+          }
+        ]
+      },
+      {
+        "from": "R16:1",
+        "to": "K1:5",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track639",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track577",
+            "width": 0.15,
+            "length_mm": 0.707
+          }
+        ]
+      },
+      {
+        "from": "R16:1",
+        "to": "K1:6",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track639",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track577",
+            "width": 0.15,
+            "length_mm": 0.707
+          }
+        ]
+      },
+      {
+        "from": "R16:1",
+        "to": "J6:1",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track657",
+            "width": 0.15,
+            "length_mm": 2.616
+          },
+          {
+            "id": "track622",
+            "width": 0.15,
+            "length_mm": 0.35
+          },
+          {
+            "id": "track581",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track639",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track577",
+            "width": 0.15,
+            "length_mm": 0.707
+          }
+        ]
+      },
+      {
+        "from": "R16:1",
+        "to": "F3:1",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track639",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track577",
+            "width": 0.15,
+            "length_mm": 0.707
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "net": "EFUSE_IN",
+    "paths": [
+      {
+        "from": "U1:1",
+        "to": "U1:2",
+        "bottleneck_track_width_mm": 0.24,
+        "narrow_segments": [
+          {
+            "id": "track7461",
+            "width": 0.24,
+            "length_mm": 0.812
+          },
+          {
+            "id": "track7462",
+            "width": 0.5,
+            "length_mm": 0.8
+          },
+          {
+            "id": "track7463",
+            "width": 0.24,
+            "length_mm": 0.812
+          }
+        ]
+      },
+      {
+        "from": "U1:1",
+        "to": "C6:1",
+        "bottleneck_track_width_mm": 0.24,
+        "narrow_segments": [
+          {
+            "id": "track7459",
+            "width": 0.6,
+            "length_mm": 0.125
+          },
+          {
+            "id": "track7462",
+            "width": 0.5,
+            "length_mm": 0.8
+          },
+          {
+            "id": "track7463",
+            "width": 0.24,
+            "length_mm": 0.812
+          }
+        ]
+      },
+      {
+        "from": "U1:1",
+        "to": "Q2:2",
+        "bottleneck_track_width_mm": 0.24,
+        "narrow_segments": [
+          {
+            "id": "track7462",
+            "width": 0.5,
+            "length_mm": 0.8
+          },
+          {
+            "id": "track7463",
+            "width": 0.24,
+            "length_mm": 0.812
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "net": "ESTOP_OUT",
+    "paths": [
+      {
+        "from": "J7:1",
+        "to": "J6:2",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track2289",
+            "width": 0.25,
+            "length_mm": 1.127
+          },
+          {
+            "id": "track2287",
+            "width": 0.25,
+            "length_mm": 6.127
+          },
+          {
+            "id": "track2288",
+            "width": 0.25,
+            "length_mm": 1.942
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "net": "HEATER_FUSED",
+    "paths": [
+      {
+        "from": "F2:2",
+        "to": "RSH1:1",
+        "bottleneck_track_width_mm": 2.0,
+        "narrow_segments": []
+      },
+      {
+        "from": "F2:2",
+        "to": "U3:10",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track2716",
+            "width": 0.15,
+            "length_mm": 1.061
+          },
+          {
+            "id": "track2690",
+            "width": 0.15,
+            "length_mm": 0.707
+          },
+          {
+            "id": "track2702",
+            "width": 0.15,
+            "length_mm": 0.354
+          },
+          {
+            "id": "track2697",
+            "width": 0.15,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track2683",
+            "width": 0.15,
+            "length_mm": 0.1
+          },
+          {
+            "id": "track2689",
+            "width": 0.15,
+            "length_mm": 0.15
+          },
+          {
+            "id": "track2709",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track2694",
+            "width": 0.15,
+            "length_mm": 0.15
+          },
+          {
+            "id": "track2685",
+            "width": 0.15,
+            "length_mm": 0.3
+          },
+          {
+            "id": "track2679",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track2707",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track2711",
+            "width": 0.15,
+            "length_mm": 0.354
+          },
+          {
+            "id": "track2695",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track2680",
+            "width": 0.15,
+            "length_mm": 0.4
+          },
+          {
+            "id": "track2708",
+            "width": 0.15,
+            "length_mm": 0.55
+          },
+          {
+            "id": "track2700",
+            "width": 0.15,
+            "length_mm": 0.636
+          },
+          {
+            "id": "track2682",
+            "width": 0.15,
+            "length_mm": 0.05
+          },
+          {
+            "id": "track2701",
+            "width": 0.15,
+            "length_mm": 0.3
+          },
+          {
+            "id": "track2677",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track2681",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track2676",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track2705",
+            "width": 0.15,
+            "length_mm": 0.3
+          },
+          {
+            "id": "track2693",
+            "width": 0.15,
+            "length_mm": 2.051
+          },
+          {
+            "id": "track2684",
+            "width": 0.15,
+            "length_mm": 1.05
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "net": "ITO_MINUS",
+    "paths": [
+      {
+        "from": "Q1:2",
+        "to": "J4:2",
+        "bottleneck_track_width_mm": 2.0,
+        "narrow_segments": []
+      }
+    ]
+  },
+  {
+    "net": "ITO_PLUS",
+    "paths": [
+      {
+        "from": "RSH1:2",
+        "to": "U3:8",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track3416",
+            "width": 0.15,
+            "length_mm": 0.75
+          },
+          {
+            "id": "track3406",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track3415",
+            "width": 0.15,
+            "length_mm": 0.05
+          },
+          {
+            "id": "track3411",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track3412",
+            "width": 0.15,
+            "length_mm": 1.061
+          },
+          {
+            "id": "track3424",
+            "width": 0.15,
+            "length_mm": 1.273
+          },
+          {
+            "id": "track3441",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track3437",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track3440",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track3438",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track3453",
+            "width": 0.15,
+            "length_mm": 0.35
+          },
+          {
+            "id": "track3446",
+            "width": 0.15,
+            "length_mm": 1.061
+          },
+          {
+            "id": "track3454",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track3444",
+            "width": 0.15,
+            "length_mm": 0.1
+          },
+          {
+            "id": "track3448",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track3435",
+            "width": 0.15,
+            "length_mm": 0.3
+          },
+          {
+            "id": "track3436",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track3447",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track3455",
+            "width": 0.15,
+            "length_mm": 0.636
+          }
+        ]
+      },
+      {
+        "from": "RSH1:2",
+        "to": "U3:9",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track3423",
+            "width": 0.15,
+            "length_mm": 0.75
+          },
+          {
+            "id": "track3410",
+            "width": 0.15,
+            "length_mm": 0.6
+          },
+          {
+            "id": "track3422",
+            "width": 0.15,
+            "length_mm": 1.909
+          },
+          {
+            "id": "track3429",
+            "width": 0.15,
+            "length_mm": 3.182
+          },
+          {
+            "id": "track3407",
+            "width": 0.15,
+            "length_mm": 1.9
+          },
+          {
+            "id": "track3418",
+            "width": 0.15,
+            "length_mm": 0.354
+          }
+        ]
+      },
+      {
+        "from": "RSH1:2",
+        "to": "J4:1",
+        "bottleneck_track_width_mm": 2.0,
+        "narrow_segments": []
+      }
+    ]
+  },
+  {
+    "net": "T1_OUT",
+    "paths": [
+      {
+        "from": "RS1:2",
+        "to": "U11:26",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track4851",
+            "width": 0.15,
+            "length_mm": 0.625
+          },
+          {
+            "id": "track4923",
+            "width": 0.15,
+            "length_mm": 0.495
+          },
+          {
+            "id": "track4921",
+            "width": 0.15,
+            "length_mm": 0.4
+          },
+          {
+            "id": "track4897",
+            "width": 0.15,
+            "length_mm": 0.354
+          },
+          {
+            "id": "track4907",
+            "width": 0.15,
+            "length_mm": 3.45
+          },
+          {
+            "id": "track4924",
+            "width": 0.15,
+            "length_mm": 1.6
+          },
+          {
+            "id": "track4910",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track4905",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track4909",
+            "width": 0.15,
+            "length_mm": 0.85
+          },
+          {
+            "id": "track4900",
+            "width": 0.15,
+            "length_mm": 0.707
+          },
+          {
+            "id": "track4903",
+            "width": 0.15,
+            "length_mm": 0.95
+          },
+          {
+            "id": "track4891",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track4894",
+            "width": 0.15,
+            "length_mm": 0.15
+          },
+          {
+            "id": "track4890",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track4892",
+            "width": 0.15,
+            "length_mm": 0.566
+          },
+          {
+            "id": "track4918",
+            "width": 0.15,
+            "length_mm": 1.8
+          },
+          {
+            "id": "track4915",
+            "width": 0.15,
+            "length_mm": 0.3
+          },
+          {
+            "id": "track4916",
+            "width": 0.15,
+            "length_mm": 0.636
+          },
+          {
+            "id": "track4899",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track4901",
+            "width": 0.15,
+            "length_mm": 4.35
+          }
+        ]
+      },
+      {
+        "from": "RS1:2",
+        "to": "J11:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "RS1:2",
+        "to": "R102:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "RS1:2",
+        "to": "C109:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      }
+    ]
+  },
+  {
+    "net": "T1_SW",
+    "paths": [
+      {
+        "from": "C105:2",
+        "to": "L1:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "C105:2",
+        "to": "U11:15",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track5007",
+            "width": 0.25,
+            "length_mm": 2.0
+          }
+        ]
+      },
+      {
+        "from": "C105:2",
+        "to": "U11:16",
+        "bottleneck_track_width_mm": 1.0,
+        "narrow_segments": []
+      },
+      {
+        "from": "C105:2",
+        "to": "U11:17",
+        "bottleneck_track_width_mm": 1.0,
+        "narrow_segments": []
+      },
+      {
+        "from": "C105:2",
+        "to": "U11:18",
+        "bottleneck_track_width_mm": 1.0,
+        "narrow_segments": []
+      },
+      {
+        "from": "C105:2",
+        "to": "U11:19",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track5007",
+            "width": 0.25,
+            "length_mm": 2.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "net": "T1_VIN",
+    "paths": [
+      {
+        "from": "C101:1",
+        "to": "U11:5",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track5046",
+            "width": 0.25,
+            "length_mm": 0.5
+          },
+          {
+            "id": "track5032",
+            "width": 0.6,
+            "length_mm": 1.137
+          },
+          {
+            "id": "track5025",
+            "width": 0.6,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track5022",
+            "width": 0.6,
+            "length_mm": 0.495
+          }
+        ]
+      },
+      {
+        "from": "C101:1",
+        "to": "U11:6",
+        "bottleneck_track_width_mm": 0.6,
+        "narrow_segments": [
+          {
+            "id": "track5032",
+            "width": 0.6,
+            "length_mm": 1.137
+          },
+          {
+            "id": "track5025",
+            "width": 0.6,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track5022",
+            "width": 0.6,
+            "length_mm": 0.495
+          }
+        ]
+      },
+      {
+        "from": "C101:1",
+        "to": "U11:7",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track5016",
+            "width": 0.25,
+            "length_mm": 0.5
+          },
+          {
+            "id": "track5032",
+            "width": 0.6,
+            "length_mm": 1.137
+          },
+          {
+            "id": "track5025",
+            "width": 0.6,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track5022",
+            "width": 0.6,
+            "length_mm": 0.495
+          }
+        ]
+      },
+      {
+        "from": "C101:1",
+        "to": "F11:2",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "C101:1",
+        "to": "C102:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "C101:1",
+        "to": "C103:1",
+        "bottleneck_track_width_mm": 0.8,
+        "narrow_segments": []
+      }
+    ]
+  },
+  {
+    "net": "T1_VREG",
+    "paths": [
+      {
+        "from": "L1:2",
+        "to": "U11:22",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track5082",
+            "width": 0.15,
+            "length_mm": 0.636
+          },
+          {
+            "id": "track5229",
+            "width": 0.15,
+            "length_mm": 2.05
+          },
+          {
+            "id": "track5222",
+            "width": 0.15,
+            "length_mm": 1.85
+          },
+          {
+            "id": "track5212",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track5218",
+            "width": 0.15,
+            "length_mm": 0.85
+          },
+          {
+            "id": "track5211",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track5207",
+            "width": 0.15,
+            "length_mm": 0.7
+          },
+          {
+            "id": "track5108",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track5117",
+            "width": 0.15,
+            "length_mm": 0.15
+          },
+          {
+            "id": "track5150",
+            "width": 0.15,
+            "length_mm": 0.636
+          },
+          {
+            "id": "track5130",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track5102",
+            "width": 0.15,
+            "length_mm": 0.05
+          },
+          {
+            "id": "track5183",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track5164",
+            "width": 0.15,
+            "length_mm": 0.65
+          },
+          {
+            "id": "track5091",
+            "width": 0.15,
+            "length_mm": 0.707
+          },
+          {
+            "id": "track5121",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track5151",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track5134",
+            "width": 0.15,
+            "length_mm": 0.4
+          },
+          {
+            "id": "track5118",
+            "width": 0.15,
+            "length_mm": 0.1
+          },
+          {
+            "id": "track5147",
+            "width": 0.15,
+            "length_mm": 0.15
+          },
+          {
+            "id": "track5170",
+            "width": 0.15,
+            "length_mm": 1.061
+          },
+          {
+            "id": "track5173",
+            "width": 0.15,
+            "length_mm": 0.3
+          },
+          {
+            "id": "track5178",
+            "width": 0.15,
+            "length_mm": 1.273
+          },
+          {
+            "id": "track5098",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track5122",
+            "width": 0.15,
+            "length_mm": 0.283
+          }
+        ]
+      },
+      {
+        "from": "L1:2",
+        "to": "U11:25",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track5206",
+            "width": 0.15,
+            "length_mm": 3.85
+          },
+          {
+            "id": "track5203",
+            "width": 0.15,
+            "length_mm": 0.3
+          },
+          {
+            "id": "track5208",
+            "width": 0.15,
+            "length_mm": 2.55
+          },
+          {
+            "id": "track5237",
+            "width": 0.15,
+            "length_mm": 0.6
+          },
+          {
+            "id": "track5221",
+            "width": 0.15,
+            "length_mm": 0.35
+          },
+          {
+            "id": "track5232",
+            "width": 0.15,
+            "length_mm": 0.849
+          },
+          {
+            "id": "track5202",
+            "width": 0.15,
+            "length_mm": 0.35
+          },
+          {
+            "id": "track5235",
+            "width": 0.15,
+            "length_mm": 0.75
+          },
+          {
+            "id": "track5238",
+            "width": 0.15,
+            "length_mm": 0.354
+          },
+          {
+            "id": "track5220",
+            "width": 0.15,
+            "length_mm": 0.5
+          },
+          {
+            "id": "track5223",
+            "width": 0.15,
+            "length_mm": 2.3
+          },
+          {
+            "id": "track5135",
+            "width": 0.15,
+            "length_mm": 0.354
+          },
+          {
+            "id": "track5175",
+            "width": 0.15,
+            "length_mm": 0.919
+          },
+          {
+            "id": "track5158",
+            "width": 0.15,
+            "length_mm": 2.0
+          }
+        ]
+      },
+      {
+        "from": "L1:2",
+        "to": "C108:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "L1:2",
+        "to": "RS1:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "L1:2",
+        "to": "C107:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      }
+    ]
+  },
+  {
+    "net": "T2_OUT",
+    "paths": [
+      {
+        "from": "RS2:2",
+        "to": "U12:26",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track5294",
+            "width": 0.15,
+            "length_mm": 0.725
+          },
+          {
+            "id": "track5353",
+            "width": 0.15,
+            "length_mm": 0.5
+          },
+          {
+            "id": "track5348",
+            "width": 0.15,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track5328",
+            "width": 0.15,
+            "length_mm": 0.35
+          },
+          {
+            "id": "track5336",
+            "width": 0.15,
+            "length_mm": 1.0
+          },
+          {
+            "id": "track5323",
+            "width": 0.15,
+            "length_mm": 0.95
+          },
+          {
+            "id": "track5340",
+            "width": 0.15,
+            "length_mm": 0.15
+          },
+          {
+            "id": "track5362",
+            "width": 0.15,
+            "length_mm": 0.4
+          },
+          {
+            "id": "track5324",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track5338",
+            "width": 0.15,
+            "length_mm": 0.65
+          },
+          {
+            "id": "track5358",
+            "width": 0.15,
+            "length_mm": 0.65
+          },
+          {
+            "id": "track5326",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track5335",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track5318",
+            "width": 0.15,
+            "length_mm": 0.55
+          },
+          {
+            "id": "track5354",
+            "width": 0.15,
+            "length_mm": 0.3
+          },
+          {
+            "id": "track5364",
+            "width": 0.15,
+            "length_mm": 0.1
+          },
+          {
+            "id": "track5390",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track5357",
+            "width": 0.15,
+            "length_mm": 1.2
+          },
+          {
+            "id": "track5308",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track5334",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track5368",
+            "width": 0.15,
+            "length_mm": 0.3
+          },
+          {
+            "id": "track5394",
+            "width": 0.15,
+            "length_mm": 0.3
+          },
+          {
+            "id": "track5380",
+            "width": 0.15,
+            "length_mm": 0.3
+          },
+          {
+            "id": "track5331",
+            "width": 0.15,
+            "length_mm": 0.3
+          },
+          {
+            "id": "track5382",
+            "width": 0.15,
+            "length_mm": 0.9
+          },
+          {
+            "id": "track5313",
+            "width": 0.15,
+            "length_mm": 0.15
+          },
+          {
+            "id": "track5312",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track5395",
+            "width": 0.15,
+            "length_mm": 0.55
+          },
+          {
+            "id": "track5320",
+            "width": 0.15,
+            "length_mm": 1.75
+          },
+          {
+            "id": "track5396",
+            "width": 0.15,
+            "length_mm": 2.25
+          },
+          {
+            "id": "track5385",
+            "width": 0.15,
+            "length_mm": 0.566
+          },
+          {
+            "id": "track5332",
+            "width": 0.15,
+            "length_mm": 0.45
+          }
+        ]
+      },
+      {
+        "from": "RS2:2",
+        "to": "C209:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "RS2:2",
+        "to": "R202:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "RS2:2",
+        "to": "J12:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      }
+    ]
+  },
+  {
+    "net": "T2_SW",
+    "paths": [
+      {
+        "from": "U12:15",
+        "to": "U12:16",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track5433",
+            "width": 0.25,
+            "length_mm": 2.0
+          }
+        ]
+      },
+      {
+        "from": "U12:15",
+        "to": "U12:17",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track5433",
+            "width": 0.25,
+            "length_mm": 2.0
+          }
+        ]
+      },
+      {
+        "from": "U12:15",
+        "to": "U12:18",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track5433",
+            "width": 0.25,
+            "length_mm": 2.0
+          }
+        ]
+      },
+      {
+        "from": "U12:15",
+        "to": "U12:19",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track5433",
+            "width": 0.25,
+            "length_mm": 2.0
+          }
+        ]
+      },
+      {
+        "from": "U12:15",
+        "to": "C205:2",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track5433",
+            "width": 0.25,
+            "length_mm": 2.0
+          }
+        ]
+      },
+      {
+        "from": "U12:15",
+        "to": "L2:1",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track5433",
+            "width": 0.25,
+            "length_mm": 2.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "net": "T2_VIN",
+    "paths": [
+      {
+        "from": "C201:1",
+        "to": "U12:5",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track5465",
+            "width": 0.25,
+            "length_mm": 0.5
+          },
+          {
+            "id": "track5477",
+            "width": 0.6,
+            "length_mm": 1.137
+          },
+          {
+            "id": "track5456",
+            "width": 0.6,
+            "length_mm": 0.55
+          }
+        ]
+      },
+      {
+        "from": "C201:1",
+        "to": "U12:6",
+        "bottleneck_track_width_mm": 0.6,
+        "narrow_segments": [
+          {
+            "id": "track5477",
+            "width": 0.6,
+            "length_mm": 1.137
+          },
+          {
+            "id": "track5456",
+            "width": 0.6,
+            "length_mm": 0.55
+          }
+        ]
+      },
+      {
+        "from": "C201:1",
+        "to": "U12:7",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track5556",
+            "width": 0.25,
+            "length_mm": 0.5
+          },
+          {
+            "id": "track5477",
+            "width": 0.6,
+            "length_mm": 1.137
+          },
+          {
+            "id": "track5456",
+            "width": 0.6,
+            "length_mm": 0.55
+          }
+        ]
+      },
+      {
+        "from": "C201:1",
+        "to": "C202:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "C201:1",
+        "to": "F12:2",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "C201:1",
+        "to": "C203:1",
+        "bottleneck_track_width_mm": 0.8,
+        "narrow_segments": []
+      }
+    ]
+  },
+  {
+    "net": "T2_VREG",
+    "paths": [
+      {
+        "from": "C208:1",
+        "to": "U12:22",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track5661",
+            "width": 0.15,
+            "length_mm": 0.636
+          },
+          {
+            "id": "track5815",
+            "width": 0.15,
+            "length_mm": 1.131
+          },
+          {
+            "id": "track5826",
+            "width": 0.15,
+            "length_mm": 0.15
+          },
+          {
+            "id": "track5817",
+            "width": 0.15,
+            "length_mm": 0.05
+          },
+          {
+            "id": "track5829",
+            "width": 0.15,
+            "length_mm": 0.3
+          },
+          {
+            "id": "track5819",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track5827",
+            "width": 0.15,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track5822",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track5825",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track5844",
+            "width": 0.15,
+            "length_mm": 0.354
+          },
+          {
+            "id": "track5808",
+            "width": 0.15,
+            "length_mm": 0.15
+          },
+          {
+            "id": "track5837",
+            "width": 0.15,
+            "length_mm": 0.6
+          },
+          {
+            "id": "track5833",
+            "width": 0.15,
+            "length_mm": 0.35
+          },
+          {
+            "id": "track5806",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track5804",
+            "width": 0.15,
+            "length_mm": 0.15
+          },
+          {
+            "id": "track5809",
+            "width": 0.15,
+            "length_mm": 0.15
+          },
+          {
+            "id": "track5830",
+            "width": 0.15,
+            "length_mm": 0.9
+          },
+          {
+            "id": "track5838",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track5842",
+            "width": 0.15,
+            "length_mm": 0.707
+          },
+          {
+            "id": "track5818",
+            "width": 0.15,
+            "length_mm": 0.1
+          },
+          {
+            "id": "track5836",
+            "width": 0.15,
+            "length_mm": 0.6
+          },
+          {
+            "id": "track5824",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track5839",
+            "width": 0.15,
+            "length_mm": 0.4
+          },
+          {
+            "id": "track5841",
+            "width": 0.15,
+            "length_mm": 0.4
+          },
+          {
+            "id": "track5821",
+            "width": 0.15,
+            "length_mm": 0.4
+          },
+          {
+            "id": "track5816",
+            "width": 0.15,
+            "length_mm": 1.697
+          },
+          {
+            "id": "track5687",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track5644",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track5645",
+            "width": 0.15,
+            "length_mm": 0.5
+          },
+          {
+            "id": "track5694",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track5616",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track5720",
+            "width": 0.15,
+            "length_mm": 0.35
+          },
+          {
+            "id": "track5684",
+            "width": 0.15,
+            "length_mm": 0.45
+          },
+          {
+            "id": "track5638",
+            "width": 0.15,
+            "length_mm": 2.5
+          }
+        ]
+      },
+      {
+        "from": "C208:1",
+        "to": "U12:25",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track5761",
+            "width": 0.15,
+            "length_mm": 2.9
+          },
+          {
+            "id": "track5786",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track5785",
+            "width": 0.15,
+            "length_mm": 2.1
+          },
+          {
+            "id": "track5781",
+            "width": 0.15,
+            "length_mm": 0.65
+          },
+          {
+            "id": "track5764",
+            "width": 0.15,
+            "length_mm": 0.35
+          },
+          {
+            "id": "track5784",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track5783",
+            "width": 0.15,
+            "length_mm": 0.05
+          },
+          {
+            "id": "track5760",
+            "width": 0.15,
+            "length_mm": 0.05
+          },
+          {
+            "id": "track5765",
+            "width": 0.15,
+            "length_mm": 0.495
+          },
+          {
+            "id": "track5759",
+            "width": 0.15,
+            "length_mm": 0.3
+          },
+          {
+            "id": "track5751",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track5773",
+            "width": 0.15,
+            "length_mm": 0.5
+          },
+          {
+            "id": "track5757",
+            "width": 0.15,
+            "length_mm": 0.5
+          },
+          {
+            "id": "track5769",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track5768",
+            "width": 0.15,
+            "length_mm": 0.354
+          },
+          {
+            "id": "track5778",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track5772",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track5777",
+            "width": 0.15,
+            "length_mm": 1.3
+          },
+          {
+            "id": "track5766",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track5789",
+            "width": 0.15,
+            "length_mm": 2.65
+          },
+          {
+            "id": "track5647",
+            "width": 0.15,
+            "length_mm": 0.25
+          }
+        ]
+      },
+      {
+        "from": "C208:1",
+        "to": "RS2:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "C208:1",
+        "to": "C207:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "C208:1",
+        "to": "L2:2",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      }
+    ]
+  },
+  {
+    "net": "T3_OUT",
+    "paths": [
+      {
+        "from": "RS3:2",
+        "to": "U13:26",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track5909",
+            "width": 0.15,
+            "length_mm": 0.675
+          },
+          {
+            "id": "track5940",
+            "width": 0.15,
+            "length_mm": 1.3
+          },
+          {
+            "id": "track5989",
+            "width": 0.15,
+            "length_mm": 0.55
+          },
+          {
+            "id": "track5980",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track5975",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track5998",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track6017",
+            "width": 0.15,
+            "length_mm": 2.25
+          },
+          {
+            "id": "track5976",
+            "width": 0.15,
+            "length_mm": 1.3
+          },
+          {
+            "id": "track5973",
+            "width": 0.15,
+            "length_mm": 0.5
+          },
+          {
+            "id": "track5947",
+            "width": 0.15,
+            "length_mm": 0.3
+          },
+          {
+            "id": "track6004",
+            "width": 0.15,
+            "length_mm": 0.45
+          },
+          {
+            "id": "track5924",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track5926",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track5965",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track5925",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track5943",
+            "width": 0.15,
+            "length_mm": 1.1
+          },
+          {
+            "id": "track5970",
+            "width": 0.15,
+            "length_mm": 0.354
+          },
+          {
+            "id": "track6012",
+            "width": 0.15,
+            "length_mm": 0.849
+          },
+          {
+            "id": "track5937",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track6018",
+            "width": 0.15,
+            "length_mm": 0.55
+          },
+          {
+            "id": "track5944",
+            "width": 0.15,
+            "length_mm": 0.3
+          },
+          {
+            "id": "track5920",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track5927",
+            "width": 0.15,
+            "length_mm": 0.15
+          },
+          {
+            "id": "track6000",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track5945",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track5954",
+            "width": 0.15,
+            "length_mm": 0.1
+          },
+          {
+            "id": "track5992",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track5953",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track5979",
+            "width": 0.15,
+            "length_mm": 0.55
+          },
+          {
+            "id": "track5942",
+            "width": 0.15,
+            "length_mm": 0.4
+          },
+          {
+            "id": "track5957",
+            "width": 0.15,
+            "length_mm": 0.4
+          },
+          {
+            "id": "track5967",
+            "width": 0.15,
+            "length_mm": 0.4
+          },
+          {
+            "id": "track5932",
+            "width": 0.15,
+            "length_mm": 0.45
+          },
+          {
+            "id": "track6016",
+            "width": 0.15,
+            "length_mm": 0.283
+          }
+        ]
+      },
+      {
+        "from": "RS3:2",
+        "to": "J13:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "RS3:2",
+        "to": "R302:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "RS3:2",
+        "to": "C309:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      }
+    ]
+  },
+  {
+    "net": "T3_SW",
+    "paths": [
+      {
+        "from": "L3:1",
+        "to": "U13:15",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track6049",
+            "width": 0.25,
+            "length_mm": 2.0
+          }
+        ]
+      },
+      {
+        "from": "L3:1",
+        "to": "U13:16",
+        "bottleneck_track_width_mm": 1.0,
+        "narrow_segments": []
+      },
+      {
+        "from": "L3:1",
+        "to": "U13:17",
+        "bottleneck_track_width_mm": 1.0,
+        "narrow_segments": []
+      },
+      {
+        "from": "L3:1",
+        "to": "U13:18",
+        "bottleneck_track_width_mm": 1.0,
+        "narrow_segments": []
+      },
+      {
+        "from": "L3:1",
+        "to": "U13:19",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track6049",
+            "width": 0.25,
+            "length_mm": 2.0
+          }
+        ]
+      },
+      {
+        "from": "L3:1",
+        "to": "C305:2",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      }
+    ]
+  },
+  {
+    "net": "T3_VIN",
+    "paths": [
+      {
+        "from": "C301:1",
+        "to": "U13:5",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track6083",
+            "width": 0.25,
+            "length_mm": 0.5
+          },
+          {
+            "id": "track6091",
+            "width": 0.6,
+            "length_mm": 1.137
+          },
+          {
+            "id": "track6072",
+            "width": 0.6,
+            "length_mm": 0.55
+          }
+        ]
+      },
+      {
+        "from": "C301:1",
+        "to": "U13:6",
+        "bottleneck_track_width_mm": 0.6,
+        "narrow_segments": [
+          {
+            "id": "track6091",
+            "width": 0.6,
+            "length_mm": 1.137
+          },
+          {
+            "id": "track6072",
+            "width": 0.6,
+            "length_mm": 0.55
+          }
+        ]
+      },
+      {
+        "from": "C301:1",
+        "to": "U13:7",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track6070",
+            "width": 0.25,
+            "length_mm": 0.5
+          },
+          {
+            "id": "track6091",
+            "width": 0.6,
+            "length_mm": 1.137
+          },
+          {
+            "id": "track6072",
+            "width": 0.6,
+            "length_mm": 0.55
+          }
+        ]
+      },
+      {
+        "from": "C301:1",
+        "to": "C303:1",
+        "bottleneck_track_width_mm": 0.8,
+        "narrow_segments": []
+      },
+      {
+        "from": "C301:1",
+        "to": "C302:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "C301:1",
+        "to": "F13:2",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      }
+    ]
+  },
+  {
+    "net": "T3_VREG",
+    "paths": [
+      {
+        "from": "C307:1",
+        "to": "L3:2",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "C307:1",
+        "to": "U13:22",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track6257",
+            "width": 0.15,
+            "length_mm": 0.636
+          },
+          {
+            "id": "track6301",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track6333",
+            "width": 0.15,
+            "length_mm": 0.8
+          },
+          {
+            "id": "track6330",
+            "width": 0.15,
+            "length_mm": 0.45
+          },
+          {
+            "id": "track6295",
+            "width": 0.15,
+            "length_mm": 0.4
+          },
+          {
+            "id": "track6308",
+            "width": 0.15,
+            "length_mm": 0.35
+          },
+          {
+            "id": "track6327",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track6320",
+            "width": 0.15,
+            "length_mm": 0.85
+          },
+          {
+            "id": "track6323",
+            "width": 0.15,
+            "length_mm": 0.566
+          },
+          {
+            "id": "track6325",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track6314",
+            "width": 0.15,
+            "length_mm": 1.0
+          },
+          {
+            "id": "track6303",
+            "width": 0.15,
+            "length_mm": 0.3
+          },
+          {
+            "id": "track6319",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track6309",
+            "width": 0.15,
+            "length_mm": 0.6
+          },
+          {
+            "id": "track6306",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track6334",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track6292",
+            "width": 0.15,
+            "length_mm": 0.566
+          },
+          {
+            "id": "track6219",
+            "width": 0.15,
+            "length_mm": 0.495
+          },
+          {
+            "id": "track6161",
+            "width": 0.15,
+            "length_mm": 0.15
+          },
+          {
+            "id": "track6167",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track6168",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track6233",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track6153",
+            "width": 0.15,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track6251",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track6194",
+            "width": 0.15,
+            "length_mm": 0.8
+          },
+          {
+            "id": "track6199",
+            "width": 0.15,
+            "length_mm": 0.919
+          },
+          {
+            "id": "track6170",
+            "width": 0.15,
+            "length_mm": 0.354
+          },
+          {
+            "id": "track6185",
+            "width": 0.15,
+            "length_mm": 0.65
+          },
+          {
+            "id": "track6176",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track6218",
+            "width": 0.15,
+            "length_mm": 0.212
+          }
+        ]
+      },
+      {
+        "from": "C307:1",
+        "to": "U13:25",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track6347",
+            "width": 0.15,
+            "length_mm": 0.4
+          },
+          {
+            "id": "track6355",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track6344",
+            "width": 0.15,
+            "length_mm": 2.55
+          },
+          {
+            "id": "track6340",
+            "width": 0.15,
+            "length_mm": 0.1
+          },
+          {
+            "id": "track6338",
+            "width": 0.15,
+            "length_mm": 0.95
+          },
+          {
+            "id": "track6345",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track6343",
+            "width": 0.15,
+            "length_mm": 0.35
+          },
+          {
+            "id": "track6350",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track6348",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track6346",
+            "width": 0.15,
+            "length_mm": 0.5
+          },
+          {
+            "id": "track6342",
+            "width": 0.15,
+            "length_mm": 0.75
+          },
+          {
+            "id": "track6341",
+            "width": 0.15,
+            "length_mm": 0.566
+          },
+          {
+            "id": "track6351",
+            "width": 0.15,
+            "length_mm": 4.05
+          },
+          {
+            "id": "track6241",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track6195",
+            "width": 0.15,
+            "length_mm": 0.05
+          },
+          {
+            "id": "track6159",
+            "width": 0.15,
+            "length_mm": 0.05
+          },
+          {
+            "id": "track6225",
+            "width": 0.15,
+            "length_mm": 0.4
+          },
+          {
+            "id": "track6155",
+            "width": 0.15,
+            "length_mm": 0.35
+          },
+          {
+            "id": "track6158",
+            "width": 0.15,
+            "length_mm": 0.4
+          },
+          {
+            "id": "track6244",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track6202",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track6229",
+            "width": 0.15,
+            "length_mm": 1.4
+          }
+        ]
+      },
+      {
+        "from": "C307:1",
+        "to": "C308:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "C307:1",
+        "to": "RS3:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      }
+    ]
+  },
+  {
+    "net": "T4_OUT",
+    "paths": [
+      {
+        "from": "RS4:2",
+        "to": "C409:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "RS4:2",
+        "to": "J14:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "RS4:2",
+        "to": "R402:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "RS4:2",
+        "to": "U14:26",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track6447",
+            "width": 0.15,
+            "length_mm": 0.675
+          },
+          {
+            "id": "track6495",
+            "width": 0.15,
+            "length_mm": 1.15
+          },
+          {
+            "id": "track6464",
+            "width": 0.15,
+            "length_mm": 0.55
+          },
+          {
+            "id": "track6460",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track6510",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track6487",
+            "width": 0.15,
+            "length_mm": 0.1
+          },
+          {
+            "id": "track6462",
+            "width": 0.15,
+            "length_mm": 0.495
+          },
+          {
+            "id": "track6481",
+            "width": 0.15,
+            "length_mm": 0.75
+          },
+          {
+            "id": "track6475",
+            "width": 0.15,
+            "length_mm": 0.1
+          },
+          {
+            "id": "track6484",
+            "width": 0.15,
+            "length_mm": 0.4
+          },
+          {
+            "id": "track6486",
+            "width": 0.15,
+            "length_mm": 0.35
+          },
+          {
+            "id": "track6469",
+            "width": 0.15,
+            "length_mm": 2.85
+          },
+          {
+            "id": "track6490",
+            "width": 0.15,
+            "length_mm": 0.495
+          },
+          {
+            "id": "track6512",
+            "width": 0.15,
+            "length_mm": 0.45
+          },
+          {
+            "id": "track6524",
+            "width": 0.15,
+            "length_mm": 0.707
+          },
+          {
+            "id": "track6482",
+            "width": 0.15,
+            "length_mm": 0.6
+          },
+          {
+            "id": "track6463",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track6504",
+            "width": 0.15,
+            "length_mm": 0.354
+          },
+          {
+            "id": "track6470",
+            "width": 0.15,
+            "length_mm": 0.45
+          },
+          {
+            "id": "track6472",
+            "width": 0.15,
+            "length_mm": 0.495
+          },
+          {
+            "id": "track6503",
+            "width": 0.15,
+            "length_mm": 0.1
+          },
+          {
+            "id": "track6523",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track6483",
+            "width": 0.15,
+            "length_mm": 0.354
+          },
+          {
+            "id": "track6485",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track6500",
+            "width": 0.15,
+            "length_mm": 3.4
+          },
+          {
+            "id": "track6515",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track6496",
+            "width": 0.15,
+            "length_mm": 1.05
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "net": "T4_SW",
+    "paths": [
+      {
+        "from": "C405:2",
+        "to": "U14:15",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track6548",
+            "width": 0.25,
+            "length_mm": 2.0
+          }
+        ]
+      },
+      {
+        "from": "C405:2",
+        "to": "U14:16",
+        "bottleneck_track_width_mm": 1.0,
+        "narrow_segments": []
+      },
+      {
+        "from": "C405:2",
+        "to": "U14:17",
+        "bottleneck_track_width_mm": 1.0,
+        "narrow_segments": []
+      },
+      {
+        "from": "C405:2",
+        "to": "U14:18",
+        "bottleneck_track_width_mm": 1.0,
+        "narrow_segments": []
+      },
+      {
+        "from": "C405:2",
+        "to": "U14:19",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track6548",
+            "width": 0.25,
+            "length_mm": 2.0
+          }
+        ]
+      },
+      {
+        "from": "C405:2",
+        "to": "L4:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      }
+    ]
+  },
+  {
+    "net": "T4_VIN",
+    "paths": [
+      {
+        "from": "C401:1",
+        "to": "C402:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "C401:1",
+        "to": "U14:5",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track6592",
+            "width": 0.25,
+            "length_mm": 0.5
+          },
+          {
+            "id": "track6577",
+            "width": 0.6,
+            "length_mm": 1.137
+          },
+          {
+            "id": "track6595",
+            "width": 0.6,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track6576",
+            "width": 0.6,
+            "length_mm": 0.495
+          }
+        ]
+      },
+      {
+        "from": "C401:1",
+        "to": "U14:6",
+        "bottleneck_track_width_mm": 0.6,
+        "narrow_segments": [
+          {
+            "id": "track6577",
+            "width": 0.6,
+            "length_mm": 1.137
+          },
+          {
+            "id": "track6595",
+            "width": 0.6,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track6576",
+            "width": 0.6,
+            "length_mm": 0.495
+          }
+        ]
+      },
+      {
+        "from": "C401:1",
+        "to": "U14:7",
+        "bottleneck_track_width_mm": 0.25,
+        "narrow_segments": [
+          {
+            "id": "track6602",
+            "width": 0.25,
+            "length_mm": 0.5
+          },
+          {
+            "id": "track6577",
+            "width": 0.6,
+            "length_mm": 1.137
+          },
+          {
+            "id": "track6595",
+            "width": 0.6,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track6576",
+            "width": 0.6,
+            "length_mm": 0.495
+          }
+        ]
+      },
+      {
+        "from": "C401:1",
+        "to": "C403:1",
+        "bottleneck_track_width_mm": 0.8,
+        "narrow_segments": []
+      },
+      {
+        "from": "C401:1",
+        "to": "F14:2",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      }
+    ]
+  },
+  {
+    "net": "T4_VREG",
+    "paths": [
+      {
+        "from": "RS4:1",
+        "to": "C407:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "RS4:1",
+        "to": "C408:1",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      },
+      {
+        "from": "RS4:1",
+        "to": "U14:22",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track6728",
+            "width": 0.15,
+            "length_mm": 0.636
+          },
+          {
+            "id": "track6842",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track6778",
+            "width": 0.15,
+            "length_mm": 0.7
+          },
+          {
+            "id": "track6782",
+            "width": 0.15,
+            "length_mm": 0.1
+          },
+          {
+            "id": "track6845",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track6793",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track6792",
+            "width": 0.15,
+            "length_mm": 1.5
+          },
+          {
+            "id": "track6843",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track6834",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track6858",
+            "width": 0.15,
+            "length_mm": 0.35
+          },
+          {
+            "id": "track6866",
+            "width": 0.15,
+            "length_mm": 1.061
+          },
+          {
+            "id": "track6819",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track6829",
+            "width": 0.15,
+            "length_mm": 0.3
+          },
+          {
+            "id": "track6796",
+            "width": 0.15,
+            "length_mm": 0.15
+          },
+          {
+            "id": "track6776",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track6805",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track6832",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track6813",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track6774",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track6806",
+            "width": 0.15,
+            "length_mm": 0.7
+          },
+          {
+            "id": "track6820",
+            "width": 0.15,
+            "length_mm": 0.495
+          },
+          {
+            "id": "track6859",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track6853",
+            "width": 0.15,
+            "length_mm": 0.354
+          },
+          {
+            "id": "track6824",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track6808",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track6779",
+            "width": 0.15,
+            "length_mm": 0.1
+          },
+          {
+            "id": "track6783",
+            "width": 0.15,
+            "length_mm": 0.05
+          },
+          {
+            "id": "track6827",
+            "width": 0.15,
+            "length_mm": 0.495
+          },
+          {
+            "id": "track6804",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track6798",
+            "width": 0.15,
+            "length_mm": 1.15
+          },
+          {
+            "id": "track6787",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track6847",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track6849",
+            "width": 0.15,
+            "length_mm": 0.3
+          },
+          {
+            "id": "track6855",
+            "width": 0.15,
+            "length_mm": 1.0
+          },
+          {
+            "id": "track6821",
+            "width": 0.15,
+            "length_mm": 0.65
+          },
+          {
+            "id": "track6786",
+            "width": 0.15,
+            "length_mm": 0.05
+          },
+          {
+            "id": "track6816",
+            "width": 0.15,
+            "length_mm": 0.05
+          },
+          {
+            "id": "track6784",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track6794",
+            "width": 0.15,
+            "length_mm": 0.35
+          },
+          {
+            "id": "track6841",
+            "width": 0.15,
+            "length_mm": 0.35
+          }
+        ]
+      },
+      {
+        "from": "RS4:1",
+        "to": "U14:25",
+        "bottleneck_track_width_mm": 0.15,
+        "narrow_segments": [
+          {
+            "id": "track6852",
+            "width": 0.15,
+            "length_mm": 0.4
+          },
+          {
+            "id": "track6810",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track6825",
+            "width": 0.15,
+            "length_mm": 1.4
+          },
+          {
+            "id": "track6861",
+            "width": 0.15,
+            "length_mm": 2.2
+          },
+          {
+            "id": "track6867",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track6836",
+            "width": 0.15,
+            "length_mm": 0.25
+          },
+          {
+            "id": "track6800",
+            "width": 0.15,
+            "length_mm": 0.636
+          },
+          {
+            "id": "track6797",
+            "width": 0.15,
+            "length_mm": 0.283
+          },
+          {
+            "id": "track6795",
+            "width": 0.15,
+            "length_mm": 0.9
+          },
+          {
+            "id": "track6828",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track6799",
+            "width": 0.15,
+            "length_mm": 0.424
+          },
+          {
+            "id": "track6844",
+            "width": 0.15,
+            "length_mm": 0.35
+          },
+          {
+            "id": "track6831",
+            "width": 0.15,
+            "length_mm": 0.45
+          },
+          {
+            "id": "track6781",
+            "width": 0.15,
+            "length_mm": 0.141
+          },
+          {
+            "id": "track6789",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track6791",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track6830",
+            "width": 0.15,
+            "length_mm": 0.2
+          },
+          {
+            "id": "track6857",
+            "width": 0.15,
+            "length_mm": 0.212
+          },
+          {
+            "id": "track6788",
+            "width": 0.15,
+            "length_mm": 0.55
+          },
+          {
+            "id": "track6773",
+            "width": 0.15,
+            "length_mm": 1.45
+          },
+          {
+            "id": "track6822",
+            "width": 0.15,
+            "length_mm": 2.95
+          },
+          {
+            "id": "track6677",
+            "width": 0.15,
+            "length_mm": 0.071
+          },
+          {
+            "id": "track6688",
+            "width": 0.15,
+            "length_mm": 0.071
+          }
+        ]
+      },
+      {
+        "from": "RS4:1",
+        "to": "L4:2",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      }
+    ]
+  },
+  {
+    "net": "THERM_GLASS_OUT",
+    "paths": [
+      {
+        "from": "J8:1",
+        "to": "J7:2",
+        "bottleneck_track_width_mm": 1.2,
+        "narrow_segments": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+Prototype firmware L.1 - 2026-09-24
+Target: Seeeduino:nrf52:xiaonRF52840; core 1.1.13; TinyUSB 1.7.0
+Compiler: GNU Arm Embedded 9-2019q4
+
+Sketch uses 84008 bytes (10%) of program storage space. Maximum is 811008 bytes.
+Global variables use 7524 bytes (3%) of dynamic memory, leaving 230044 bytes for local variables. Maximum is 237568 bytes.
+
+PASS: sensor/fault/current/temperature/deadman/fan/configuration/PWM/rollover cases
+PASS: real firmware state transitions, interlock, pulse timeout, calibration lock, deadman, USB loss, I2C failure, power limit
+PASS: SHT31 CRC, corrupted bytes, conversions, dew point, invalid RH, stale data and rollover
+
+UF2: all Intel HEX payload bytes verified; family 0xADA52840.
+PCB source SHA256 matches revision L manufacturing export.
+Hardware tests: NOT PERFORMED.
+Default binary: measurements unverified; power commands blocked.

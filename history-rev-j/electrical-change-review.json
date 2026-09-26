@@ -1,0 +1,32 @@
+{
+  "from_revision": "I",
+  "to_revision": "J",
+  "net_changes": [
+    {
+      "reference": "U11",
+      "pin": "22",
+      "old_net": "GND",
+      "new_net": "T1_VREG"
+    },
+    {
+      "reference": "U12",
+      "pin": "22",
+      "old_net": "GND",
+      "new_net": "T2_VREG"
+    },
+    {
+      "reference": "U13",
+      "pin": "22",
+      "old_net": "GND",
+      "new_net": "T3_VREG"
+    },
+    {
+      "reference": "U14",
+      "pin": "22",
+      "old_net": "GND",
+      "new_net": "T4_VREG"
+    }
+  ],
+  "new_physical_components": 0,
+  "erc_power_flags_added": 4
+}

@@ -1,0 +1,7 @@
+Qty,Manufacturer,Part,Purpose,Notes
+4,SparkFun,COM-16988 QwiicBus EndPoint,2 local + 2 remote PCA9615 adapters,Set jumpers exactly as REMOTE-SENSORS.md
+2,Adafruit,2857 SHT31-D breakout,Remote T/RH sensing,Vin5V; addresses0x44/0x45
+2,JST,XHP-5,Cable housing at J28/J29,2.5mm XH
+10,JST,SXH-001T-P0.6,Crimp contacts,Use wire within contact specification
+2,Generic,CAT5e/CAT6 straight RJ45 patch cable,Differential link,Start1m; qualify chosen maximum up to3m
+2,Generic,Ventilated sensor cap,Ambient exposure,Separate from warm adapter; no coating on sensing aperture

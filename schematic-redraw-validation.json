@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-25",
+  "scope": "Schematic drawing only; PCB unchanged",
+  "physical_components": 202,
+  "electrical_pins": 638,
+  "exact_pin_to_net_parity": true,
+  "values_footprints_uuids_hierarchy_parity": true,
+  "erc_violations": 0,
+  "unrouted_schematic_connections": 0,
+  "pcb_sha256_unchanged": "94e26b0159dc112d9fe51a5cce2872bfe5b97c0d8600d464bc04b36c9e7ec8d8",
+  "baseline_netlist_sha256": "b60aff6977a47e53f6736e90bbf62989357f324b6efac2ae531801afb0be2872",
+  "redrawn_netlist_sha256": "cbbe8bd40a8719bdb24916dfc403245ff628247008631acd7f5f354c67c20c7b"
+}

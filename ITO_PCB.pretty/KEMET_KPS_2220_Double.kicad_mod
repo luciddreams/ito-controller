@@ -1,0 +1,182 @@
+(footprint "KEMET_KPS_2220_Double"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "KEMET KPS2220 double stack; pads2.08x4.78 at +/-2.69; courtyard7.70x6.00; C1129 04/26")
+	(tags "capacitor")
+	(property "Reference" "REF**"
+		(at 0 -3.6 0)
+		(layer "F.Fab")
+		(uuid "5b0791dd-6293-4396-b904-4de081d65104")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "47u / 25V X7R C2220C476M3R2C7186"
+		(at 0 3.6 0)
+		(layer "F.Fab")
+		(uuid "d2aaa6c4-d939-4508-b19f-10b1679465ef")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "82681d14-2b74-4d49-b9bc-b09d45529be2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "12005845-2580-4966-8625-78085f3c010f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -3.85 -3)
+		(end 3.85 -3)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "cb525804-2fad-4e2a-aa76-b616a32fb73d")
+	)
+	(fp_line
+		(start -3.85 3)
+		(end -3.85 -3)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "60b9a2a7-c748-4799-b421-7ee2ae562678")
+	)
+	(fp_line
+		(start 3.85 -3)
+		(end 3.85 3)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "791a899b-0502-487a-b0f5-b31a4fb49d23")
+	)
+	(fp_line
+		(start 3.85 3)
+		(end -3.85 3)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "8503720c-7ea1-480a-ae16-21e7c871c33f")
+	)
+	(fp_line
+		(start -3 -2.5)
+		(end 3 -2.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "758e20fe-a288-4e04-be62-008a920a6d03")
+	)
+	(fp_line
+		(start -3 2.5)
+		(end -3 -2.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "2c822017-a1f4-4e71-84cf-a66a9203ab8a")
+	)
+	(fp_line
+		(start -1.333598 -2.72)
+		(end 1.333598 -2.72)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "8e5d15d8-c1bb-4327-8e2e-df3ac2710154")
+	)
+	(fp_line
+		(start -1.333598 2.72)
+		(end 1.333598 2.72)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "a72f33a4-734d-4ae5-b2b8-50743f794078")
+	)
+	(fp_line
+		(start 3 -2.5)
+		(end 3 2.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "a6acb252-e494-47fb-ae34-d9afde8ab497")
+	)
+	(fp_line
+		(start 3 2.5)
+		(end -3 2.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "1c0f23c1-2eea-4bff-8f56-5caf1d2c833c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "79823d01-d072-4c05-8942-eba605cfef5f")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.69 0)
+		(size 2.08 4.78)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e7b73a92-51e2-4b1e-87f9-f6ff373de41b")
+	)
+	(pad "2" smd rect
+		(at 2.69 0)
+		(size 2.08 4.78)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(zone_connect 2)
+		(uuid "b1c2210d-a147-4cb1-b655-6cde694d54b4")
+	)
+	(embedded_fonts no)
+
+	(model "${KIPRJMOD}/3dmodels/KEMET_KPS_2220_Double.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+)
