@@ -10,6 +10,7 @@ KiCad 9 project for a 100 × 100 mm ITO glass plate with resistive heating and f
 - [Schematic PDF](ito-controller-schema-rev-l.pdf) and [schematic reading guide](SCHEMATIC-GUIDE.md).
 - Open `ito-controller.kicad_pro` in KiCad 9 for the schematic, PCB and 3D viewer. Keep the directory structure intact.
 - [Datasheets and BOM coverage](datasheets/README.md).
+- [Purchasing BOM and order tracker](procurement/README.md): ordered/delivered checkboxes, suppliers, prices and quantities.
 - [Assembly and wiring](ASSEMBLY.md), [connector pinout](connector-pinout.csv) and [prototype commissioning](PROTOTYPE-START.md).
 - [Firmware build, flashing and calibration](firmware/README.md) and [GPIO/I²C contract](FIRMWARE-INTERFACE.md).
 
@@ -22,6 +23,7 @@ KiCad 9 project for a 100 × 100 mm ITO glass plate with resistive heating and f
 | `manufacturing/` | Gerbers, drills, placement files and fabrication output |
 | `BOM-prototype.csv` | Component references, manufacturers and orderable part numbers |
 | `external-sensor-BOM.csv` | External ambient modules and cable parts |
+| `procurement/` | Browser purchasing tracker, Excel alternative and instructions |
 | `firmware/` | Source code, diagnostic build and host tests |
 | `datasheets/` | Manufacturer documents, source URLs and download status |
 | `docs/` | Detailed description and import information |

@@ -1,0 +1,790 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ITO controller purchasing BOM</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f3f5f8;color:#203247;font:14px system-ui,sans-serif}header{padding:25px 28px 16px;background:white;border-bottom:1px solid #d7dfe8}h1{margin:0 0 8px;font-size:25px}p{line-height:1.6;margin:7px 0;color:#52647a}.controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:18px 0 8px}button,input,select{font:inherit;border:1px solid #b8c5d4;border-radius:5px;padding:7px;background:white;color:inherit}button{cursor:pointer}button.primary{background:#253b56;color:white}input[type=number]{width:90px}input[type=checkbox]{width:19px;height:19px;accent-color:#295a94;cursor:pointer}#search{width:260px}#metrics{display:flex;gap:26px;flex-wrap:wrap;margin:18px 0 0}#metrics span{font-size:13px}#metrics strong{font-size:20px;display:block;color:#203247}.tablewrap{overflow:auto;max-height:66vh;margin:20px 28px;background:white;border:1px solid #d7dfe8;border-radius:8px}table{border-collapse:separate;border-spacing:0;min-width:2350px;width:100%}th{position:sticky;top:0;background:#253b56;color:white;padding:12px 10px;text-align:left;z-index:2;white-space:nowrap;font-size:12px}td{padding:10px;border-bottom:1px solid #e5eaf0;vertical-align:top}th:first-child,td:first-child{position:sticky;left:0;min-width:300px;max-width:340px;z-index:1;background:#fff}th:first-child{background:#253b56;z-index:3}tr:nth-child(even) td{background:#f8fafc}td input:not([type=checkbox]){background:#fff8e7;width:140px}td input[type=number]{width:85px}.part{font-weight:650;overflow-wrap:anywhere}small{display:block;color:#64748b;margin-top:4px;font-size:12px}.status{white-space:nowrap;border-radius:4px;padding:4px 7px;background:#eef2f7;display:inline-block}.ready{background:#ddf1e5}.warn{background:#ffe5df;color:#943527}details{max-width:340px;margin-top:5px;color:#52647a;font-size:12px}footer{padding:0 28px 20px;font-size:12px;color:#52647a}#message{font-size:13px;color:#52647a}#error{color:#a12626}a{color:#285b97}
+</style>
+<header><h1>ITO controller purchasing BOM</h1>
+<p>68 purchase lines · 202 PCB positions grouped into 58 part types · revision L</p>
+<p>Tick <b>Ordered</b> after placing an order. Enter <b>Received qty</b> for partial deliveries; tick <b>Delivered</b> when the whole order has arrived.</p>
+<div class="controls"><label>Build quantity <input id="builds" type="number" min="1" step="1" value="1"></label><input id="search" placeholder="Search MPN, supplier or reference" aria-label="Search"><select id="filter" aria-label="Filter"><option value="all">All items</option><option value="PCB">PCB</option><option value="Remote sensors">Remote sensors</option><option value="System">System</option><option value="open">Still needed</option><option value="ordered">Ordered</option></select><button class="primary" id="save">Export progress JSON</button><button id="load">Import progress JSON</button><input type="file" id="file" accept=".json" hidden><button id="csv">Export current CSV</button></div>
+<p id="message" role="status">Changes save in this browser only. Export progress JSON to keep a portable backup or commit it to GitHub.</p><p id="error" role="alert"></p><div id="metrics"></div></header>
+<div class="tablewrap"><table><thead><tr><th>Part / MPN</th><th>Per build</th><th>Required</th><th>Stock</th><th>Still needed</th><th>Ordered</th><th>Order qty</th><th>Supplier</th><th>Supplier SKU</th><th>Unit price EUR</th><th>Line total EUR</th><th>Received qty</th><th>Delivered</th><th>Status</th><th>Order reference</th><th>Expected date</th><th>Product URL</th><th>Notes</th></tr></thead><tbody id="rows"></tbody></table></div>
+<footer>Prices in EUR excluding VAT and shipping. One supplier and unit price per part; use a weighted unit price for combined orders. Stock means stock held before these orders.<br>Scope: PCB parts, remote sensor BOM, MCU, PSU, TECs and bare PCB. Thermal assembly, glass/coating and remaining wiring still require selection; see README.md.<br>Source: <a id="source">source BOM commit</a>. Browser progress and the Excel file do not synchronize automatically. No data is sent to a server.</footer>
+<script id="bom-data" type="application/json">{
+  "schema": 1,
+  "sourceCommit": "02f71dd4e608c7d41adff49b4cf41a6e93647b64",
+  "pcbPositions": 202,
+  "pcbParts": 58,
+  "items": [
+    {
+      "category": "PCB",
+      "manufacturer": "Analog Devices",
+      "mpn": "LT8613EUDE#PBF",
+      "qty": 4,
+      "refs": "U11, U12, U13, U14",
+      "notes": "LT8613EUDE",
+      "footprint": "ITO_PCB:QFN-28-1EP_3x6mm_P0.5mm_EP1.7x4.75mm",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Analog Devices|LT8613EUDE#PBF"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Infineon",
+      "mpn": "IRLB4030PBF",
+      "qty": 1,
+      "refs": "Q2",
+      "notes": "IRLB4030PBF",
+      "footprint": "ITO_PCB:TO-220-3_Vertical",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Infineon|IRLB4030PBF"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "JST",
+      "mpn": "B2B-XH-A(LF)(SN)",
+      "qty": 10,
+      "refs": "J5, J6, J7, J8, J21, J22, J23, J24, J25, J9",
+      "notes": "Connector 2 pins / EFUSE RESET NO",
+      "footprint": "ITO_PCB:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|JST|B2B-XH-A(LF)(SN)"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "JST",
+      "mpn": "B4B-XH-A(LF)(SN)",
+      "qty": 2,
+      "refs": "J26, J27",
+      "notes": "Connector 4 pins",
+      "footprint": "ITO_PCB:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|JST|B4B-XH-A(LF)(SN)"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "JST",
+      "mpn": "B5B-XH-A(LF)(SN)",
+      "qty": 2,
+      "refs": "J28, J29",
+      "notes": "Short \u003c=10cm lead to local PCA9615 adapter; differential cable only beyond adapter. Pin1=3V3 reference, pin5=fused5V. See REMOTE-SENSORS.md.",
+      "footprint": "ITO_PCB:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|JST|B5B-XH-A(LF)(SN)"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "KEMET",
+      "mpn": "C0805C100J5GACTU",
+      "qty": 4,
+      "refs": "C109, C209, C309, C409",
+      "notes": "0805, 10pF, C0G, 50V, 5%",
+      "footprint": "ITO_PCB:C_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|KEMET|C0805C100J5GACTU"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "KEMET",
+      "mpn": "C2220C476M3R2C7186",
+      "qty": 8,
+      "refs": "C107, C108, C207, C208, C307, C308, C407, C408",
+      "notes": "KPS stacked 2220, 47uF, 25V, X7R, 20%; custom pads",
+      "footprint": "ITO_PCB:KEMET_KPS_2220_Double",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|KEMET|C2220C476M3R2C7186"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Kycon",
+      "mpn": "KPJX-4S",
+      "qty": 1,
+      "refs": "J30",
+      "notes": "7.5A per contact at48VDC; use both contacts per polarity; 4P snap-lock PCB socket; Direct GST160A24-R7B input. Pins1/4=+24_IN, pins2/3=GND. J3 alternative input only; never connect two supplies. Prototype remains \u003c=4A total.",
+      "footprint": "ITO_PCB:Kycon_KPJX-4S",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Kycon|KPJX-4S"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Littelfuse",
+      "mpn": "0451.250MRL",
+      "qty": 2,
+      "refs": "F4, F5",
+      "notes": "Remote adapter/cable 5V branch fuse; normal branch budget \u003c=150mA.",
+      "footprint": "ITO_PCB:Littelfuse_451",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Littelfuse|0451.250MRL"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Littelfuse",
+      "mpn": "0451001.MRL",
+      "qty": 1,
+      "refs": "F3",
+      "notes": "1A / 125V DC 0451001.MRL",
+      "footprint": "ITO_PCB:Littelfuse_451",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Littelfuse|0451001.MRL"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Littelfuse",
+      "mpn": "0451005.MRL",
+      "qty": 1,
+      "refs": "F2",
+      "notes": "5A / 125V DC 0451005.MRL",
+      "footprint": "ITO_PCB:Littelfuse_451",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Littelfuse|0451005.MRL"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Littelfuse",
+      "mpn": "0451010.MRL",
+      "qty": 1,
+      "refs": "F1",
+      "notes": "10A / 125V DC 0451010.MRL",
+      "footprint": "ITO_PCB:Littelfuse_451",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Littelfuse|0451010.MRL"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Littelfuse",
+      "mpn": "045102.5MRL",
+      "qty": 4,
+      "refs": "F11, F12, F13, F14",
+      "notes": "2.5A / 125V DC 045102.5MRL",
+      "footprint": "ITO_PCB:Littelfuse_451",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Littelfuse|045102.5MRL"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Littelfuse",
+      "mpn": "SMBJ33CA",
+      "qty": 1,
+      "refs": "D1",
+      "notes": "SMBJ33CA bidirectioneel",
+      "footprint": "ITO_PCB:D_SMB",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Littelfuse|SMBJ33CA"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Microchip",
+      "mpn": "MCP4728-E/UN",
+      "qty": 1,
+      "refs": "U4",
+      "notes": "MCP4728-E-UN",
+      "footprint": "ITO_PCB:MSOP-10_3x3mm_P0.5mm",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Microchip|MCP4728-E/UN"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Murata",
+      "mpn": "GRM21BR61E106KA73L",
+      "qty": 2,
+      "refs": "C1, C2",
+      "notes": "0805, 10uF, 25V, X5R, 10%; used on \u003c=5V rails",
+      "footprint": "ITO_PCB:C_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Murata|GRM21BR61E106KA73L"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Murata",
+      "mpn": "GRM21BR71H103KA01L",
+      "qty": 4,
+      "refs": "C106, C206, C306, C406",
+      "notes": "0805, 10nF, 50V, X7R, 10%",
+      "footprint": "ITO_PCB:C_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Murata|GRM21BR71H103KA01L"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Murata",
+      "mpn": "GRM21BR71H104KA01L",
+      "qty": 24,
+      "refs": "C3, C4, C10, C12, C20, C21, C22, C23, C24, C26, C28, C30, C31, C105, C205, C305, C405, C40, C41, C42, C43, C44, C50, C7",
+      "notes": "0805, 100nF, 50V, X7R, 10% / dVdt timing; calculate with effective C = 70..127nF, including temperature/aging allowance",
+      "footprint": "ITO_PCB:C_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Murata|GRM21BR71H104KA01L"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Murata",
+      "mpn": "GRM21BR71H105KA12L",
+      "qty": 12,
+      "refs": "C6, C11, C103, C104, C203, C204, C303, C304, C403, C404, C51, C52",
+      "notes": "0805, 1uF, 50V, X7R, 10% / Connector branch decoupling.",
+      "footprint": "ITO_PCB:C_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Murata|GRM21BR71H105KA12L"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Murata",
+      "mpn": "GRM32ER71H106KA12L",
+      "qty": 8,
+      "refs": "C101, C102, C201, C202, C301, C302, C401, C402",
+      "notes": "1210, 10uF, 50V, X7R, 10%; no 0805 substitution",
+      "footprint": "ITO_PCB:C_1210_3225Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Murata|GRM32ER71H106KA12L"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Omron",
+      "mpn": "G2RL-1A-E DC24",
+      "qty": 1,
+      "refs": "K1",
+      "notes": "G2RL-1A-E DC24",
+      "footprint": "ITO_PCB:G2RL_1A_E_review",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Omron|G2RL-1A-E DC24"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "onsemi",
+      "mpn": "BSS138LT1G",
+      "qty": 1,
+      "refs": "Q3",
+      "notes": "BSS138LT1G",
+      "footprint": "ITO_PCB:SOT-23",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|onsemi|BSS138LT1G"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "onsemi",
+      "mpn": "MMBT3904LT1G",
+      "qty": 3,
+      "refs": "Q4, Q5, Q6",
+      "notes": "MMBT3904",
+      "footprint": "ITO_PCB:SOT-23",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|onsemi|MMBT3904LT1G"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Panasonic",
+      "mpn": "EEUFR1H471",
+      "qty": 1,
+      "refs": "C5",
+      "notes": "470uF 50V radial; 12.5mm diameter, 5mm pitch; reserve22mm height",
+      "footprint": "ITO_PCB:CP_Radial_D12.5mm_P5.00mm",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Panasonic|EEUFR1H471"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Panasonic",
+      "mpn": "ERJP06F1002V",
+      "qty": 1,
+      "refs": "R25",
+      "notes": "0805 10k 1%, 0.5W; output bleeder.",
+      "footprint": "ITO_PCB:R_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Panasonic|ERJP06F1002V"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Phoenix Contact",
+      "mpn": "1715721",
+      "qty": 6,
+      "refs": "J3, J4, J11, J12, J13, J14",
+      "notes": "MKDS 1,5/2-5,08; 2 positions, pitch 5.08mm",
+      "footprint": "ITO_PCB:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Phoenix Contact|1715721"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Samtec",
+      "mpn": "SSW-107-01-G-S",
+      "qty": 2,
+      "refs": "J1, J2",
+      "notes": "XIAO right socket 1x7 - USB down / XIAO left socket 1x7 - USB down",
+      "footprint": "ITO_PCB:PinSocket_1x07_P2.54mm_Vertical",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Samtec|SSW-107-01-G-S"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Samtec",
+      "mpn": "TSW-102-07-G-S",
+      "qty": 5,
+      "refs": "JP1, TP11, TP12, TP13, TP14",
+      "notes": "Power jumper - default OPEN / Connector 2 pins",
+      "footprint": "ITO_PCB:PinHeader_1x02_P2.54mm_Vertical",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Samtec|TSW-102-07-G-S"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Samtec",
+      "mpn": "TSW-103-07-G-S",
+      "qty": 1,
+      "refs": "TP1",
+      "notes": "Connector 3 pins",
+      "footprint": "ITO_PCB:PinHeader_1x03_P2.54mm_Vertical",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Samtec|TSW-103-07-G-S"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "STMicroelectronics",
+      "mpn": "STP55NF06L",
+      "qty": 1,
+      "refs": "Q1",
+      "notes": "STP55NF06L",
+      "footprint": "ITO_PCB:TO-220-3_Vertical",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|STMicroelectronics|STP55NF06L"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Texas Instruments",
+      "mpn": "ADS1115IDGSR",
+      "qty": 1,
+      "refs": "U9",
+      "notes": "ADS1115IDGS",
+      "footprint": "ITO_PCB:VSSOP-10_3x3mm_P0.5mm",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Texas Instruments|ADS1115IDGSR"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Texas Instruments",
+      "mpn": "INA226AIDGSR",
+      "qty": 1,
+      "refs": "U3",
+      "notes": "INA226AIDGS",
+      "footprint": "ITO_PCB:VSSOP-10_3x3mm_P0.5mm",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Texas Instruments|INA226AIDGSR"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Texas Instruments",
+      "mpn": "OPA2333AIDR",
+      "qty": 2,
+      "refs": "U5, U6",
+      "notes": "OPA2333AID",
+      "footprint": "ITO_PCB:SOIC-8_3.9x4.9mm_P1.27mm",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Texas Instruments|OPA2333AIDR"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Texas Instruments",
+      "mpn": "SN74AHC1G08DBVR",
+      "qty": 1,
+      "refs": "U15",
+      "notes": "SN74AHC1G08DBVR",
+      "footprint": "ITO_PCB:SOT-23-5",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Texas Instruments|SN74AHC1G08DBVR"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Texas Instruments",
+      "mpn": "SN74LVC08APWR",
+      "qty": 1,
+      "refs": "U8",
+      "notes": "SN74LVC08APWR",
+      "footprint": "ITO_PCB:TSSOP-14_4.4x5mm_P0.65mm",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Texas Instruments|SN74LVC08APWR"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Texas Instruments",
+      "mpn": "TCA9534PWR",
+      "qty": 1,
+      "refs": "U7",
+      "notes": "TCA9534PWR",
+      "footprint": "ITO_PCB:TSSOP-16_4.4x5mm_P0.65mm",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Texas Instruments|TCA9534PWR"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Texas Instruments",
+      "mpn": "TPS26630RGER",
+      "qty": 1,
+      "refs": "U1",
+      "notes": "TPS26630RGER",
+      "footprint": "ITO_PCB:TI_RGE0024H_4x4_EP2.7",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Texas Instruments|TPS26630RGER"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Texas Instruments",
+      "mpn": "UCC27511DBVR",
+      "qty": 1,
+      "refs": "U2",
+      "notes": "UCC27511DBV",
+      "footprint": "ITO_PCB:SOT-23-6",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Texas Instruments|UCC27511DBVR"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "TRACO Power",
+      "mpn": "TSR 1-2450",
+      "qty": 1,
+      "refs": "M1",
+      "notes": "TSR 1-2450",
+      "footprint": "ITO_PCB:Converter_DCDC_TRACO_TSR-1_THT",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|TRACO Power|TSR 1-2450"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Vishay",
+      "mpn": "1N4007-E3/54",
+      "qty": 1,
+      "refs": "D2",
+      "notes": "1N4007",
+      "footprint": "ITO_PCB:D_DO-41_SOD81_P10.16mm_Horizontal",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Vishay|1N4007-E3/54"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Vishay",
+      "mpn": "IHLP6767GZEK100M11",
+      "qty": 4,
+      "refs": "L1, L2, L3, L4",
+      "notes": "10uH IHLP6767GZEK100M11",
+      "footprint": "ITO_PCB:L_Vishay_IHLP-6767",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Vishay|IHLP6767GZEK100M11"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Vishay",
+      "mpn": "WSL2512R0100FEA",
+      "qty": 1,
+      "refs": "RSH1",
+      "notes": "10m / 1W / 1% WSL2512R0100FEA",
+      "footprint": "ITO_PCB:WSL2512_7m_to_500m",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Vishay|WSL2512R0100FEA"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Vishay",
+      "mpn": "WSL2512R0250FEA",
+      "qty": 4,
+      "refs": "RS1, RS2, RS3, RS4",
+      "notes": "25m / 1W / 1% WSL2512R0250FEA",
+      "footprint": "ITO_PCB:WSL2512_7m_to_500m",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Vishay|WSL2512R0250FEA"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Yageo",
+      "mpn": "RC0805FR-07100KL",
+      "qty": 19,
+      "refs": "R21, R22, R23, R32, R33, R51, R55, R52, R56, R53, R57, R54, R58, R103, R203, R303, R403, R73, R19",
+      "notes": "0805, 1%, >=0.125W, >=50V",
+      "footprint": "ITO_PCB:R_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Yageo|RC0805FR-07100KL"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Yageo",
+      "mpn": "RC0805FR-0710KL",
+      "qty": 4,
+      "refs": "R3, R15, R24, R74",
+      "notes": "0805, 1%, >=0.125W, >=50V",
+      "footprint": "ITO_PCB:R_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Yageo|RC0805FR-0710KL"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Yageo",
+      "mpn": "RC0805FR-0710RL",
+      "qty": 1,
+      "refs": "R31",
+      "notes": "0805, 1%, >=0.125W, >=50V",
+      "footprint": "ITO_PCB:R_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Yageo|RC0805FR-0710RL"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Yageo",
+      "mpn": "RC0805FR-071KL",
+      "qty": 7,
+      "refs": "R6, R18, R65, R66, R67, R68, R71",
+      "notes": "0805, 1%, >=0.125W, >=50V",
+      "footprint": "ITO_PCB:R_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Yageo|RC0805FR-071KL"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Yageo",
+      "mpn": "RC0805FR-071M13L",
+      "qty": 4,
+      "refs": "R102, R202, R302, R402",
+      "notes": "0805, 1%, >=0.125W, >=50V",
+      "footprint": "ITO_PCB:R_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Yageo|RC0805FR-071M13L"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Yageo",
+      "mpn": "RC0805FR-0722RL",
+      "qty": 1,
+      "refs": "R30",
+      "notes": "0805, 1%, >=0.125W, >=50V",
+      "footprint": "ITO_PCB:R_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Yageo|RC0805FR-0722RL"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Yageo",
+      "mpn": "RC0805FR-072K2L",
+      "qty": 3,
+      "refs": "R1, R2, R20",
+      "notes": "0805, 1%, >=0.125W, >=50V",
+      "footprint": "ITO_PCB:R_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Yageo|RC0805FR-072K2L"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Yageo",
+      "mpn": "RC0805FR-074K7L",
+      "qty": 2,
+      "refs": "R7, R72",
+      "notes": "0805, 1%, >=0.125W, >=50V",
+      "footprint": "ITO_PCB:R_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Yageo|RC0805FR-074K7L"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Yageo",
+      "mpn": "RC0805FR-0788K7L",
+      "qty": 4,
+      "refs": "R101, R201, R301, R401",
+      "notes": "0805, 1%, >=0.125W, >=50V",
+      "footprint": "ITO_PCB:R_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Yageo|RC0805FR-0788K7L"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Yageo",
+      "mpn": "RC0805JR-070RL",
+      "qty": 1,
+      "refs": "R4",
+      "notes": "0805 zero-ohm link; signal only",
+      "footprint": "ITO_PCB:R_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Yageo|RC0805JR-070RL"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Yageo",
+      "mpn": "RT0805BRD0710KL",
+      "qty": 17,
+      "refs": "R5, R11, R13, R17, R42, R43, R44, R45, R46, R47, R48, R49, R61, R62, R63, R64, R70",
+      "notes": "0805 thin film, 0.1%, 25ppm/K or better, >=0.125W",
+      "footprint": "ITO_PCB:R_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Yageo|RT0805BRD0710KL"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Yageo",
+      "mpn": "RT0805BRD07150KL",
+      "qty": 1,
+      "refs": "R16",
+      "notes": "0805 thin film, 0.1%, 25ppm/K or better, >=0.125W",
+      "footprint": "ITO_PCB:R_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Yageo|RT0805BRD07150KL"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Yageo",
+      "mpn": "RT0805BRD07156KL",
+      "qty": 1,
+      "refs": "R10",
+      "notes": "0805 thin film, 0.1%, 25ppm/K or better, >=0.125W",
+      "footprint": "ITO_PCB:R_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Yageo|RT0805BRD07156KL"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Yageo",
+      "mpn": "RT0805BRD07223KL",
+      "qty": 1,
+      "refs": "R12",
+      "notes": "0805 thin film, 0.1%, 25ppm/K or better, >=0.125W",
+      "footprint": "ITO_PCB:R_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Yageo|RT0805BRD07223KL"
+    },
+    {
+      "category": "PCB",
+      "manufacturer": "Yageo",
+      "mpn": "RT0805BRD074K02L",
+      "qty": 1,
+      "refs": "R14",
+      "notes": "0805 thin film, 0.1%, 25ppm/K or better, >=0.125W",
+      "footprint": "ITO_PCB:R_0805_2012Metric",
+      "source": "BOM-prototype.csv",
+      "id": "PCB|Yageo|RT0805BRD074K02L"
+    },
+    {
+      "category": "Remote sensors",
+      "manufacturer": "SparkFun",
+      "mpn": "COM-16988 QwiicBus EndPoint",
+      "qty": 4,
+      "refs": "2 local + 2 remote PCA9615 adapters",
+      "notes": "Set jumpers exactly as REMOTE-SENSORS.md",
+      "footprint": "",
+      "source": "external-sensor-BOM.csv",
+      "id": "Remote sensors|SparkFun|COM-16988 QwiicBus EndPoint"
+    },
+    {
+      "category": "Remote sensors",
+      "manufacturer": "Adafruit",
+      "mpn": "2857 SHT31-D breakout",
+      "qty": 2,
+      "refs": "Remote T/RH sensing",
+      "notes": "Vin5V; addresses0x44/0x45",
+      "footprint": "",
+      "source": "external-sensor-BOM.csv",
+      "id": "Remote sensors|Adafruit|2857 SHT31-D breakout"
+    },
+    {
+      "category": "Remote sensors",
+      "manufacturer": "JST",
+      "mpn": "XHP-5",
+      "qty": 2,
+      "refs": "Cable housing at J28/J29",
+      "notes": "2.5mm XH",
+      "footprint": "",
+      "source": "external-sensor-BOM.csv",
+      "id": "Remote sensors|JST|XHP-5"
+    },
+    {
+      "category": "Remote sensors",
+      "manufacturer": "JST",
+      "mpn": "SXH-001T-P0.6",
+      "qty": 10,
+      "refs": "Crimp contacts",
+      "notes": "Use wire within contact specification",
+      "footprint": "",
+      "source": "external-sensor-BOM.csv",
+      "id": "Remote sensors|JST|SXH-001T-P0.6"
+    },
+    {
+      "category": "Remote sensors",
+      "manufacturer": "Generic",
+      "mpn": "CAT5e/CAT6 straight RJ45 patch cable",
+      "qty": 2,
+      "refs": "Differential link",
+      "notes": "Start1m; qualify chosen maximum up to3m",
+      "footprint": "",
+      "source": "external-sensor-BOM.csv",
+      "id": "Remote sensors|Generic|CAT5e/CAT6 straight RJ45 patch cable"
+    },
+    {
+      "category": "Remote sensors",
+      "manufacturer": "Generic",
+      "mpn": "Ventilated sensor cap",
+      "qty": 2,
+      "refs": "Ambient exposure",
+      "notes": "Separate from warm adapter; no coating on sensing aperture",
+      "footprint": "",
+      "source": "external-sensor-BOM.csv",
+      "id": "Remote sensors|Generic|Ventilated sensor cap"
+    },
+    {
+      "category": "System",
+      "manufacturer": "Seeed Studio",
+      "mpn": "XIAO BLE nRF52840",
+      "qty": 1,
+      "refs": "",
+      "notes": "Module on J1/J2; user already owns a module, enter available stock.",
+      "footprint": "",
+      "source": "README.md / project decisions",
+      "id": "System|Seeed Studio|XIAO BLE nRF52840"
+    },
+    {
+      "category": "System",
+      "manufacturer": "Mean Well",
+      "mpn": "GST160A24-R7B",
+      "qty": 1,
+      "refs": "",
+      "notes": "24 V supply; direct connection to J30. No P1J adapter required.",
+      "footprint": "",
+      "source": "README.md / project decisions",
+      "id": "System|Mean Well|GST160A24-R7B"
+    },
+    {
+      "category": "System",
+      "manufacturer": "Supplier to select",
+      "mpn": "TEC1-12706",
+      "qty": 4,
+      "refs": "",
+      "notes": "Exact supplier to select; follow prototype operating limits.",
+      "footprint": "",
+      "source": "README.md / project decisions",
+      "id": "System|Supplier to select|TEC1-12706"
+    },
+    {
+      "category": "System",
+      "manufacturer": "PCB manufacturer to select",
+      "mpn": "ITO controller revision L bare PCB",
+      "qty": 1,
+      "refs": "",
+      "notes": "Fabricate to FABRICATION.md; do not order from this checklist alone.",
+      "footprint": "",
+      "source": "README.md / project decisions",
+      "id": "System|PCB manufacturer to select|ITO controller revision L bare PCB"
+    }
+  ]
+}</script>
+<script>
+'use strict';
+const bom=JSON.parse(document.getElementById('bom-data').textContent),key='ito-controller-purchasing-v1';
+const blank=()=>({ordered:false,delivered:false,stock:0,orderQty:0,received:0,supplier:'',sku:'',price:'',orderRef:'',eta:'',url:'',notes:''});
+let state={schema:1,sourceCommit:bom.sourceCommit,builds:1,items:{}};
+const $=id=>document.getElementById(id),fields=['ordered','delivered','stock','orderQty','received','supplier','sku','price','orderRef','eta','url','notes'];
+function validate(s){if(s?.schema!==1||!Number.isInteger(s.builds)||s.builds<1||s.builds>10000||!s.items||typeof s.items!=='object'||Array.isArray(s.items))throw Error('Invalid progress file.');const next={schema:1,sourceCommit:bom.sourceCommit,builds:s.builds,items:{}};for(const item of bom.items){const v=s.items[item.id];if(!v)continue;const clean=blank();for(const f of fields){if(!(f in v))continue;const a=v[f];if(['ordered','delivered'].includes(f)){if(typeof a!=='boolean')throw Error('Invalid checkbox value.');}else if(['stock','orderQty','received'].includes(f)){if(!Number.isInteger(a)||a<0)throw Error('Invalid quantity.');}else if(f==='price'){if(a!==''&&(typeof a!=='number'||!Number.isFinite(a)||a<0))throw Error('Invalid price.');}else if(typeof a!=='string')throw Error('Invalid text field.');clean[f]=a;}next.items[item.id]=clean;}return next;}
+try{const old=localStorage.getItem(key);if(old)state=validate(JSON.parse(old));}catch(e){$('error').textContent='Could not load browser storage. Import an exported backup if needed.';}
+function persist(){try{localStorage.setItem(key,JSON.stringify(state));$('message').textContent='Saved in this browser. Export progress JSON and commit it to GitHub to share or back it up.';}catch(e){$('error').textContent='Browser storage is unavailable. Export progress JSON before closing.';}}
+function calc(item,v,builds=state.builds){const required=item.qty*builds,needed=Math.max(0,required-v.stock-v.received),cost=v.orderQty>0&&v.price!==''?Math.round(v.orderQty*v.price*100)/100:null;let status='To order';if(v.delivered&&(v.orderQty===0||v.received<v.orderQty))status='Check receipt';else if(v.received>0&&!v.ordered)status='Check order flag';else if(v.received>v.orderQty)status='Check quantities';else if(needed===0)status='Ready';else if(v.ordered&&v.orderQty===0)status='Enter order qty';else if(v.ordered&&v.stock+v.orderQty<required)status='Order shortfall';else if(v.ordered)status=v.received>0?'Partial delivery':'Awaiting delivery';return {required,needed,cost,status};}
+const money=n=>new Intl.NumberFormat('en-IE',{style:'currency',currency:'EUR'}).format(n);
+function input(td,f,v,id){const el=document.createElement('input');el.type=['ordered','delivered'].includes(f)?'checkbox':['stock','orderQty','received','price'].includes(f)?'number':f==='eta'?'date':'text';el.dataset.field=f;el.dataset.id=id;el.setAttribute('aria-label',f+' '+id);if(el.type==='checkbox')el.checked=v[f];else el.value=v[f];if(el.type==='number'){el.min='0';el.step=f==='price'?'0.0001':'1';}td.append(el);}
+function render(){const body=$('rows');body.replaceChildren();let total=0,unpriced=0,ready=0,ordered=0;const search=$('search').value.toLowerCase(),filter=$('filter').value;for(const item of bom.items){const v={...blank(),...state.items[item.id]},c=calc(item,v);if(c.cost!==null)total+=c.cost;else if(v.orderQty>0)unpriced++;if(c.status==='Ready')ready++;if(v.ordered)ordered++;if(filter==='open'&&c.needed===0||filter==='ordered'&&!v.ordered||!['all','open','ordered',item.category].includes(filter))continue;if(search&&!JSON.stringify([item,v.supplier,v.sku]).toLowerCase().includes(search))continue;const tr=document.createElement('tr');const td=()=>{const x=document.createElement('td');tr.append(x);return x;};const first=td(),title=document.createElement('div');title.className='part';title.textContent=item.mpn;first.append(title);const meta=document.createElement('small');meta.textContent=item.manufacturer+' · '+item.category;first.append(meta);const details=document.createElement('details'),summary=document.createElement('summary');summary.textContent='References and specification';details.append(summary);const desc=document.createElement('div');desc.textContent=[item.refs,item.notes,item.footprint].filter(Boolean).join(' — ');details.append(desc);first.append(details);td().textContent=item.qty;td().textContent=c.required;input(td(),'stock',v,item.id);td().textContent=c.needed;for(const f of ['ordered','orderQty','supplier','sku','price'])input(td(),f,v,item.id);td().textContent=c.cost===null?'—':money(c.cost);input(td(),'received',v,item.id);input(td(),'delivered',v,item.id);const tag=document.createElement('span');tag.textContent=c.status;tag.className='status'+(c.status==='Ready'?' ready':/Check|shortfall|Enter/.test(c.status)?' warn':'');td().append(tag);for(const f of ['orderRef','eta','url','notes'])input(td(),f,v,item.id);body.append(tr);}
+ $('metrics').replaceChildren();for(const [label,value] of [['Priced order total',money(total)],['Order lines without price',unpriced],['Ordered lines',ordered+' / '+bom.items.length],['Ready for build',ready+' / '+bom.items.length]]){const span=document.createElement('span'),strong=document.createElement('strong');span.textContent=label;strong.textContent=value;span.append(strong);$('metrics').append(span);}}
+$('rows').addEventListener('change',e=>{const el=e.target,f=el.dataset.field,id=el.dataset.id;if(!f)return;if(!el.checkValidity()){el.reportValidity();return;}let value=el.type==='checkbox'?el.checked:el.type==='number'?(el.value===''&&f==='price'?'':Number(el.value)):el.value;state.items[id]={...blank(),...state.items[id],[f]:value};persist();render();});
+$('builds').value=state.builds;$('builds').addEventListener('change',e=>{const n=Number(e.target.value);if(!Number.isInteger(n)||n<1||n>10000){e.target.value=state.builds;return;}state.builds=n;persist();render();});$('search').addEventListener('input',render);$('filter').addEventListener('change',render);
+function download(name,content,type){const a=document.createElement('a'),url=URL.createObjectURL(new Blob([content],{type}));a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+$('save').onclick=()=>download('order-progress.json',JSON.stringify({...state,exportedAt:new Date().toISOString()},null,2),'application/json');$('load').onclick=()=>$('file').click();$('file').onchange=async e=>{try{const file=e.target.files[0];if(!file)return;const next=validate(JSON.parse(await file.text()));if(!confirm('Replace current browser progress with this file?'))return;state=next;$('builds').value=state.builds;$('error').textContent='';persist();render();}catch(e){$('error').textContent=e.message;}finally{$('file').value='';}};
+$('csv').onclick=()=>{const rows=[['MPN','Manufacturer','Category','Per build','Required','Stock','Still needed','Ordered','Order qty','Supplier','Supplier SKU','Unit price EUR','Line total EUR','Received qty','Delivered','Status','Order reference','Expected date','Product URL','Notes','References']];for(const item of bom.items){const v={...blank(),...state.items[item.id]},c=calc(item,v);rows.push([item.mpn,item.manufacturer,item.category,item.qty,c.required,v.stock,c.needed,v.ordered,v.orderQty,v.supplier,v.sku,v.price,c.cost??'',v.received,v.delivered,c.status,v.orderRef,v.eta,v.url,v.notes,item.refs]);}const quote=x=>'"'+String(x).replace(/^[=+@-]/,"'$&").replaceAll('"','""')+'"';download('ITO-Controller-Purchasing.csv','\uFEFF'+rows.map(r=>r.map(quote).join(',')).join('\r\n'),'text/csv;charset=utf-8');};
+$('source').href='https://github.com/luciddreams/ito-controller/tree/'+bom.sourceCommit;render();
+</script></html>
