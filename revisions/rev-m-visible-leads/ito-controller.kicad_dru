@@ -1,0 +1,4 @@
+(version 1)
+(rule "Prototype clearance for 0.15mm-pitch gaps" (constraint clearance (min 0.15mm)))
+(rule "Copper to edge" (constraint edge_clearance (min 0.5mm)))
+

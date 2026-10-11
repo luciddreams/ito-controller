@@ -1,0 +1,1 @@
+(fp_lib_table (lib (name "ITO_PCB") (type "KiCad") (uri "${KIPRJMOD}/ITO_PCB.pretty") (options "") (descr "Local prototype footprints; see README.md")))
