@@ -95,7 +95,7 @@ inline void task(void*) {
   config.auth_key = ITO_TAILSCALE_AUTH_KEY;
   config.device_name = ITO_TAILSCALE_NAME;
   config.enable_derp = config.enable_stun = config.enable_disco = true;
-  config.max_peers = 8;
+  config.max_peers = 16;
   microlink_t* link = microlink_init(&config);
   if (!link || microlink_start(link) != ESP_OK) {
     state("init_failed"); vTaskDelete(nullptr); return;

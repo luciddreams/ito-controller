@@ -103,13 +103,22 @@ the newest 32 KB are kept while no terminal is attached.
   the blocking UART0 console at 115200 baud (lines 5 ms apart), so the DERP-map
   dump alone exceeded the 250 ms watchdog. Verified after the fix: 136 s uptime,
   `gap_ctrl_ms=40`, `gap_lowprio_ms=29480`, minimum free internal heap 98 KB.
-- Open: the tailnet state alternated `mqtt_connecting` and `connecting`; MQTT
-  never reached `mqtt_connected`. MicroLink resolves the broker by exact peer
-  hostname (trailing dot stripped) and the configured host has the right shape,
-  so look in the streamed log for `ml_coord` state changes, `ml_tcp` lines such
-  as `WG tunnel not up` or `connect() failed: errno=`, and `ml_derp` status.
-  Tailnet ACL for port 1883 from the device tag and broker authentication are
-  server-side checks for the owner.
+- Fixed: MQTT never reached `mqtt_connected`. Cause: MicroLink's peer table had
+  8 slots and the tailnet has 13 peers; the broker came 10th in the MapResponse,
+  so the log showed `Peer table full (8 slots), cannot add <broker>` and no
+  WireGuard tunnel to it ever existed. Both `config.max_peers` in
+  `../esp32s3/ito_prototype_esp32s3/ito_tailnet_monitor.h` (changed on the
+  owner's request) and `CONFIG_ML_MAX_PEERS` in `sdkconfig.defaults` are now 16;
+  MicroLink clamps the former to the latter, and an existing `sdkconfig`
+  overrides the defaults, so edit or regenerate it too. Verified on macOS: tunnel
+  up over a direct path 18 s after boot, `tailnet=mqtt_connected` held,
+  `gap_ctrl_ms=40`, minimum free internal heap 93 KB. If the tailnet grows past
+  16 peers the broker can be dropped again; `CONFIG_ML_PRIORITY_PEER_IP` set to
+  the broker's tailnet IP reserves it a slot.
+- `tailnet=starting` that never moves on means Wi-Fi has not associated (the
+  task waits for `WL_CONNECTED` before time sync and MicroLink). If the log stops
+  after `wifi:Set ps type` with no `state: init -> auth` lines, the AP was not
+  found: check the antenna is attached, the SSID, and that it is on 2.4 GHz.
 - Off the PCB the I2C bus floats, so the controller reports
   `mode=4 fault=STALE_SENSOR` and spends extra time in bounded bus waits. That is
   expected and not a defect.
