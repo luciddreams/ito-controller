@@ -15,7 +15,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "platform.h"
-#include "network.h"
+#include "ito_wifi_monitor.h"
 #include <stdlib.h>
 #include <errno.h>
 Bus bus;
