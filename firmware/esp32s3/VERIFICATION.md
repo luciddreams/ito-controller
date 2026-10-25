@@ -17,3 +17,10 @@ accuracy, electrical timing, startup/reset pulses, hardware watchdog recovery,
 relay operation, current calibration and U11 operation remain unverified.
 Defaults therefore block all power pulses. In particular GPIO43 boot-ROM UART
 activity requires physical interlock/startup verification, not just unit tests.
+
+## L.2-S3 monitoring extension
+
+Wi-Fi target compiles with core 3.3.2: 949087 bytes flash / 66200 bytes RAM.
+USB-only target compiles: 340563 bytes flash / 41752 bytes RAM. Six host suites
+pass, adding JSON serialization and the Wi-Fi-only pulse lock tests. See
+`dashboard/VERIFICATION.md` at repository root for UI/API checks and limitations.

@@ -125,3 +125,18 @@ Sources checked 2026-10-25:
 - https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/
 - https://docs.espressif.com/projects/arduino-esp32/en/latest/api/adc.html
 - https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-reference/system/wdts.html
+
+## L.2-S3 Wi-Fi telemetry and Next.js dashboard
+
+See [dashboard/README.md](../../dashboard/README.md) for setup.
+Copy the sketch's `wifi_local.example.h` to `wifi_local.h` and enter credentials
+locally to enable Wi-Fi. Send `wifi` over USB to read the assigned IP. A separate
+core-0 task serves authenticated, read-only `GET /api/status` snapshots. ADC/I2C
+and GPIO access stay in the main loop. The snapshot has sequence, sample ages,
+validity flags and null values for nonfinite measurements.
+
+When Wi-Fi is compiled in, **all power pulses are blocked**, including over USB,
+regardless of calibration settings. This is a commissioning monitor until Wi-Fi
+scheduling and watchdog behaviour are verified on physical hardware. Without the
+local header, the existing USB-only behaviour remains. Network disconnects never
+issue control commands. The dashboard runs locally on your PC, not on the XIAO.

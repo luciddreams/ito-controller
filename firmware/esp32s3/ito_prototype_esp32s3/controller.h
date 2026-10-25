@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "platform.h"
+#include "network.h"
 #include <stdlib.h>
 #include <errno.h>
 Bus bus;
@@ -98,7 +99,7 @@ void stopOutputs(){directOff();offTime=millis();if(mode!=safety::Mode::Fault)mod
  if(!bus.reg8(0x20,1,0)||!dac())latch("I2C_STOP");
 }
 bool configurationOK(){
- return watchdogOK&&cfg::MEASUREMENTS_VERIFIED&&cfg::ADC_VERIFIED&&
+ return !monitor::enabled&&watchdogOK&&cfg::MEASUREMENTS_VERIFIED&&cfg::ADC_VERIFIED&&
   platform::calibrationValid(cfg::INPUT_ADC_GAIN,cfg::INPUT_ADC_OFFSET_V)&&
   platform::calibrationValid(cfg::HOT_ADC_GAIN,cfg::HOT_ADC_OFFSET_V)&&
   safety::configuration(true,0.001f,cfg::VDD_V,cfg::INPUT_AMPS_PER_VOLT,cfg::HEATER_RESISTANCE_OHM,cfg::TEC_MAX_CODE);
@@ -157,9 +158,10 @@ void pollSensors(uint32_t now){
 void status(){char line[320];snprintf(line,sizeof(line),"mode=%u fault=%s ready=%u raw=%u,%u mV=%u,%u Iin=%.3f Vbus=%.2f Ih=%.3f rpm=%u T=%.1f,%.1f,%.1f,%.1f,%.1f\n",
  unsigned(mode),fault,ready,rawInput,rawHot,mvInput,mvHot,inputs.inputA,inputs.busV,inputs.heaterA,rpm,
  inputs.temperature[0],inputs.temperature[1],inputs.temperature[2],inputs.temperature[3],inputs.temperature[4]);emit(line);
- snprintf(line,sizeof(line),"FW=L.1-S3 target=XIAO_ESP32S3 installed=0x%X calibrated=%u adc_verified=%u wdt=%u load=%u button=%u efuse_ok=%u\n",cfg::INSTALLED_TEC_MASK,cfg::MEASUREMENTS_VERIFIED,cfg::ADC_VERIFIED,watchdogOK,inputs.loadPresent,inputs.button,inputs.faultN);emit(line);
+ snprintf(line,sizeof(line),"FW=L.2-S3 target=XIAO_ESP32S3 installed=0x%X calibrated=%u adc_verified=%u wdt=%u load=%u button=%u efuse_ok=%u\n",cfg::INSTALLED_TEC_MASK,cfg::MEASUREMENTS_VERIFIED,cfg::ADC_VERIFIED,watchdogOK,inputs.loadPresent,inputs.button,inputs.faultN);emit(line);
 }
 void requestPulse(bool heat,unsigned a,unsigned b,unsigned ms){
+ if(monitor::enabled){emit("REJECT: Wi-Fi build is monitoring only; power pulses disabled\n");return;}
  uint32_t now=millis();
  if(!configurationOK()||uint32_t(now-lastSensorComplete)>50||
     safety::check(inputs,false,cfg::INPUT_TRIP_A,cfg::INPUT_TRIP_V,cfg::HEATER_ON_TRIP_A,cfg::GLASS_TRIP_C,cfg::HOT_TRIP_C)){
@@ -192,6 +194,7 @@ bool parseArgs(const char* s,unsigned* values,unsigned count){
  return *s==0;
 }
 void command(char* s){
+ if(!strcmp(s,"wifi")){char text[120];monitor::status(text,sizeof(text));emit(text);return;}
  if(!strcmp(s,"status")){status();return;}
  if(!strcmp(s,"pins")){
   char p[180];snprintf(p,sizeof(p),"D2/load=%d D10/button=%d D3/heater=%d D6/TEC_ARM=%d D9/POWER_ARM=%d SDA=%d SCL=%d\n",digitalRead(D2),digitalRead(D10),digitalRead(D3),digitalRead(D6),digitalRead(D9),digitalRead(D4),digitalRead(D5));emit(p);return;
@@ -208,7 +211,7 @@ void command(char* s){
  unsigned args[3];
  if(strncmp(s,"heat ",5)==0&&parseArgs(s+5,args,2)){requestPulse(true,args[0],0,args[1]);return;}
  if(strncmp(s,"tec ",4)==0&&parseArgs(s+4,args,3)){requestPulse(false,args[0],args[1],args[2]);return;}
- emit("Commands: status | pins | ambient | stop | reset | heat DUTY MS | tec CH CODE MS\n");
+ emit("Commands: wifi | status | pins | ambient | stop | reset | heat DUTY MS | tec CH CODE MS\n");
 }
 void serialPoll(){static char line[80];static unsigned used=0;static bool discard=false;
  for(unsigned k=0;k<32&&Serial.available();k++){
@@ -232,6 +235,23 @@ void setup(){
  initialized=initDevices();if(!initialized)latch("INIT");
  ready=configurationOK();
  for(unsigned n=0;n<5;n++)inputs.temperature[n]=NAN;
+ monitor::begin();
+}
+void publishTelemetry(){
+ static uint32_t previous=0,sequence=0;
+ uint32_t now=millis();if(!monitor::enabled||uint32_t(now-previous)<500)return;previous=now;
+ telemetry::Snapshot s;s.uptime=now;s.sequence=++sequence;s.sampleAge=now-lastSensorComplete;
+ s.mode=unsigned(mode);snprintf(s.fault,sizeof(s.fault),"%s",fault);
+ s.ready=ready;s.installed=cfg::INSTALLED_TEC_MASK;s.calibrated=cfg::MEASUREMENTS_VERIFIED;
+ s.adcVerified=cfg::ADC_VERIFIED;s.watchdog=watchdogOK;s.ioOk=inputs.ioOk;s.sensorsFresh=inputs.sensorsFresh;
+ // Read present pin levels, rather than cached input flags left by a failed I2C poll.
+ s.load=!digitalRead(D2);s.button=!digitalRead(D10);s.efuse=inputs.faultN;
+ s.heater=digitalRead(D3);s.tec=digitalRead(D6);s.relay=digitalRead(D9);s.monitorOnly=monitor::enabled;
+ s.raw[0]=rawInput;s.raw[1]=rawHot;s.mv[0]=mvInput;s.mv[1]=mvHot;
+ s.inputA=inputs.inputA;s.heaterA=inputs.heaterA;s.busV=inputs.busV;s.rpm=rpm;
+ for(unsigned i=0;i<5;i++)s.temperatures[i]=inputs.temperature[i];
+ for(unsigned i=0;i<2;i++){s.airValid[i]=ambient::fresh(air[i],now);s.airAge[i]=now-air[i].stamp;s.airT[i]=air[i].c;s.rh[i]=air[i].rh;s.dew[i]=air[i].dew;}
+ monitor::publish(s);
 }
 void loop(){
  uint32_t now=millis();
@@ -273,6 +293,7 @@ void loop(){
  pollAmbient(millis());
  serialPoll();
  serialFlush();
+ publishTelemetry();
  if(watchdogOK&&!platform::watchdogFeed()){watchdogOK=false;latch("WATCHDOG_FEED");}
  delay(1);
 }

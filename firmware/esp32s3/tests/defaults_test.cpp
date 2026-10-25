@@ -19,7 +19,7 @@ int main(){
  assert(fabsf(platform::correctedVoltage(2000,1650,1.01f,-0.01f)-1.6565f)<0.0001f);
  assert(!platform::calibrationValid(NAN,0));assert(!platform::calibrationValid(1,1));
  Serial.capacity=64;status();for(int i=0;i<16;i++)serialFlush();
- assert(Serial.output.find("FW=L.1-S3")!=std::string::npos);
+ assert(Serial.output.find("FW=L.2-S3")!=std::string::npos);
  mockWatchdogOK=false;setup();assert(mode==safety::Mode::Fault);
  assert(gpio[D3]==0&&gpio[D6]==0&&gpio[D9]==0);
  puts("PASS: delivered config blocks power, startup off, ADC clipping/calibration, USB queue, watchdog failure");
