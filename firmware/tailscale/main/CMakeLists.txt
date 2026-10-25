@@ -6,3 +6,7 @@ idf_component_register(
 target_compile_definitions(${COMPONENT_LIB} PRIVATE
   ITO_TAILSCALE_MONITOR=1 ARDUINO_USB_MODE=0 ARDUINO_USB_CDC_ON_BOOT=1
 )
+
+# Keep IRAM ISR helper literals before their Xtensa L32R references.
+# https://gcc.gnu.org/onlinedocs/gcc/Xtensa-Options.html
+set_source_files_properties(main.cpp PROPERTIES COMPILE_OPTIONS "-mtext-section-literals")
