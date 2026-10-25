@@ -12,9 +12,9 @@ dependencies = (
     ('arduino', 'https://github.com/espressif/arduino-esp32.git',
      'ee98cf3ca1bccebcfb9e74ed906b51983e416202'),
     ('lib-builder', 'https://github.com/espressif/esp32-arduino-lib-builder.git',
-     'ce4c80a2f6cbf8c55ba246ffa2000fcdb33d9e6c'),
+     'fdb4a87b69a6e246a6804648af2e9d1410e8f071'),
     ('lib-builder/components/arduino_tinyusb/tinyusb', 'https://github.com/hathach/tinyusb.git',
-     '331c263400dd5ccf77264cab1fa6bbd9f374b44e'),
+     '86ad6e56c1700e85f1c5678607a762cfe3aa2f47'),
 )
 for name, url, revision in dependencies:
     path = root / 'vendor' / name
