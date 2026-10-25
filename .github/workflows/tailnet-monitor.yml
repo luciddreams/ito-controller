@@ -1,0 +1,31 @@
+name: Experimental Tailscale monitor
+on:
+  pull_request:
+    paths: ['firmware/**', 'dashboard/**', '.github/workflows/tailnet-monitor.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  firmware:
+    runs-on: ubuntu-latest
+    container: espressif/idf:v5.5.1
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch pinned dependencies and compile with placeholder credentials
+        shell: bash
+        run: |
+          . /opt/esp/idf/export.sh
+          python firmware/tailscale/bootstrap.py
+          cp firmware/tailscale/main/tailnet_local.example.h firmware/tailscale/main/tailnet_local.h
+          cd firmware/tailscale
+          idf.py set-target esp32s3
+          idf.py build
+  dashboard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - working-directory: dashboard
+        run: npm ci && npm test && npm run build

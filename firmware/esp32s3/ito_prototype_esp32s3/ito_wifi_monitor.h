@@ -1,6 +1,8 @@
 #pragma once
 #include "telemetry.h"
-#if !defined(ITO_HOST_TEST) && __has_include("wifi_local.h")
+#if defined(ITO_TAILSCALE_MONITOR) && !defined(ITO_HOST_TEST)
+#include "ito_tailnet_monitor.h"
+#elif !defined(ITO_HOST_TEST) && __has_include("wifi_local.h")
 #include "wifi_local.h"
 #include <WiFi.h>
 #include <WebServer.h>
@@ -64,3 +66,4 @@ inline void begin(){}
 inline void status(char* out,size_t n){snprintf(out,n,"wifi=disabled copy wifi_local.example.h to wifi_local.h\n");}
 }
 #endif
+

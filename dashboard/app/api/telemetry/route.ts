@@ -1,9 +1,19 @@
 import { validate, deviceURL, demo } from '../../../lib/telemetry.mjs';
+import { mqttTelemetry } from '../../../lib/mqtt.mjs';
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 const headers = {'Cache-Control':'no-store'};
 export async function GET() {
   if (process.env.ITO_DEMO === 'true') return Response.json({source:'demo',received_at:Date.now(),telemetry:demo()}, {headers});
+  if (process.env.ITO_TRANSPORT === 'mqtt') {
+    try {
+      const snapshot = mqttTelemetry();
+      if (snapshot) return Response.json(snapshot, {headers});
+      return Response.json({error:'Waiting for fresh MQTT telemetry from the controller.'}, {status:503,headers});
+    } catch {
+      return Response.json({error:'MQTT configuration unavailable. Check the server configuration.'}, {status:503,headers});
+    }
+  }
   const origin = process.env.ITO_DEVICE_URL;
   const token = process.env.ITO_DEVICE_TOKEN;
   if (!origin || !token || token.length < 32) return Response.json({error:'Configure ITO_DEVICE_URL and a 32+ character ITO_DEVICE_TOKEN in .env.local. See README.'}, {status:503,headers});
@@ -20,3 +30,4 @@ export async function GET() {
     return Response.json({source:'device',received_at:Date.now(),telemetry:validate(JSON.parse(text))}, {headers});
   } catch { return Response.json({error:'No valid telemetry from the XIAO. Check power, Wi-Fi, IP address and firmware. Last readings are not live.'}, {status:502,headers}); }
 }
+
