@@ -25,3 +25,7 @@ CONFIG_ML_JSON_BUFFER_SIZE_KB=512
 
 # No RainMaker/Insights logging interception is used by this monitor.
 CONFIG_DIAG_ENABLE_WRAP_LOG_FUNCTIONS=n
+
+# Legacy esp_diagnostics 1.2.1 predates the wrap-enable switch above.
+# Skip its linker wrapping too; this monitor uses ESP-IDF logging directly.
+CONFIG_DIAG_USE_EXTERNAL_LOG_WRAP=y
