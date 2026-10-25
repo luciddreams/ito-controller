@@ -1,0 +1,17 @@
+services:
+  ito-dashboard:
+    build: .
+    restart: unless-stopped
+    init: true
+    env_file: .env.mqtt
+    ports:
+      - "127.0.0.1:3100:3000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true

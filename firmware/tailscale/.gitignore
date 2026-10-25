@@ -1,0 +1,7 @@
+/vendor/
+/build/
+/managed_components/
+/sdkconfig
+/sdkconfig.old
+/dependencies.lock
+/main/tailnet_local.h
