@@ -16,3 +16,7 @@ set_source_files_properties(main.cpp PROPERTIES COMPILE_OPTIONS "-mtext-section-
 # feeds set_arduino_panic_handler(); main.cpp uses it to keep panic details in RTC
 # memory, since the TinyUSB console goes down with the chip before ESP-IDF prints.
 target_link_libraries(${COMPONENT_LIB} INTERFACE "-Wl,--wrap=esp_panic_handler")
+
+# Route MicroLink's WireGuard handshake timestamp through main.cpp, which uses
+# NTP wall-clock time instead of uptime so peers accept handshakes after a reboot.
+target_link_libraries(${COMPONENT_LIB} INTERFACE "-Wl,--wrap=wireguard_tai64n_now")

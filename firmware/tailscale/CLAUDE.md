@@ -115,6 +115,22 @@ the newest 32 KB are kept while no terminal is attached.
   `gap_ctrl_ms=40`, minimum free internal heap 93 KB. If the tailnet grows past
   16 peers the broker can be dropped again; `CONFIG_ML_PRIORITY_PEER_IP` set to
   the broker's tailnet IP reserves it a slot.
+- Fixed: after a reboot MQTT stayed in `mqtt_connecting` for minutes. Cause:
+  MicroLink's `wireguard_tai64n_now()` stamps WireGuard handshakes with uptime, so
+  a peer that saw the previous run drops every new handshake as a replay (DISCO
+  pings still work; `tailscale ping` from the broker fails) until it forgets the
+  idle peer. `main.cpp` now wraps it (`-Wl,--wrap=wireguard_tai64n_now` in
+  `main/CMakeLists.txt`) to send NTP wall-clock TAI64N. Verified: reconnect about
+  15 s after reboot, stable for 5 min.
+- Open: on the PCB (powered, or unpowered but fed through the XIAO's 3V3 from
+  USB) the I2C devices answer, and the control loop's bit-banged polls keep core 1
+  busy; MicroLink's `ml_coord` and `ml_wg_mgr`, pinned to core 1, starve, the
+  tunnel drops and `ito-diag-lo` goes silent. Safety monitoring is unaffected.
+  Moving those two tasks to core 0 (wrapping `xTaskCreatePinnedToCore`) was tried
+  and broke the board: it vanished from USB and the tailnet within about a minute
+  of boot; not root-caused, as a flaky USB cable muddied the tests. Remaining
+  options touch safety-reviewed code (faster GPIO in `bus.h`, or slower polling
+  while monitor-only) and need the owner's go-ahead.
 - `tailnet=starting` that never moves on means Wi-Fi has not associated (the
   task waits for `WL_CONNECTED` before time sync and MicroLink). If the log stops
   after `wifi:Set ps type` with no `state: init -> auth` lines, the AP was not

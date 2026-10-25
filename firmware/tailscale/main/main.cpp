@@ -11,6 +11,7 @@
 #include "esp_task_wdt.h"
 #include "esp_timer.h"
 #include <stdarg.h>
+#include <sys/time.h>
 #include "esp_log.h"
 
 // MicroLink pins ml_coord (priority 5) and ml_wg_mgr (priority 7) to core 1 and
@@ -218,6 +219,21 @@ static void task(void* arg) {
 }
 }  // namespace diag
 
+// WireGuard handshake timestamps: MicroLink's wireguard_tai64n_now() uses time
+// since boot, so after a reboot every peer that saw the previous run drops our
+// handshakes as replays until uptime passes the old value. The tailnet task syncs
+// NTP before microlink_init(), so send wall-clock TAI64N instead (link flag in
+// CMakeLists.txt); before a valid clock, keep MicroLink's own value.
+extern "C" void __real_wireguard_tai64n_now(uint8_t* output);
+extern "C" void __wrap_wireguard_tai64n_now(uint8_t* output) {
+  struct timeval now;
+  gettimeofday(&now, nullptr);
+  if (now.tv_sec < 1704067200) { __real_wireguard_tai64n_now(output); return; }
+  uint64_t seconds = 0x400000000000000AULL + uint64_t(now.tv_sec);
+  uint32_t nanos = uint32_t(now.tv_usec) * 1000;
+  for (int i = 0; i < 8; i++) output[i] = uint8_t(seconds >> (56 - 8 * i));
+  for (int i = 0; i < 4; i++) output[8 + i] = uint8_t(nanos >> (24 - 8 * i));
+}
 // Task watchdog: record which entries starved before ESP-IDF aborts.
 extern "C" void esp_task_wdt_isr_user_handler(void) {
   diag::live.twdt[0] = 0;
