@@ -39,6 +39,27 @@ Broker connection success is not proof that topic ACLs allow publishing: verify
 receipt on the server. Give the device publish-only access to
 `ito/controller-01/telemetry`; give the dashboard subscribe-only access.
 
+### Reading the console
+
+`idf.py monitor` leaves DTR low, and the controller drops console output while no
+terminal asserts DTR, so use a terminal that does (pyserial ships with ESP-IDF):
+
+```text
+python -m serial.tools.miniterm COM10 115200                 # Windows
+python3 -m serial.tools.miniterm /dev/cu.usbmodemXXXX 115200  # macOS
+```
+
+About 300 ms after connecting, the firmware prints `DIAG` lines (previous reset
+reason, task-watchdog culprit, panic PC and backtrace, core-1 scheduling gaps, heap
+low-water mark), then streams the ESP-IDF log including MicroLink; the newest 32 KB
+are kept while no terminal is attached. UART0 cannot serve as a console because its
+pins are the D6/D7 outputs. The control loop runs at priority 10 on core 1 because
+MicroLink pins its coordinator (priority 5) and WireGuard manager (priority 7) to
+that core; at the original priority 2 their logging starved the 250 ms watchdog.
+
+On Windows without symlink support, `CMakeLists.txt` registers MicroLink's
+`wireguard_lwip` component directly, since Git checks the symlink out as a file.
+
 ## Enrollment and compatibility
 
 MicroLink is an independent Tailscale-compatible implementation, not an official
