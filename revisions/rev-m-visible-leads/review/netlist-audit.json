@@ -1,0 +1,17 @@
+{
+  "source_components": 262,
+  "schematic_components": 262,
+  "board_components_in_design": 262,
+  "mechanical_and_fiducials": [
+    "FID1",
+    "FID2",
+    "FID3",
+    "H1",
+    "H2",
+    "H3",
+    "H4"
+  ],
+  "connected_pin_assignments_checked": 734,
+  "issue_count": 0,
+  "issues": []
+}

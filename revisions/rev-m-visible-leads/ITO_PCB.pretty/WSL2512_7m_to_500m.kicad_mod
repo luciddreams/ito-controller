@@ -1,0 +1,182 @@
+(footprint "WSL2512_7m_to_500m"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Vishay WSL2512 for 7mOhm to 500mOhm; 30100 rev2023-11-23; manufacturer landpattern, assembly qualification pending")
+	(tags "resistor")
+	(property "Reference" "REF**"
+		(at 0 -2.62 0)
+		(layer "F.Fab")
+		(uuid "39583077-0062-426b-8046-da4dff38b63b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "25m / 1W / 1% WSL2512R0250FEA"
+		(at 0 2.62 0)
+		(layer "F.Fab")
+		(uuid "7eb846bd-16cd-4d64-a507-a41bd4140ef1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e018cda9-1e1f-43bf-87cd-dda72470e66d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "856a40cc-0e7f-46bc-858b-bf06dba58a06")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -3.929999 -2.089999)
+		(end 3.929999 -2.089999)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "c23a0b14-daf9-4fa9-8ebe-03b02c907eb9")
+	)
+	(fp_line
+		(start -3.929999 2.089999)
+		(end -3.929999 -2.089999)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "8db34d63-d8f3-4235-b883-12071df41713")
+	)
+	(fp_line
+		(start 3.929999 -2.089999)
+		(end 3.929999 2.089999)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "73debf53-95bf-41f1-882e-5a1c21779a54")
+	)
+	(fp_line
+		(start 3.929999 2.089999)
+		(end -3.929999 2.089999)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "0bfe7a91-5a26-4b38-a83a-3a93595abc68")
+	)
+	(fp_line
+		(start -3.15 -1.6)
+		(end 3.15 -1.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "3b55b9f5-379f-492e-9ea1-c2932faf26f6")
+	)
+	(fp_line
+		(start -3.15 1.6)
+		(end -3.15 -1.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "812fb3d0-f384-420f-b5b6-949dc5f20ccf")
+	)
+	(fp_line
+		(start -2.177064 -1.71)
+		(end 2.177064 -1.71)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "3ec39631-0c96-41bf-92db-8abb7a0cafaf")
+	)
+	(fp_line
+		(start -2.177064 1.71)
+		(end 2.177064 1.71)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "f8294966-0e73-4056-81c6-5f8640c85871")
+	)
+	(fp_line
+		(start 3.15 -1.6)
+		(end 3.15 1.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "29594c02-483b-4649-bb8d-eeed8c78a419")
+	)
+	(fp_line
+		(start 3.15 1.6)
+		(end -3.15 1.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "7bd32d45-4699-4ed5-9c20-297bd793fce0")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "7411ca25-8e01-403a-9b44-88c9b5a643f4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.854999 0)
+		(size 1.65 3.68)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8ab22304-40fa-4994-b290-d9b915f367b4")
+	)
+	(pad "2" smd rect
+		(at 2.854999 0)
+		(size 1.65 3.68)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "adfd1474-3e4c-4e8b-a824-bb94b3ff1385")
+	)
+	(embedded_fonts no)
+
+	(model "${KIPRJMOD}/../../3dmodels/WSL2512_7m_to_500m.step" (offset (xyz 0 0 0)) (scale (xyz 1 1 1)) (rotate (xyz 0 0 0)))
+)
+

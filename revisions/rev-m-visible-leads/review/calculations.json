@@ -1,0 +1,39 @@
+{
+  "status": "CALCULATED ONLY; not a bench result",
+  "dac_full_scale_v": 2.0475,
+  "divider_ratio": 0.7132667617689016,
+  "ctrl_full_scale_v": 1.4604136947218258,
+  "current_full_scale_formula_30_A": 1.947218259629101,
+  "current_full_scale_51mV_typ_A": 1.9861626248216828,
+  "current_reference_and_shunt_only_bounds_A": [
+    1.850821316083106,
+    2.1242381014135647
+  ],
+  "voltage_ceiling_nominal_V": 11.942699999999999,
+  "inductor_ripple_24V_nominal_App": 0.6060467874999999,
+  "inductor_ripple_28V_nominal_App": 0.6918020083333333,
+  "inductor_ripple_28V_Lminus20_fminus10_App": 0.960836122685185,
+  "sense_resistor_dc_loss_at2A_W": 0.1,
+  "inductor_copper_loss_at2A_25C_maxDCR_W": 0.232,
+  "gate_driver_LDO_loss_28V_Qg16nC_each_W": 0.2208,
+  "gate_driver_capacitance_recommendation_uF": 16.0,
+  "soft_start_to_full_scale_ms": 13.276488133834782,
+  "compensation_formula_R_ohm": 33158.331030671456,
+  "compensation_R_at_Lminus20_fminus10_ohm": 23873.99834208345,
+  "compensation_formula_C_F": 6.666666666666667e-09,
+  "selected_compensation_R_ohm": 22100,
+  "selected_compensation_C_F": 6.8e-09,
+  "inductor_monitor_gain_V_per_A": 0.5,
+  "efuse_IOL_nominal_A": 4.477611940298507,
+  "efuse_2x_overload_pulse_nominal_A": 8.955223880597014,
+  "efuse_pulse_typical_ms": 25.5,
+  "nominal_power_four_TEC_at12V2A_W": 96,
+  "input_current_four_TEC_24V_efficiency90pct_A": 4.444444444444444,
+  "notes": [
+    "Current bounds omit DAC error, divider tolerance, temperature and transient behavior.",
+    "Switching frequency +/-10% is an analytical assumption, not a datasheet limit at300kHz.",
+    "TP11-14 measure inductor current, not instantaneous TEC current after output capacitors.",
+    "The actual input must remain <=4A; all four channels at12V/2A exceed that budget.",
+    "IRLR024N VGS(th) maximum2V is on, not below, the LT3741 recommended boundary; startup/recovery needs explicit validation."
+  ]
+}
